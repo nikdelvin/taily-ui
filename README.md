@@ -1,6 +1,6 @@
 <p>
     <a href="https://tailyui.nikdelvin.dev">
-      <img alt="Flowbite - Tailwind CSS components" width="350" src="https://tailyui.nikdelvin.dev/assets/github/logo.jpg">
+      <img alt="Taily UI - Tailwind CSS components" width="350" src="https://tailyui.nikdelvin.dev/assets/github/logo.jpg">
     </a><br>
     Introducing Taily UI - 🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.
 </p>
