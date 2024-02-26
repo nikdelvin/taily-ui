@@ -1,5 +1,4 @@
-export const buttonGroup = `@apply
-group/button
+export const buttonsGroup = `@apply
 relative
 z-0
 inline-flex
@@ -108,7 +107,7 @@ after:data-[color=success]:data-[type=solid]:to-green-500
 after:data-[type=bordered]:brightness-[0.25]
 after:data-[type=solid]:brightness-[1]`
 
-export const buttonGroupButton = `@apply
+export const buttonsGroupItem = `@apply
 relative
 inline-flex
 w-full
@@ -126,21 +125,21 @@ first:rounded-l-full
 first:pl-4
 last:rounded-r-full
 last:pr-4
-group-data-[size=large]/button:py-[12px]
-group-data-[size=medium]/button:py-[10px]
-group-data-[size=small]/button:py-[8px]
-group-data-[size=large]/button:text-base
-group-data-[size=medium]/button:text-sm
-group-data-[size=small]/button:text-xs
-group-data-[color=default]/button:group-data-[type=bordered]/button:hover:bg-slate-800/25
-group-data-[color=error]/button:group-data-[type=bordered]/button:hover:bg-pink-950/25
-group-data-[color=primary]/button:group-data-[type=bordered]/button:hover:bg-cyan-950/25
-group-data-[color=secondary]/button:group-data-[type=bordered]/button:hover:bg-purple-950/25
-group-data-[color=success]/button:group-data-[type=bordered]/button:hover:bg-teal-950/25
-group-data-[type=solid]/button:hover:bg-zinc-950/15
-group-data-[color=default]/button:group-data-[type=bordered]/button:focus:bg-slate-800/50
-group-data-[color=error]/button:group-data-[type=bordered]/button:focus:bg-pink-950/50
-group-data-[color=primary]/button:group-data-[type=bordered]/button:focus:bg-cyan-950/50
-group-data-[color=secondary]/button:group-data-[type=bordered]/button:focus:bg-purple-950/50
-group-data-[color=success]/button:group-data-[type=bordered]/button:focus:bg-teal-950/50
-group-data-[type=solid]/button:focus:bg-zinc-950/30`
+group-data-[size=large]:py-[12px]
+group-data-[size=medium]:py-[10px]
+group-data-[size=small]:py-[8px]
+group-data-[size=large]:text-base
+group-data-[size=medium]:text-sm
+group-data-[size=small]:text-xs
+group-data-[color=default]:group-data-[type=bordered]:hover:bg-slate-800/25
+group-data-[color=error]:group-data-[type=bordered]:hover:bg-pink-950/25
+group-data-[color=primary]:group-data-[type=bordered]:hover:bg-cyan-950/25
+group-data-[color=secondary]:group-data-[type=bordered]:hover:bg-purple-950/25
+group-data-[color=success]:group-data-[type=bordered]:hover:bg-teal-950/25
+group-data-[type=solid]:hover:bg-zinc-950/15
+group-data-[color=default]:group-data-[type=bordered]:focus:bg-slate-800/50
+group-data-[color=error]:group-data-[type=bordered]:focus:bg-pink-950/50
+group-data-[color=primary]:group-data-[type=bordered]:focus:bg-cyan-950/50
+group-data-[color=secondary]:group-data-[type=bordered]:focus:bg-purple-950/50
+group-data-[color=success]:group-data-[type=bordered]:focus:bg-teal-950/50
+group-data-[type=solid]:focus:bg-zinc-950/30`

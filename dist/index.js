@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin'
 import { button } from './components/button'
-import { buttonGroup, buttonGroupButton } from './components/buttonGroup'
+import { buttonsGroup, buttonsGroupItem } from './components/buttonGroup'
 
 const tailyUI = plugin(
   function ({addComponents}) {
@@ -8,11 +8,11 @@ const tailyUI = plugin(
       '.button': {
         [button]: {}
       },
-      '.button-group': {
-        [buttonGroup]: {}
+      '.buttons-group': {
+        [buttonsGroup]: {}
       },
-      '.button-group .button': {
-        [buttonGroupButton]: {}
+      '.buttons-group-item': {
+        [buttonsGroupItem]: {}
       }
     })
   }
