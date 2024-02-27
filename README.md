@@ -72,12 +72,12 @@ Taily UI is an open source collection of UI components built with the utility cl
     </tr>
     <tr>
         <td width="33.3333%">
-            <a href="https://tailyui.nikdelvin.dev/docs/components/button">
+            <a href="https://tailyui.nikdelvin.dev/docs/components/buttons">
                 <img alt="Tailwind CSS Button" src="https://tailyui.nikdelvin.dev/assets/github/button.jpg">
             </a>
         </td>
         <td width="33.3333%">
-            <a href="https://tailyui.nikdelvin.dev/docs/components/button-group">
+            <a href="https://tailyui.nikdelvin.dev/docs/components/button-groups">
                 <img alt="Tailwind CSS Button Group" src="https://tailyui.nikdelvin.dev/assets/github/button-group.jpg">
             </a>
         </td>
