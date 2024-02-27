@@ -1,4 +1,4 @@
-export const buttonsGroup = `@apply
+export const buttonGroup = `@apply
 relative
 z-0
 inline-flex
@@ -107,7 +107,7 @@ after:data-[color=success]:data-[type=solid]:to-green-500
 after:data-[type=bordered]:brightness-[0.25]
 after:data-[type=solid]:brightness-[1]`
 
-export const buttonsGroupItem = `@apply
+export const buttonGroupItem = `@apply
 relative
 inline-flex
 w-full
