@@ -5,4 +5,17 @@ declare module './index.js' {
         handler: PluginCreator,
         config?: Partial<Config> | undefined
     }
+    function openSourcePromo(config: {
+        logo: any
+        title: string
+        color: 'primary' | 'secondary' | 'warning'
+        text: Array<{ type: 'default' | 'primary' | 'secondary', value: string }>
+        description: string
+        button: {
+            title: string
+            link: string
+        }
+        github: string
+        images: [string, string, string]
+    }): void
 }
