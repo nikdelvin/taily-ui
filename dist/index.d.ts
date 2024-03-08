@@ -5,6 +5,7 @@ declare module './index.js' {
         handler: PluginCreator,
         config?: Partial<Config> | undefined
     }
+    const safeList: string[]
     function OpenSourcePromo(config: {
         logo: any
         title: string
@@ -18,5 +19,4 @@ declare module './index.js' {
         github: string
         images: [string, string, string]
     }): void
-    const OpenSourcePromoSafeList: string[]
 }
