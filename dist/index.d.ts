@@ -5,7 +5,7 @@ declare module './index.js' {
         handler: PluginCreator,
         config?: Partial<Config> | undefined
     }
-    function openSourcePromo(config: {
+    function OpenSourcePromo(config: {
         logo: any
         title: string
         color: 'primary' | 'secondary' | 'warning'
