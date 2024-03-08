@@ -18,4 +18,5 @@ declare module './index.js' {
         github: string
         images: [string, string, string]
     }): void
+    const OpenSourcePromoSafeList: string[]
 }

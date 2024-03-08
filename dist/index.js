@@ -1,7 +1,7 @@
 import plugin from 'tailwindcss/plugin'
 import { button } from './components/button'
 import { buttonGroup, buttonGroupItem } from './components/buttonGroup'
-import { OpenSourcePromo } from './layouts/OpenSourcePromo'
+import { OpenSourcePromo, OpenSourcePromoSafeLift } from './layouts/OpenSourcePromo'
 
 const tailyUI = plugin(
   function ({addComponents}) {
@@ -19,4 +19,4 @@ const tailyUI = plugin(
   }
 )
 
-export { tailyUI, OpenSourcePromo }
+export { tailyUI, OpenSourcePromo, OpenSourcePromoSafeLift }
