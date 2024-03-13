@@ -2,6 +2,15 @@ import { gitHub } from "../icons/github"
 
 export function OpenSourcePromo(config) {
     const colorsConfig = {
+        default: {
+            background: 'from-gray-500/25 via-zinc-950 to-blue-200/25',
+            title: 'from-gray-500 via-slate-500 to-blue-200',
+            textPrimary: 'from-slate-500 via-gray-500 to-zinc-500',
+            textSecondary: 'from-cyan-200 via-sky-200 to-blue-200',
+            button: 'default',
+            github: 'ghost',
+            image: 'from-gray-500 via-slate-500 to-blue-200'
+        },
         primary: {
             background: 'from-blue-500/25 via-zinc-950 to-green-500/25',
             title: 'from-blue-500 via-cyan-500 to-green-500',
@@ -20,6 +29,15 @@ export function OpenSourcePromo(config) {
             github: 'primary',
             image: 'from-fuchsia-500 via-violet-500 to-blue-500'
         },
+        success: {
+            background: 'from-green-500/25 via-zinc-950 to-amber-500/25',
+            title: 'from-green-500 via-lime-500 to-amber-500',
+            textPrimary: 'from-teal-500 via-emerald-500 to-green-500',
+            textSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
+            button: 'success',
+            github: 'warning',
+            image: 'from-green-500 via-lime-500 to-amber-500'
+        },
         warning: {
             background: 'from-yellow-500/25 via-zinc-950 to-red-500/25',
             title: 'from-yellow-500 via-orange-500 to-red-500',
@@ -28,6 +46,24 @@ export function OpenSourcePromo(config) {
             button: 'warning',
             github: 'error',
             image: 'from-yellow-500 via-orange-500 to-red-500'
+        },
+        error: {
+            background: 'from-red-500/25 via-zinc-950 to-fuchsia-500/25',
+            title: 'from-red-500 via-rose-500 to-fuchsia-500',
+            textPrimary: 'from-pink-500 via-rose-500 to-red-500',
+            textSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
+            button: 'error',
+            github: 'secondary',
+            image: 'from-red-500 via-rose-500 to-fuchsia-500'
+        },
+        ghost: {
+            background: 'from-blue-200/25 via-zinc-950 to-slate-500/25',
+            title: 'from-blue-200 via-blue-300 from-slate-500',
+            textPrimary: 'from-cyan-200 via-sky-200 to-blue-200',
+            textSecondary: 'from-slate-500 via-gray-500 to-zinc-500',
+            button: 'ghost',
+            github: 'default',
+            image: 'from-blue-200 via-blue-300 from-slate-500'
         }
     }
 

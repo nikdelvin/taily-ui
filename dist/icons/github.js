@@ -1,16 +1,32 @@
 export function gitHub(color) {
     const colorsConfig = {
+        default: {
+            color1: ['#dbeafe', '#cbd5e1'],
+            color2: ['#bfdbfe', '#64748b']
+        },
         primary: {
             color1: ['#f0abfc', '#93c5fd'],
             color2: ['#d946ef', '#3b82f6']
+        },
+        secondary: {
+            color1: ['#fca5a5', '#f0abfc'],
+            color2: ['#ef4444', '#d946ef']
         },
         success: {
             color1: ['#93c5fd', '#86efac'],
             color2: ['#3b82f6', '#22c55e']
         },
+        warning: {
+            color1: ['#86efac', '#fde047'],
+            color2: ['#22c55e', '#eab308']
+        },
         error: {
             color1: ['#fde047', '#fca5a5'],
             color2: ['#eab308', '#ef4444']
+        },
+        ghost: {
+            color1: ['#d1d5db', '#dbeafe'],
+            color2: ['#6b7280', '#bfdbfe']
         }
     } 
 
