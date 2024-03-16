@@ -9,7 +9,7 @@ declare module './index.js' {
     function OpenSourcePromo(config: {
         logo: any
         title: string
-        color: 'primary' | 'secondary' | 'warning'
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
         text: Array<{ type: 'default' | 'primary' | 'secondary', value: string }>
         description: string
         button: {
