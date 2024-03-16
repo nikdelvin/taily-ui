@@ -1,12 +1,12 @@
 import { gitHub } from "../icons/github"
 import { shape } from "../icons/shape"
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max)
+function shuffle(array) { 
+    return array.sort(() => Math.random() - 0.5)
 }
 
 export function OpenSourcePromo(config) {
-    const shapeIndex = getRandomInt(28)
+    const shapeIndexes = shuffle(Array.from(Array(30).keys())).slice(0, 3)
     const colorsConfig = {
         default: {
             background: 'from-slate-500/25 via-zinc-950 to-blue-200/25',
@@ -136,7 +136,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[0]}"
                                     width="640"
                                     height="360"
-                                />` : shape(shapeIndex)}
+                                />` : shape(shapeIndexes[0])}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
@@ -146,7 +146,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[1]}"
                                     width="640"
                                     height="360"
-                                />` : shape(shapeIndex + 1)}
+                                />` : shape(shapeIndexes[1])}
                             </div>
                             <div class="flex h-full w-full rotate-[-10deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
                                 ${config.images != null && config.images[2] != null ? `<img
@@ -154,7 +154,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[2]}"
                                     width="640"
                                     height="360"
-                                />` : shape(shapeIndex + 2)}
+                                />` : shape(shapeIndexes[2])}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                         </div>
