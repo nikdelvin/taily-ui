@@ -37,7 +37,7 @@ export function shape(type) {
     ]
     return `
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" xml:space="preserve" version="1.1" viewBox="0 0 640 360" class="mix-blend-overlay my-2">
-            <image width="640" height="360" xlink:href="${type != null ? shapes[type] : shapes[getRandomInt(40)]}"/>
+            <image width="640" height="360" xlink:href="${type != null ? shapes[type] : shapes[getRandomInt(30)]}"/>
         </svg>
     `
 }
