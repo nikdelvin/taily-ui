@@ -1,34 +1,34 @@
 export function gitHub(color) {
     const colorsConfig = {
         default: {
-            color1: ['#dbeafe', '#cbd5e1'],
-            color2: ['#bfdbfe', '#64748b']
+            color1: ['#cffafe', '#d4d4d8'],
+            color2: ['#a5f3fc', '#71717a']
         },
         primary: {
-            color1: ['#f0abfc', '#93c5fd'],
-            color2: ['#d946ef', '#3b82f6']
+            color1: ['#d8b4fe', '#93c5fd'],
+            color2: ['#a855f7', '#3b82f6']
         },
         secondary: {
-            color1: ['#fca5a5', '#f0abfc'],
-            color2: ['#ef4444', '#d946ef']
+            color1: ['#f9a8d4', '#a5b4fc'],
+            color2: ['#ec4899', '#6366f1']
         },
         success: {
-            color1: ['#93c5fd', '#86efac'],
-            color2: ['#3b82f6', '#22c55e']
+            color1: ['#67e8f9', '#86efac'],
+            color2: ['#06b6d4', '#22c55e']
         },
         warning: {
-            color1: ['#86efac', '#fde047'],
-            color2: ['#22c55e', '#eab308']
+            color1: ['#5eead4', '#fdba74'],
+            color2: ['#14b8a6', '#f97316']
         },
         error: {
             color1: ['#fde047', '#fca5a5'],
             color2: ['#eab308', '#ef4444']
         },
         ghost: {
-            color1: ['#d1d5db', '#dbeafe'],
-            color2: ['#6b7280', '#bfdbfe']
+            color1: ['#cbd5e1', '#dbeafe'],
+            color2: ['#64748b', '#bfdbfe']
         }
-    } 
+    }
 
     return `
         <svg
