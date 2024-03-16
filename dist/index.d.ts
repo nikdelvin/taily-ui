@@ -17,6 +17,6 @@ declare module './index.js' {
             link: string
         }
         github: string
-        images: string[]
+        images?: string[]
     }): void
 }

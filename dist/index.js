@@ -85,6 +85,8 @@ const safeList = [
   "scale-[0.8]",
   "blur-md",
   "mix-blend-overlay",
+  "overflow-hidden",
+  "my-2"
 ]
 
 const tailyUI = plugin(
