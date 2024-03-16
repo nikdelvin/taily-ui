@@ -1,4 +1,5 @@
 import { gitHub } from "../icons/github"
+import { shape } from "../icons/shape"
 
 export function OpenSourcePromo(config) {
     const colorsConfig = {
@@ -68,7 +69,7 @@ export function OpenSourcePromo(config) {
     }
 
     return `
-        <div class="flex h-screen w-screen flex-col overflow-y-scroll">
+        <div class="flex h-full w-screen flex-col overflow-y-scroll">
             <div class="h-full bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full flex-col items-center justify-start gap-4 p-16">
                     <div class="grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
@@ -125,30 +126,30 @@ export function OpenSourcePromo(config) {
                         </div>
                         <div class="mx-8 my-16 grid grid-flow-row grid-cols-2 gap-4">
                             <div class="flex h-full w-full rotate-[-10deg] scale-100 flex-col items-center justify-center rounded-3xl bg-gradient-to-r ${colorsConfig[config.color].image} py-4">
-                                <img
+                                ${config.images[0] != null ? `<img
                                     alt="Main 1"
                                     src="${config.images[0]}"
                                     width="640"
                                     height="360"
-                                />
+                                />` : shape()}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                             <div class="flex h-full w-full rotate-[10deg] scale-90 flex-col items-center justify-center rounded-3xl bg-gradient-to-r ${colorsConfig[config.color].image} py-4 blur-sm">
-                                <img
+                                ${config.images[1] != null ? `<img
                                     alt="Main 2"
                                     src="${config.images[1]}"
                                     width="640"
                                     height="360"
-                                />
+                                />` : shape()}
                             </div>
                             <div class="flex h-full w-full rotate-[-10deg] scale-[0.8] flex-col items-center justify-center rounded-3xl bg-gradient-to-r ${colorsConfig[config.color].image} py-4 blur-md">
-                                <img
+                                ${config.images[2] != null ? `<img
                                     alt="Main 3"
                                     src="${config.images[2]}"
                                     width="640"
                                     height="360"
-                                />
+                                />` : shape()}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                         </div>
