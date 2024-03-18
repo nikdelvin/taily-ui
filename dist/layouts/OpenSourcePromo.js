@@ -16,13 +16,13 @@ export function OpenSourcePromo(config) {
     ])
     const colorsConfig = {
         default: {
-            background: 'from-slate-500/25 via-zinc-950 to-blue-200/25',
-            title: 'from-slate-500 to-blue-200',
+            background: 'from-slate-500/25 via-zinc-950 to-violet-200/25',
+            title: 'from-slate-500 to-violet-200',
             textPrimary: 'from-slate-500 via-gray-500 to-zinc-500',
-            textSecondary: 'from-cyan-200 via-sky-200 to-blue-200',
+            textSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
             button: 'default',
             github: 'ghost',
-            image: 'from-slate-500 to-blue-200',
+            image: 'from-slate-500 to-violet-200',
             shapes: 'dark'
         },
         primary: {
@@ -76,13 +76,13 @@ export function OpenSourcePromo(config) {
             shapes: 'dark'
         },
         ghost: {
-            background: 'from-cyan-200/25 via-zinc-950 to-zinc-500/25',
-            title: 'from-cyan-200 to-zinc-500',
-            textPrimary: 'from-cyan-200 via-sky-200 to-blue-200',
+            background: 'from-blue-200/25 via-zinc-950 to-zinc-500/25',
+            title: 'from-blue-200 to-zinc-500',
+            textPrimary: 'from-blue-200 via-indigo-200 to-violet-200',
             textSecondary: 'from-slate-500 via-gray-500 to-zinc-500',
             button: 'ghost',
             github: 'default',
-            image: 'from-cyan-200 to-zinc-500',
+            image: 'from-blue-200 to-zinc-500',
             shapes: 'dark'
         }
     }
