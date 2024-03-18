@@ -17,8 +17,8 @@ export function gitHub(color) {
             color2: ['#06b6d4', '#22c55e']
         },
         warning: {
-            color1: ['#5eead4', '#fdba74'],
-            color2: ['#14b8a6', '#f97316']
+            color1: ['#86efac', '#fdba74'],
+            color2: ['#22c55e', '#f97316']
         },
         error: {
             color1: ['#fde047', '#fca5a5'],

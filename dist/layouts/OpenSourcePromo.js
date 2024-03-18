@@ -43,13 +43,13 @@ export function OpenSourcePromo(config) {
             image: 'from-purple-500 to-blue-500'
         },
         success: {
-            background: 'from-teal-500/25 via-zinc-950 to-orange-500/25',
-            title: 'from-teal-500 to-orange-500',
+            background: 'from-green-500/25 via-zinc-950 to-orange-500/25',
+            title: 'from-green-500 to-orange-500',
             textPrimary: 'from-teal-500 via-emerald-500 to-green-500',
             textSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
             button: 'success',
             github: 'warning',
-            image: 'from-teal-500 to-orange-500'
+            image: 'from-green-500 to-orange-500'
         },
         warning: {
             background: 'from-yellow-500/25 via-zinc-950 to-red-500/25',
