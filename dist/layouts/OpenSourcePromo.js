@@ -4,9 +4,17 @@ import { shape } from "../icons/shape"
 function shuffle(array) { 
     return array.sort(() => Math.random() - 0.5)
 }
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max)
+}
 
 export function OpenSourcePromo(config) {
-    const shapeIndexes = shuffle(Array.from(Array(30).keys())).slice(0, 3)
+    const shapeColor = Math.random() > 0.5 ? 'light' : 'dark'
+    const shapeIndexes = shuffle([
+        { type: 'type1', index: getRandomInt(3) }, 
+        { type: 'type2', index: getRandomInt(4) }, 
+        { type: 'type3', index: getRandomInt(3) }
+    ])
     const colorsConfig = {
         default: {
             background: 'from-slate-500/25 via-zinc-950 to-blue-200/25',
@@ -136,7 +144,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[0]}"
                                     width="640"
                                     height="360"
-                                />` : shape(shapeIndexes[0])}
+                                />` : shape(shapeColor, shapeIndexes[0].type, shapeIndexes[0].index)}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
@@ -146,7 +154,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[1]}"
                                     width="640"
                                     height="360"
-                                />` : shape(shapeIndexes[1])}
+                                />` : shape(shapeColor, shapeIndexes[1].type, shapeIndexes[1].index)}
                             </div>
                             <div class="flex h-full w-full rotate-[-10deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
                                 ${config.images != null && config.images[2] != null ? `<img
@@ -154,7 +162,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[2]}"
                                     width="640"
                                     height="360"
-                                />` : shape(shapeIndexes[2])}
+                                />` : shape(shapeColor, shapeIndexes[2].type, shapeIndexes[2].index)}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                         </div>
