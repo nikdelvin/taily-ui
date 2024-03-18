@@ -22,8 +22,7 @@ export function OpenSourcePromo(config) {
             textSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
             button: 'default',
             github: 'ghost',
-            image: 'from-slate-500 to-violet-200',
-            shapes: 'dark'
+            image: 'from-slate-500 to-violet-200'
         },
         primary: {
             background: 'from-cyan-500/25 via-zinc-950 to-green-500/25',
@@ -32,8 +31,7 @@ export function OpenSourcePromo(config) {
             textSecondary: 'from-teal-500 via-emerald-500 to-green-500',
             button: 'primary',
             github: 'success',
-            image: 'from-cyan-500 to-green-500',
-            shapes: 'dark'
+            image: 'from-cyan-500 to-green-500'
         },
         secondary: {
             background: 'from-purple-500/25 via-zinc-950 to-blue-500/25',
@@ -42,8 +40,7 @@ export function OpenSourcePromo(config) {
             textSecondary: 'from-cyan-500 via-sky-500 to-blue-500',
             button: 'secondary',
             github: 'primary',
-            image: 'from-purple-500 to-blue-500',
-            shapes: 'light'
+            image: 'from-purple-500 to-blue-500'
         },
         success: {
             background: 'from-teal-500/25 via-zinc-950 to-orange-500/25',
@@ -52,8 +49,7 @@ export function OpenSourcePromo(config) {
             textSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
             button: 'success',
             github: 'warning',
-            image: 'from-teal-500 to-orange-500',
-            shapes: 'dark'
+            image: 'from-teal-500 to-orange-500'
         },
         warning: {
             background: 'from-yellow-500/25 via-zinc-950 to-red-500/25',
@@ -62,8 +58,7 @@ export function OpenSourcePromo(config) {
             textSecondary: 'from-pink-500 via-rose-500 to-red-500',
             button: 'warning',
             github: 'error',
-            image: 'from-yellow-500 to-red-500',
-            shapes: 'dark'
+            image: 'from-yellow-500 to-red-500'
         },
         error: {
             background: 'from-pink-500/25 via-zinc-950 to-indigo-500/25',
@@ -72,8 +67,7 @@ export function OpenSourcePromo(config) {
             textSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
             button: 'error',
             github: 'secondary',
-            image: 'from-pink-500 to-indigo-500',
-            shapes: 'dark'
+            image: 'from-pink-500 to-indigo-500'
         },
         ghost: {
             background: 'from-blue-200/25 via-zinc-950 to-zinc-500/25',
@@ -82,8 +76,7 @@ export function OpenSourcePromo(config) {
             textSecondary: 'from-slate-500 via-gray-500 to-zinc-500',
             button: 'ghost',
             github: 'default',
-            image: 'from-blue-200 to-zinc-500',
-            shapes: 'dark'
+            image: 'from-blue-200 to-zinc-500'
         }
     }
 
@@ -150,7 +143,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[0]}"
                                     width="640"
                                     height="360"
-                                />` : shape(colorsConfig[config.color].shapes, shapeIndexes[0].type, shapeIndexes[0].index)}
+                                />` : shape(shapeIndexes[0].type, shapeIndexes[0].index)}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
@@ -160,7 +153,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[1]}"
                                     width="640"
                                     height="360"
-                                />` : shape(colorsConfig[config.color].shapes, shapeIndexes[1].type, shapeIndexes[1].index)}
+                                />` : shape(shapeIndexes[1].type, shapeIndexes[1].index)}
                             </div>
                             <div class="flex h-full w-full rotate-[-10deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
                                 ${config.images != null && config.images[2] != null ? `<img
@@ -168,7 +161,7 @@ export function OpenSourcePromo(config) {
                                     src="${config.images[2]}"
                                     width="640"
                                     height="360"
-                                />` : shape(colorsConfig[config.color].shapes, shapeIndexes[2].type, shapeIndexes[2].index)}
+                                />` : shape(shapeIndexes[2].type, shapeIndexes[2].index)}
                             </div>
                             <div class="flex h-full flex-col items-center justify-center"></div>
                         </div>
