@@ -9,12 +9,12 @@ export function gitHub(color) {
             color2: ['#a855f7', '#3b82f6']
         },
         secondary: {
-            color1: ['#f9a8d4', '#a5b4fc'],
-            color2: ['#ec4899', '#6366f1']
+            color1: ['#fca5a5', '#d8b4fe'],
+            color2: ['#ef4444', '#a855f7']
         },
         success: {
-            color1: ['#67e8f9', '#86efac'],
-            color2: ['#06b6d4', '#22c55e']
+            color1: ['#93c5fd', '#86efac'],
+            color2: ['#3b82f6', '#22c55e']
         },
         warning: {
             color1: ['#86efac', '#fdba74'],
@@ -25,8 +25,8 @@ export function gitHub(color) {
             color2: ['#eab308', '#ef4444']
         },
         ghost: {
-            color1: ['#cbd5e1', '#ede9fe'],
-            color2: ['#64748b', '#ddd6fe']
+            color1: ['#d4d4d8', '#ede9fe'],
+            color2: ['#71717a', '#ddd6fe']
         }
     }
 
