@@ -16,22 +16,22 @@ export function OpenSourcePromo(config) {
     ])
     const colorsConfig = {
         default: {
-            background: 'from-slate-500/25 via-zinc-950 to-violet-200/25',
-            title: 'from-slate-500 to-violet-200',
+            background: 'from-zinc-500/25 via-zinc-950 to-violet-200/25',
+            title: 'from-zinc-500 to-violet-200',
             textPrimary: 'from-slate-500 via-gray-500 to-zinc-500',
             textSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
             button: 'default',
             github: 'ghost',
-            image: 'from-slate-500 to-violet-200'
+            image: 'from-zinc-500 to-violet-200'
         },
         primary: {
-            background: 'from-cyan-500/25 via-zinc-950 to-green-500/25',
-            title: 'from-cyan-500 to-green-500',
+            background: 'from-blue-500/25 via-zinc-950 to-green-500/25',
+            title: 'from-blue-500 to-green-500',
             textPrimary: 'from-cyan-500 via-sky-500 to-blue-500',
             textSecondary: 'from-teal-500 via-emerald-500 to-green-500',
             button: 'primary',
             github: 'success',
-            image: 'from-cyan-500 to-green-500'
+            image: 'from-blue-500 to-green-500'
         },
         secondary: {
             background: 'from-purple-500/25 via-zinc-950 to-blue-500/25',
@@ -61,13 +61,13 @@ export function OpenSourcePromo(config) {
             image: 'from-yellow-500 to-red-500'
         },
         error: {
-            background: 'from-pink-500/25 via-zinc-950 to-indigo-500/25',
-            title: 'from-pink-500 to-indigo-500',
+            background: 'from-red-500/25 via-zinc-950 to-purple-500/25',
+            title: 'from-red-500 to-purple-500',
             textPrimary: 'from-pink-500 via-rose-500 to-red-500',
             textSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
             button: 'error',
             github: 'secondary',
-            image: 'from-pink-500 to-indigo-500'
+            image: 'from-red-500 to-purple-500'
         },
         ghost: {
             background: 'from-blue-200/25 via-zinc-950 to-zinc-500/25',
