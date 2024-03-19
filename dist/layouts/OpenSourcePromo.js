@@ -61,13 +61,13 @@ export function OpenSourcePromo(config) {
             image: 'from-yellow-500 to-red-500'
         },
         error: {
-            background: 'from-red-500/25 via-zinc-950 to-purple-500/25',
-            title: 'from-red-500 to-purple-500',
+            background: 'from-red-500/25 via-zinc-950 to-violet-500/25',
+            title: 'from-red-500 to-violet-500',
             textPrimary: 'from-pink-500 via-rose-500 to-red-500',
             textSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
             button: 'error',
             github: 'secondary',
-            image: 'from-red-500 to-purple-500'
+            image: 'from-red-500 to-violet-500'
         },
         ghost: {
             background: 'from-blue-200/25 via-zinc-950 to-zinc-500/25',

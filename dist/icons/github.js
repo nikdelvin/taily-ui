@@ -9,8 +9,8 @@ export function gitHub(color) {
             color2: ['#a855f7', '#3b82f6']
         },
         secondary: {
-            color1: ['#fca5a5', '#d8b4fe'],
-            color2: ['#ef4444', '#a855f7']
+            color1: ['#fca5a5', '#c4b5fd'],
+            color2: ['#ef4444', '#8b5cf6']
         },
         success: {
             color1: ['#93c5fd', '#86efac'],
