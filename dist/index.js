@@ -1,7 +1,9 @@
 import plugin from 'tailwindcss/plugin'
 import { button } from './components/button'
 import { buttonGroup, buttonGroupItem } from './components/buttonGroup'
+import { card } from './components/card'
 import { OpenSourcePromo } from './layouts/OpenSourcePromo'
+import { KPICards } from './layouts/KPICards'
 
 const safeList = [
   "flex",
@@ -67,6 +69,9 @@ const safeList = [
   "from-slate-500", 
   "via-gray-500",
   "to-zinc-500",
+  "from-slate-400", 
+  "via-gray-400",
+  "to-zinc-400",
   "from-cyan-500", 
   "via-sky-500", 
   "to-blue-500",
@@ -92,7 +97,10 @@ const safeList = [
   "button",
   "font-medium",
   "mx-8",
-  "my-16",
+  "mt-16",
+  "mb-0",
+  "pb-3",
+  "pt-1",
   "rotate-[-10deg]",
   "scale-100",
   "justify-center",
@@ -105,7 +113,19 @@ const safeList = [
   "blur-md",
   "mix-blend-overlay",
   "overflow-hidden",
-  "my-2"
+  "my-2",
+  "grid-cols-2",
+  "gap-16",
+  "lg:grid-cols-4",
+  "text-4xl",
+  "bottom-[-40px]",
+  "right-[-115px]",
+  "h-[180px]",
+  "w-[360px]",
+  "left-[-50px]",
+  "top-0",
+  "h-[135px]",
+  "w-[270px]"
 ]
 
 const tailyUI = plugin(
@@ -119,9 +139,12 @@ const tailyUI = plugin(
       },
       '.button-group-item': {
         [buttonGroupItem]: {}
+      },
+      '.card': {
+        [card]: {}
       }
     })
   }
 )
 
-export { tailyUI, safeList, OpenSourcePromo }
+export { tailyUI, safeList, OpenSourcePromo, KPICards }

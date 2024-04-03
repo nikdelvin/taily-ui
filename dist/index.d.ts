@@ -19,4 +19,9 @@ declare module './index.js' {
         github: string
         images?: string[]
     }): void
+    function KPICards(config: {
+        title: string
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        cards: Array<{ title: string, description1: string, description2: string }>
+    }): void
 }

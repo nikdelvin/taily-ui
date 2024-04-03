@@ -136,7 +136,7 @@ export function OpenSourcePromo(config) {
                                 </a>
                             </div>
                         </div>
-                        <div class="mx-8 my-16 grid grid-flow-row grid-cols-2 gap-4">
+                        <div class="mx-8 mt-16 mb-0 grid grid-flow-row grid-cols-2 gap-4">
                             <div class="flex h-full w-full rotate-[-10deg] scale-100 flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image}">
                                 ${config.images != null && config.images[0] != null ? `<img
                                     alt="Main 1"
