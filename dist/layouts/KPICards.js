@@ -98,7 +98,7 @@ export function KPICards(config) {
                                         ${card.title}
                                     </h1>
                                     <h2 class="pb-3 text-center text-4xl font-bold">
-                                        ${card.description1}${' '}<spanclass="inline bg-gradient-to-r ${index % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
+                                        ${card.description1}${' '}<span class="inline bg-gradient-to-r ${index % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
                                     </h2>
                                     <div class="absolute bottom-[-40px] right-[-115px] h-[180px] w-[360px]">
                                         ${shape(shapeIndexes[index*2].type, shapeIndexes[index*2].index)}
@@ -108,7 +108,7 @@ export function KPICards(config) {
                                     </div>
                                 </div>
                             `
-                        })}
+                        }).join('')}
                     </div>
                 </div>
             </div>
