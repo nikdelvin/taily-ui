@@ -127,7 +127,9 @@ const safeList = [
   "h-[135px]",
   "w-[270px]",
   "card",
-  "absolute"
+  "absolute",
+  "text-center",
+  "bg-gradient-to-br"
 ]
 
 const tailyUI = plugin(

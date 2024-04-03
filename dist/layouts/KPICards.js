@@ -1,14 +1,11 @@
 import { shape } from "../icons/shape"
 
-function shuffle(array) { 
-    return array.sort(() => Math.random() - 0.5)
-}
 function getRandomInt(max) {
     return Math.floor(Math.random() * max)
 }
 
 export function KPICards(config) {
-    const shapeIndexes = shuffle([
+    const shapeIndexes = [
         { type: 'type1', index: getRandomInt(3) }, 
         { type: 'type2', index: getRandomInt(4) }, 
         { type: 'type3', index: getRandomInt(3) },
@@ -17,7 +14,7 @@ export function KPICards(config) {
         { type: 'type3', index: getRandomInt(3) },
         { type: 'type1', index: getRandomInt(3) },
         { type: 'type3', index: getRandomInt(3) }
-    ])
+    ]
     const colorsConfig = {
         default: {
             background: 'from-zinc-500/25 via-zinc-950 to-violet-200/25',
