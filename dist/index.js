@@ -125,7 +125,8 @@ const safeList = [
   "left-[-50px]",
   "top-0",
   "h-[135px]",
-  "w-[270px]"
+  "w-[270px]",
+  "card"
 ]
 
 const tailyUI = plugin(
