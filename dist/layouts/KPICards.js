@@ -22,7 +22,8 @@ export function KPICards(config) {
             textPrimary: 'from-slate-400 via-gray-400 to-zinc-400',
             textSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
             cardPrimary: 'default',
-            cardSecondary: 'ghost'
+            cardSecondary: 'ghost',
+            button: 'default'
         },
         primary: {
             background: 'from-blue-500/25 via-zinc-950 to-green-500/25',
@@ -30,7 +31,8 @@ export function KPICards(config) {
             textPrimary: 'from-cyan-500 via-sky-500 to-blue-500',
             textSecondary: 'from-teal-500 via-emerald-500 to-green-500',
             cardPrimary: 'primary',
-            cardSecondary: 'success'
+            cardSecondary: 'success',
+            button: 'primary'
         },
         secondary: {
             background: 'from-purple-500/25 via-zinc-950 to-blue-500/25',
@@ -38,7 +40,8 @@ export function KPICards(config) {
             textPrimary: 'from-purple-500 via-violet-500 to-indigo-500',
             textSecondary: 'from-cyan-500 via-sky-500 to-blue-500',
             cardPrimary: 'secondary',
-            cardSecondary: 'primary'
+            cardSecondary: 'primary',
+            button: 'secondary'
         },
         success: {
             background: 'from-green-500/25 via-zinc-950 to-orange-500/25',
@@ -46,7 +49,8 @@ export function KPICards(config) {
             textPrimary: 'from-teal-500 via-emerald-500 to-green-500',
             textSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
             cardPrimary: 'success',
-            cardSecondary: 'warning'
+            cardSecondary: 'warning',
+            button: 'success'
         },
         warning: {
             background: 'from-yellow-500/25 via-zinc-950 to-red-500/25',
@@ -54,7 +58,8 @@ export function KPICards(config) {
             textPrimary: 'from-yellow-500 via-amber-500 to-orange-500',
             textSecondary: 'from-pink-500 via-rose-500 to-red-500',
             cardPrimary: 'warning',
-            cardSecondary: 'error'
+            cardSecondary: 'error',
+            button: 'warning'
         },
         error: {
             background: 'from-red-500/25 via-zinc-950 to-violet-500/25',
@@ -62,7 +67,8 @@ export function KPICards(config) {
             textPrimary: 'from-pink-500 via-rose-500 to-red-500',
             textSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
             cardPrimary: 'error',
-            cardSecondary: 'secondary'
+            cardSecondary: 'secondary',
+            button: 'error'
         },
         ghost: {
             background: 'from-blue-200/25 via-zinc-950 to-zinc-500/25',
@@ -70,7 +76,8 @@ export function KPICards(config) {
             textPrimary: 'from-blue-200 via-indigo-200 to-violet-200',
             textSecondary: 'from-slate-400 via-gray-400 to-zinc-400',
             cardPrimary: 'ghost',
-            cardSecondary: 'default'
+            cardSecondary: 'default',
+            button: 'ghost'
         }
     }
 
@@ -107,6 +114,17 @@ export function KPICards(config) {
                             `
                         }).join('')}
                     </div>
+                </div>
+                <div class="flex h-full w-full flex-col items-center justify-start pb-16 pt-8">
+                    <a
+                        data-color="${colorsConfig[config.color].button}"
+                        data-type="solid"
+                        data-size="large"
+                        class="button !w-[200px]"
+                        href="${config.button.link}"
+                    >
+                        <span class="font-medium">${config.button.title}</span>
+                    </a>
                 </div>
             </div>
         </div>

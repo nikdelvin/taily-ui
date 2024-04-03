@@ -23,5 +23,9 @@ declare module './index.js' {
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
         cards: Array<{ title: string, description1: string, description2: string }>
+        button: {
+            title: string
+            link: string
+        }
     }): void
 }
