@@ -37,6 +37,7 @@ data-[icon]:aspect-square
 data-[icon]:h-auto
 data-[icon]:w-auto
 data-[color=default]:from-slate-500/50
+data-[color=default]:data-[type=bordered]:from-slate-400/50
 data-[color=error]:from-pink-500/50
 data-[color=primary]:from-cyan-500/50
 data-[color=secondary]:from-purple-500/50
@@ -44,6 +45,7 @@ data-[color=success]:from-teal-500/50
 data-[color=warning]:from-yellow-500/50
 data-[color=ghost]:from-blue-200/50
 data-[color=default]:via-gray-500/50
+data-[color=default]:data-[type=bordered]:via-gray-400/50
 data-[color=error]:via-rose-500/50
 data-[color=primary]:via-sky-500/50
 data-[color=secondary]:via-violet-500/50
@@ -51,6 +53,7 @@ data-[color=success]:via-emerald-500/50
 data-[color=warning]:via-amber-500/50
 data-[color=ghost]:via-indigo-200/50
 data-[color=default]:to-zinc-500/50
+data-[color=default]:data-[type=bordered]:to-zinc-400/50
 data-[color=error]:to-red-500/50
 data-[color=primary]:to-blue-500/50
 data-[color=secondary]:to-indigo-500/50
@@ -66,7 +69,7 @@ data-[size=small]:py-[8px]
 data-[size=large]:text-base
 data-[size=medium]:text-sm
 data-[size=small]:text-xs
-data-[color=default]:data-[type=bordered]:text-gray-500
+data-[color=default]:data-[type=bordered]:text-gray-400
 data-[color=error]:data-[type=bordered]:text-rose-500
 data-[color=primary]:data-[type=bordered]:text-sky-500
 data-[color=secondary]:data-[type=bordered]:text-violet-500

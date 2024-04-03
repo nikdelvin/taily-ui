@@ -118,7 +118,8 @@ export function KPICards(config) {
                 <div class="flex h-full w-full flex-col items-center justify-start pb-16 pt-8">
                     <a
                         data-color="${colorsConfig[config.color].button}"
-                        data-type="solid"
+                        data-shadow
+                        data-type="bordered"
                         data-size="large"
                         class="button !w-[200px]"
                         href="${config.button.link}"
