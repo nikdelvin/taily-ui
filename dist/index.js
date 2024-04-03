@@ -134,7 +134,9 @@ const safeList = [
   "bg-gradient-to-br",
   "pb-16",
   "pt-8",
-  "!w-[200px]"
+  "!w-[200px]",
+  "w-auto",
+  "h-auto"
 ]
 
 const tailyUI = plugin(

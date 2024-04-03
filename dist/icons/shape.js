@@ -18,7 +18,7 @@ export function shape(type, id, blur = false) {
         ]
     }
     return `
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" xml:space="preserve" version="1.1" viewBox="0 0 640 360" class="mix-blend-overlay ${blur ? 'blur-sm' : ''} my-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" viewBox="0 0 640 360" class="w-auto h-auto mix-blend-overlay ${blur ? 'blur-sm' : ''} my-2">
             <image width="640" height="360" xlink:href="${shapes[type][id]}"/>
         </svg>
     `
