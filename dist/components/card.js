@@ -24,7 +24,7 @@ before:m-[1px]
 before:h-[calc(100%-2px)]
 before:w-[calc(100%-2px)]
 before:rounded-[23px]
-before:bg-zinc-950/50
+before:bg-zinc-950/75
 after:absolute
 after:left-[20px]
 after:top-[-29px]
