@@ -95,14 +95,14 @@ export function KPICards(config) {
                             return `
                                 <div
                                     data-shadow
-                                    data-color="${index % 2 === 0 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                    data-color="${!(index % 4 > 1) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                     class="card"
                                 >
-                                    <h1 class="bg-gradient-to-r ${index % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
+                                    <h1 class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
                                         ${card.title}
                                     </h1>
                                     <h2 class="pb-3 text-center text-4xl font-bold">
-                                        ${card.description1}${' '}<span class="inline bg-gradient-to-r ${index % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
+                                        ${card.description1}${' '}<span class="inline bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
                                     </h2>
                                     <div class="absolute bottom-[-40px] ${index % 2 === 0 ? 'right' : 'left'}-[-115px] h-[180px] w-[360px]">
                                         ${shape(shapeIndexes[index*2].type, shapeIndexes[index*2].index)}
