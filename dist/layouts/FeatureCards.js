@@ -83,7 +83,7 @@ export function FeatureCards(config) {
         <div
             data-shadow
             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].cardPrimary}"
-            class="card !items-end !justify-start !px-10"
+            class="card ${config.reverse ? '!items-start' : '!items-end'} !justify-start !px-10"
         >
             <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 ${config.reverse ? 'text-start' : 'text-end'} text-8xl font-bold text-transparent">
                 ${config.featureTitle}
@@ -144,7 +144,7 @@ export function FeatureCards(config) {
                 </div>
                 <div class="flex h-full w-full flex-col items-center justify-start gap-4 p-16">
                     <div class="grid w-full grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
-                        ${config.reverse ? [secondCard, firstCard] : [firstCard, secondCard]}
+                        ${config.reverse ? [secondCard, firstCard].join('') : [firstCard, secondCard].join('')}
                     </div>
                 </div>
                 <div class="flex h-full w-full flex-col items-start justify-start pb-16 px-16">
