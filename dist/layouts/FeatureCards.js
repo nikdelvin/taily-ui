@@ -121,7 +121,7 @@ export function FeatureCards(config) {
                         <h3 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
                             ${index+1}.
                         </h3>
-                        ${index !== 1 ? `<p class="text-end text-2xl font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-2xl font-light text-transparent">${option}</p>`}
+                        ${index !== 1 ? `<p class="text-start text-2xl font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-2xl font-light text-transparent">${option}</p>`}
                     </div>
                 `
             }).join('')}
