@@ -79,6 +79,61 @@ export function FeatureCards(config) {
         }
     }
 
+    const firstCard = `
+        <div
+            data-shadow
+            data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].cardPrimary}"
+            class="card !items-end !justify-start !px-10"
+        >
+            <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 ${config.reverse ? 'text-start' : 'text-end'} text-8xl font-bold text-transparent">
+                ${config.featureTitle}
+            </h1>
+            <h3 class="${config.reverse ? 'text-start' : 'text-end'} text-5xl font-bold pb-3">
+                ${config.featureDescription.map((text) => {
+                    switch (text.type) {
+                        case 'default':
+                            return `<span>${text.value}${' '}</span>`
+                        case 'primary':
+                            return `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">${text.value}${' '}</span>`
+                        case 'secondary':
+                            return `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${text.value}${' '}</span>`
+                    }
+                }).join('')}
+            </h3>
+            <div class="absolute bottom-[-40px] left-[-170px] h-[225px] w-[450px]">
+                ${shape(shapeIndexes[0].type, shapeIndexes[0].index, true)}
+            </div>
+            <div class="absolute bottom-[5px] left-[295px] h-[360px] w-[720px]">
+                ${shape(shapeIndexes[1].type, shapeIndexes[1].index)}
+            </div>
+        </div>
+    `
+    
+    const secondCard = `
+        <div
+            data-shadow
+            data-color="${config.reverse ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+            class="card !items-start !justify-start !px-10 !py-6"
+        >
+            ${config.featureOptions.map((option, index) => {
+                return `
+                    <div class="mt-4 flex items-start gap-4">
+                        <h3 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
+                            ${index+1}.
+                        </h3>
+                        ${index !== 1 ? `<p class="text-end text-2xl font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-2xl font-light text-transparent">${option}</p>`}
+                    </div>
+                `
+            }).join('')}
+            <div class="absolute top-[-80px] right-[-170px] h-[225px] w-[450px]">
+                ${shape(shapeIndexes[2].type, shapeIndexes[2].index, true)}
+            </div>
+            <div class="absolute bottom-[5px] right-[295px] h-[360px] w-[720px]">
+                ${shape(shapeIndexes[1].type, shapeIndexes[1].index)}
+            </div>
+        </div>
+    `
+
     return `
         <div class="flex h-full w-screen flex-col">
             <div class="h-full bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
@@ -89,55 +144,7 @@ export function FeatureCards(config) {
                 </div>
                 <div class="flex h-full w-full flex-col items-center justify-start gap-4 p-16">
                     <div class="grid w-full grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
-                        <div
-                            data-shadow
-                            data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].cardPrimary}"
-                            class="card !items-end !justify-start !px-10"
-                        >
-                            <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 text-left text-8xl font-bold text-transparent">
-                                ${config.featureTitle}
-                            </h1>
-                            <h3 class="text-end text-5xl font-bold pb-3">
-                                ${config.featureDescription.map((text) => {
-                                    switch (text.type) {
-                                        case 'default':
-                                            return `<span>${text.value}${' '}</span>`
-                                        case 'primary':
-                                            return `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">${text.value}${' '}</span>`
-                                        case 'secondary':
-                                            return `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${text.value}${' '}</span>`
-                                    }
-                                }).join('')}
-                            </h3>
-                            <div class="absolute bottom-[-40px] left-[-170px] h-[225px] w-[450px]">
-                                ${shape(shapeIndexes[0].type, shapeIndexes[0].index, true)}
-                            </div>
-                            <div class="absolute bottom-[5px] left-[295px] h-[360px] w-[720px]">
-                                ${shape(shapeIndexes[1].type, shapeIndexes[1].index, true)}
-                            </div>
-                        </div>
-                        <div
-                            data-shadow
-                            data-color="${config.reverse ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
-                            class="card !items-start !justify-start !px-10 !py-6"
-                        >
-                            ${config.featureOptions.map((option, index) => {
-                                return `
-                                    <div class="mt-4 flex items-start gap-4">
-                                        <h3 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-left text-5xl font-bold text-transparent">
-                                            ${index+1}.
-                                        </h3>
-                                        <p class="text-left text-2xl font-light text-zinc-50">${option}</p>
-                                    </div>
-                                `
-                            }).join('')}
-                            <div class="absolute top-[-80px] right-[-170px] h-[225px] w-[450px]">
-                                ${shape(shapeIndexes[2].type, shapeIndexes[2].index, true)}
-                            </div>
-                            <div class="absolute bottom-[5px] right-[295px] h-[360px] w-[720px]">
-                                ${shape(shapeIndexes[1].type, shapeIndexes[1].index, true)}
-                            </div>
-                        </div>
+                        ${config.reverse ? [secondCard, firstCard] : [firstCard, secondCard]}
                     </div>
                 </div>
                 <div class="flex h-full w-full flex-col items-start justify-start pb-16 px-16">
