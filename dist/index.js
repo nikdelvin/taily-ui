@@ -4,6 +4,7 @@ import { buttonGroup, buttonGroupItem } from './components/buttonGroup'
 import { card } from './components/card'
 import { OpenSourcePromo } from './layouts/OpenSourcePromo'
 import { KPICards } from './layouts/KPICards'
+import { FeatureCards } from './layouts/FeatureCards'
 
 const safeList = [
   "flex",
@@ -136,7 +137,32 @@ const safeList = [
   "pt-8",
   "!w-[200px]",
   "w-auto",
-  "h-auto"
+  "h-auto",
+  "!items-end",
+  "!justify-start",
+  "!px-10",
+  "pb-12",
+  "text-left",
+  "text-end",
+  "pb-3",
+  "bottom-[-40px]",
+  "left-[-170px]",
+  "h-[225px]",
+  "w-[450px]",
+  "bottom-[5px]",
+  "left-[295px]",
+  "h-[360px]",
+  "w-[720px]",
+  "!items-start",
+  "!py-6",
+  "mt-4",
+  "items-start",
+  "font-light",
+  "top-[-80px]",
+  "right-[-170px]",
+  "bottom-[5px]",
+  "px-16",
+  "!w-[150px]"
 ]
 
 const tailyUI = plugin(
@@ -158,4 +184,4 @@ const tailyUI = plugin(
   }
 )
 
-export { tailyUI, safeList, OpenSourcePromo, KPICards }
+export { tailyUI, safeList, OpenSourcePromo, KPICards, FeatureCards }

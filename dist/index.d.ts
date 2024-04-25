@@ -28,4 +28,16 @@ declare module './index.js' {
             link: string
         }
     }): void
+    function FeatureCards(config: {
+        title: string
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        reverse: boolean
+        featureTitle: string
+        featureDescription: Array<{ type: 'default' | 'primary' | 'secondary', value: string }>
+        featureOptions: string[]
+        button: {
+            title: string
+            link: string
+        }
+    }): void
 }
