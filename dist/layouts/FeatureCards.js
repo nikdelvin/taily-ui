@@ -166,9 +166,9 @@ export function FeatureCards(config) {
                         ${config.reverse ? [secondCard, firstCard].join('') : [firstCard, secondCard].join('')}
                     </div>
                 </div>
-                <div class="flex h-full w-full flex-col items-start justify-start pb-16 px-16">
+                <div class="flex h-full w-full flex-col ${config.reverse ? 'items-end' : 'items-start'} justify-start pb-16 px-16">
                     <a
-                        data-color="${colorsConfig[config.color].button}"
+                        data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
                         data-shadow
                         data-type="bordered"
                         data-size="medium"

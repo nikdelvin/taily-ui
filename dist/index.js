@@ -157,6 +157,7 @@ const safeList = [
   "!py-6",
   "mt-4",
   "items-start",
+  "items-end",
   "font-light",
   "top-[-80px]",
   "right-[-170px]",
