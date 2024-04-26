@@ -16,7 +16,7 @@ export function FeatureCards(config) {
     const colorsConfig = {
         default: {
             background: 'from-zinc-500/15 via-zinc-950 to-violet-200/15',
-            title: 'from-zinc-500 to-violet-200',
+            title: 'from-zinc-400 to-violet-200',
             textPrimary: 'from-slate-400 via-gray-400 to-zinc-400',
             textSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
             cardPrimary: 'default',
@@ -70,7 +70,7 @@ export function FeatureCards(config) {
         },
         ghost: {
             background: 'from-blue-200/15 via-zinc-950 to-zinc-500/15',
-            title: 'from-blue-200 to-zinc-500',
+            title: 'from-blue-200 to-zinc-400',
             textPrimary: 'from-blue-200 via-indigo-200 to-violet-200',
             textSecondary: 'from-slate-400 via-gray-400 to-zinc-400',
             cardPrimary: 'ghost',
