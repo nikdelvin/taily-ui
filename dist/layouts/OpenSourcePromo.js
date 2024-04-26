@@ -81,7 +81,7 @@ export function OpenSourcePromo(config) {
     }
 
     return `
-        <div class="flex h-screen w-screen flex-col">
+        <div class="flex h-screen max-h-[860px] w-screen flex-col">
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-center p-16">
                     <div class="grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
