@@ -82,50 +82,52 @@ export function KPICards(config) {
     }
 
     return `
-        <div class="flex h-full w-screen flex-col">
+        <div class="flex h-screen w-screen flex-col">
             <div class="flex flex-col h-full items-center bg-gradient-to-br ${colorsConfig[config.color].background} text-zinc-50">
-                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start p-16">
-                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
-                        ${config.title}
-                    </h1>
-                </div>
-                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start gap-4 p-16">
-                    <div class="grid grid-flow-row grid-cols-2 gap-16 lg:grid-cols-4">
-                        ${config.cards.map((card, index) => {
-                            return `
-                                <div
-                                    data-shadow
-                                    data-color="${!(index % 4 > 1) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
-                                    class="card"
-                                >
-                                    <h1 class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
-                                        ${card.title}
-                                    </h1>
-                                    <h2 class="pb-3 text-center text-4xl font-bold">
-                                        ${card.description1}${' '}<span class="inline bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
-                                    </h2>
-                                    <div class="absolute bottom-[-40px] ${index % 2 === 0 ? 'right' : 'left'}-[-115px] h-[180px] w-[360px]">
-                                        ${shape(shapeIndexes[index*2].type, shapeIndexes[index*2].index)}
-                                    </div>
-                                    <div class="absolute ${index % 2 === 0 ? 'left' : 'right'}-[-50px] top-0 h-[135px] w-[270px]">
-                                        ${shape(shapeIndexes[index*2 + 1].type, shapeIndexes[index*2 + 1].index, true)}
-                                    </div>
-                                </div>
-                            `
-                        }).join('')}
+                <div class="flex flex-col max-w-[1440px] h-full justify-center">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
+                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
+                            ${config.title}
+                        </h1>
                     </div>
-                </div>
-                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start pb-16 pt-8">
-                    <a
-                        data-color="${colorsConfig[config.color].button}"
-                        data-shadow
-                        data-type="bordered"
-                        data-size="large"
-                        class="button !w-[200px]"
-                        href="${config.button.link}"
-                    >
-                        <span class="font-medium">${config.button.title}</span>
-                    </a>
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
+                        <div class="grid grid-flow-row grid-cols-2 gap-16 lg:grid-cols-4">
+                            ${config.cards.map((card, index) => {
+                                return `
+                                    <div
+                                        data-shadow
+                                        data-color="${!(index % 4 > 1) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                        class="card"
+                                    >
+                                        <h1 class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
+                                            ${card.title}
+                                        </h1>
+                                        <h2 class="pb-3 text-center text-4xl font-bold">
+                                            ${card.description1}${' '}<span class="inline bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
+                                        </h2>
+                                        <div class="absolute bottom-[-40px] ${index % 2 === 0 ? 'right' : 'left'}-[-115px] h-[180px] w-[360px]">
+                                            ${shape(shapeIndexes[index*2].type, shapeIndexes[index*2].index)}
+                                        </div>
+                                        <div class="absolute ${index % 2 === 0 ? 'left' : 'right'}-[-50px] top-0 h-[135px] w-[270px]">
+                                            ${shape(shapeIndexes[index*2 + 1].type, shapeIndexes[index*2 + 1].index, true)}
+                                        </div>
+                                    </div>
+                                `
+                            }).join('')}
+                        </div>
+                    </div>
+                    <div class="flex h-auto w-full flex-col items-center justify-start pb-16 pt-8">
+                        <a
+                            data-color="${colorsConfig[config.color].button}"
+                            data-shadow
+                            data-type="bordered"
+                            data-size="large"
+                            class="button !w-[200px]"
+                            href="${config.button.link}"
+                        >
+                            <span class="font-medium">${config.button.title}</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
