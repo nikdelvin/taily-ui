@@ -155,7 +155,7 @@ export function FeatureCards(config) {
 
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="flex h-full justify-center bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
+            <div class="flex flex-col h-full items-center bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start p-16">
                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
                         ${config.title}
