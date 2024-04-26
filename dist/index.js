@@ -151,6 +151,7 @@ const safeList = [
   "w-[450px]",
   "bottom-[5px]",
   "left-[295px]",
+  "right-[295px]",
   "h-[360px]",
   "w-[720px]",
   "!items-start",
