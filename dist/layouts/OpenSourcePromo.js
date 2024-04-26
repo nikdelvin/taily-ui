@@ -81,9 +81,9 @@ export function OpenSourcePromo(config) {
     }
 
     return `
-        <div class="flex h-full w-screen flex-col overflow-y-scroll">
-            <div class="h-full bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
-                <div class="flex h-full w-full flex-col items-center justify-start gap-4 p-16">
+        <div class="flex h-full w-screen flex-col">
+            <div class="flex h-full justify-center bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
+                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start gap-4 p-16">
                     <div class="grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
                         <div class="flex w-full flex-col">
                             <div class="mb-16 flex flex-row items-center gap-2">

@@ -155,18 +155,18 @@ export function FeatureCards(config) {
 
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="h-full bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
-                <div class="flex h-full w-full flex-col items-center justify-start p-16">
+            <div class="flex h-full justify-center bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
+                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start p-16">
                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
                         ${config.title}
                     </h1>
                 </div>
-                <div class="flex h-full w-full flex-col items-center justify-start gap-4 p-16">
+                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start gap-4 p-16">
                     <div class="grid w-full grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
                         ${config.reverse ? [secondCard, firstCard].join('') : [firstCard, secondCard].join('')}
                     </div>
                 </div>
-                <div class="flex h-full w-full flex-col ${config.reverse ? 'items-end' : 'items-start'} justify-start pb-16 px-16">
+                <div class="flex h-full w-full max-w-[1440px] flex-col ${config.reverse ? 'items-end' : 'items-start'} justify-start pb-16 px-16">
                     <a
                         data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
                         data-shadow

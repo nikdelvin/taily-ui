@@ -83,13 +83,13 @@ export function KPICards(config) {
 
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="h-full bg-gradient-to-br ${colorsConfig[config.color].background} text-zinc-50">
-                <div class="flex h-full w-full flex-col items-center justify-start p-16">
+            <div class="flex h-full justify-center bg-gradient-to-br ${colorsConfig[config.color].background} text-zinc-50">
+                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start p-16">
                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
                         ${config.title}
                     </h1>
                 </div>
-                <div class="flex h-full w-full flex-col items-center justify-start gap-4 p-16">
+                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start gap-4 p-16">
                     <div class="grid grid-flow-row grid-cols-2 gap-16 lg:grid-cols-4">
                         ${config.cards.map((card, index) => {
                             return `
@@ -115,7 +115,7 @@ export function KPICards(config) {
                         }).join('')}
                     </div>
                 </div>
-                <div class="flex h-full w-full flex-col items-center justify-start pb-16 pt-8">
+                <div class="flex h-full w-full max-w-[1440px] flex-col items-center justify-start pb-16 pt-8">
                     <a
                         data-color="${colorsConfig[config.color].button}"
                         data-shadow
