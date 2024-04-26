@@ -2,7 +2,7 @@ export function gitHub(color) {
     const colorsConfig = {
         default: {
             color1: ['#dbeafe', '#d4d4d8'],
-            color2: ['#bfdbfe', '#71717a']
+            color2: ['#bfdbfe', '#a1a1aa']
         },
         primary: {
             color1: ['#d8b4fe', '#93c5fd'],
@@ -26,7 +26,7 @@ export function gitHub(color) {
         },
         ghost: {
             color1: ['#d4d4d8', '#ede9fe'],
-            color2: ['#71717a', '#ddd6fe']
+            color2: ['#a1a1aa', '#ddd6fe']
         }
     }
 
