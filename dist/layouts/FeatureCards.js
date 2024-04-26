@@ -15,7 +15,7 @@ export function FeatureCards(config) {
     ])
     const colorsConfig = {
         default: {
-            background: 'from-zinc-500/25 via-zinc-950 to-violet-200/25',
+            background: 'from-zinc-500/15 via-zinc-950 to-violet-200/15',
             title: 'from-zinc-500 to-violet-200',
             textPrimary: 'from-slate-400 via-gray-400 to-zinc-400',
             textSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
@@ -24,7 +24,7 @@ export function FeatureCards(config) {
             button: 'default'
         },
         primary: {
-            background: 'from-blue-500/25 via-zinc-950 to-green-500/25',
+            background: 'from-blue-500/15 via-zinc-950 to-green-500/15',
             title: 'from-blue-500 to-green-500',
             textPrimary: 'from-cyan-500 via-sky-500 to-blue-500',
             textSecondary: 'from-teal-500 via-emerald-500 to-green-500',
@@ -33,7 +33,7 @@ export function FeatureCards(config) {
             button: 'primary'
         },
         secondary: {
-            background: 'from-purple-500/25 via-zinc-950 to-blue-500/25',
+            background: 'from-purple-500/15 via-zinc-950 to-blue-500/15',
             title: 'from-purple-500 to-blue-500',
             textPrimary: 'from-purple-500 via-violet-500 to-indigo-500',
             textSecondary: 'from-cyan-500 via-sky-500 to-blue-500',
@@ -42,7 +42,7 @@ export function FeatureCards(config) {
             button: 'secondary'
         },
         success: {
-            background: 'from-green-500/25 via-zinc-950 to-orange-500/25',
+            background: 'from-green-500/15 via-zinc-950 to-orange-500/15',
             title: 'from-green-500 to-orange-500',
             textPrimary: 'from-teal-500 via-emerald-500 to-green-500',
             textSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
@@ -51,7 +51,7 @@ export function FeatureCards(config) {
             button: 'success'
         },
         warning: {
-            background: 'from-yellow-500/25 via-zinc-950 to-red-500/25',
+            background: 'from-yellow-500/15 via-zinc-950 to-red-500/15',
             title: 'from-yellow-500 to-red-500',
             textPrimary: 'from-yellow-500 via-amber-500 to-orange-500',
             textSecondary: 'from-pink-500 via-rose-500 to-red-500',
@@ -60,7 +60,7 @@ export function FeatureCards(config) {
             button: 'warning'
         },
         error: {
-            background: 'from-red-500/25 via-zinc-950 to-violet-500/25',
+            background: 'from-red-500/15 via-zinc-950 to-violet-500/15',
             title: 'from-red-500 to-violet-500',
             textPrimary: 'from-pink-500 via-rose-500 to-red-500',
             textSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
@@ -69,7 +69,7 @@ export function FeatureCards(config) {
             button: 'error'
         },
         ghost: {
-            background: 'from-blue-200/25 via-zinc-950 to-zinc-500/25',
+            background: 'from-blue-200/15 via-zinc-950 to-zinc-500/15',
             title: 'from-blue-200 to-zinc-500',
             textPrimary: 'from-blue-200 via-indigo-200 to-violet-200',
             textSecondary: 'from-slate-400 via-gray-400 to-zinc-400',
@@ -155,7 +155,7 @@ export function FeatureCards(config) {
 
     return `
         <div class="flex h-screen w-screen flex-col">
-            <div class="flex flex-col h-full items-center bg-gradient-to-tr ${colorsConfig[config.color].background} text-zinc-50">
+            <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] h-full justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
                         <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
