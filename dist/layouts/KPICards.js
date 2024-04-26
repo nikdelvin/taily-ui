@@ -86,7 +86,7 @@ export function KPICards(config) {
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] h-full justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
-                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
+                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-50">
                             ${config.title}
                         </h1>
                     </div>

@@ -165,7 +165,9 @@ const safeList = [
   "bottom-[5px]",
   "px-16",
   "!w-[150px]",
-  "max-w-[1440px]"
+  "max-w-[1440px]",
+  "text-[22px]/[30px]",
+  "opacity-50"
 ]
 
 const tailyUI = plugin(
