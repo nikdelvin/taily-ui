@@ -128,7 +128,7 @@ export function FeatureCards(config) {
             ${config.featureOptions.map((option, index) => {
                 return `
                     <div class="mt-4 flex items-start gap-4">
-                        <div class="w-[48px] h-full flex items-start justify-start">
+                        <div class="min-w-[48px] h-full flex items-start justify-start">
                             <h3 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
                                 ${index+1}.
                             </h3>
