@@ -85,19 +85,19 @@ export function KPICards(config) {
         <div class="flex h-screen max-h-[810px] w-screen flex-col">
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] h-full justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0">
                         <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-50">
                             ${config.title}
                         </h1>
                     </div>
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
-                        <div class="grid grid-flow-row grid-cols-2 gap-16 lg:grid-cols-4">
+                        <div class="grid grid-flow-row grid-cols-2 gap-10 lg:grid-cols-4">
                             ${config.cards.map((card, index) => {
                                 return `
                                     <div
                                         data-shadow
                                         data-color="${!(index % 4 > 1) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
-                                        class="card"
+                                        class="card aspect-square"
                                     >
                                         <h1 class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
                                             ${card.title}
@@ -116,7 +116,7 @@ export function KPICards(config) {
                             }).join('')}
                         </div>
                     </div>
-                    <div class="flex h-auto w-full flex-col items-center justify-start pb-16 pt-8">
+                    <div class="flex h-auto w-full flex-col items-center justify-start pb-16 pt-0">
                         <a
                             data-color="${colorsConfig[config.color].button}"
                             data-shadow
