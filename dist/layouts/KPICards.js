@@ -105,10 +105,10 @@ export function KPICards(config) {
                                         <h2 class="pb-3 text-center text-4xl font-bold">
                                             ${card.description1}${' '}<span class="inline bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
                                         </h2>
-                                        <div class="absolute bottom-[-40px] ${index % 2 === 0 ? 'right' : 'left'}-[-115px] h-[180px] w-[360px]">
+                                        <div class="absolute bottom-[-50px] ${index % 2 === 0 ? 'right' : 'left'}-[-175px] h-[180px] w-[360px]">
                                             ${shape(shapeIndexes[index*2].type, shapeIndexes[index*2].index)}
                                         </div>
-                                        <div class="absolute ${index % 2 === 0 ? 'left' : 'right'}-[-50px] top-0 h-[135px] w-[270px]">
+                                        <div class="absolute ${index % 2 === 0 ? 'left' : 'right'}-[-150px] top-[-85px] h-[225px] w-[450px]">
                                             ${shape(shapeIndexes[index*2 + 1].type, shapeIndexes[index*2 + 1].index, true)}
                                         </div>
                                     </div>
