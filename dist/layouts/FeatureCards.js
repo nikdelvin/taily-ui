@@ -128,9 +128,11 @@ export function FeatureCards(config) {
             ${config.featureOptions.map((option, index) => {
                 return `
                     <div class="mt-4 flex items-start gap-4">
-                        <h3 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
-                            ${index+1}.
-                        </h3>
+                        <div class="w-[48px] h-full flex items-start justify-start">
+                            <h3 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
+                                ${index+1}.
+                            </h3>
+                        </div>
                         ${index !== 1 ? `<p class="text-start text-[22px]/[30px] font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-[22px]/[30px] font-light text-transparent">${option}</p>`}
                     </div>
                 `
@@ -154,7 +156,7 @@ export function FeatureCards(config) {
     `
 
     return `
-        <div class="flex h-screen max-h-[810px] w-screen flex-col">
+        <div class="flex h-full w-screen flex-col">
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] h-full justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0">

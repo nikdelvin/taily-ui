@@ -8,7 +8,6 @@ import { FeatureCards } from './layouts/FeatureCards'
 
 const safeList = [
   "flex",
-  "h-screen",
   "w-screen",
   "flex-col",
   "overflow-y-scroll",
@@ -165,7 +164,6 @@ const safeList = [
   "max-w-[1440px]",
   "text-[22px]/[30px]",
   "opacity-50",
-  "max-h-[810px]",
   "pb-0",
   "pt-0",
   "gap-10",
