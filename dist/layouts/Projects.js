@@ -19,9 +19,8 @@ export function Projects(config) {
                             ${config.title.toUpperCase()}
                         </h1>
                         <div
-                            data-shadow
                             data-color="${colorsConfig[config.color].cardPrimary}"
-                            class="card !items-start !justify-start !p-0"
+                            class="card !items-start !justify-start !p-0 ${colorsConfig[config.color].cardBG}"
                         >
                             <div class="flex aspect-video w-full p-[2px]">
                                 <div class="flex w-full overflow-hidden overflow-x-scroll rounded-[22px]">
