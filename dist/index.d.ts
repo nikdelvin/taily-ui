@@ -40,4 +40,14 @@ declare module './index.js' {
             link: string
         }
     }): void
+    function Projects(config: {
+        title: string
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        projects: Array<{
+            image: string,
+            title: string,
+            description: Array<{ type: 'default' | 'primary', value: string }>,
+            options: string[]
+        }>
+    }): void
 }

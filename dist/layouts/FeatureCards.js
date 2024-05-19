@@ -1,11 +1,6 @@
 import { shape } from "../icons/shape"
-
-function shuffle(array) { 
-    return array.sort(() => Math.random() - 0.5)
-}
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max)
-}
+import { shuffle, getRandomInt } from "../utils"
+import { colorsConfig } from "../config"
 
 export function FeatureCards(config) {
     const shapeIndexes = shuffle([
@@ -13,71 +8,6 @@ export function FeatureCards(config) {
         { type: 'type2', index: getRandomInt(4) }, 
         { type: 'type3', index: getRandomInt(3) }
     ])
-    const colorsConfig = {
-        default: {
-            background: 'from-zinc-400/15 via-zinc-950 to-violet-200/15',
-            title: 'from-zinc-400 to-violet-200',
-            textPrimary: 'from-slate-400 via-gray-400 to-zinc-400',
-            textSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
-            cardPrimary: 'default',
-            cardSecondary: 'ghost',
-            button: 'default'
-        },
-        primary: {
-            background: 'from-blue-500/15 via-zinc-950 to-green-500/15',
-            title: 'from-blue-500 to-green-500',
-            textPrimary: 'from-cyan-500 via-sky-500 to-blue-500',
-            textSecondary: 'from-teal-500 via-emerald-500 to-green-500',
-            cardPrimary: 'primary',
-            cardSecondary: 'success',
-            button: 'primary'
-        },
-        secondary: {
-            background: 'from-purple-500/15 via-zinc-950 to-blue-500/15',
-            title: 'from-purple-500 to-blue-500',
-            textPrimary: 'from-purple-500 via-violet-500 to-indigo-500',
-            textSecondary: 'from-cyan-500 via-sky-500 to-blue-500',
-            cardPrimary: 'secondary',
-            cardSecondary: 'primary',
-            button: 'secondary'
-        },
-        success: {
-            background: 'from-green-500/15 via-zinc-950 to-orange-500/15',
-            title: 'from-green-500 to-orange-500',
-            textPrimary: 'from-teal-500 via-emerald-500 to-green-500',
-            textSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
-            cardPrimary: 'success',
-            cardSecondary: 'warning',
-            button: 'success'
-        },
-        warning: {
-            background: 'from-yellow-500/15 via-zinc-950 to-red-500/15',
-            title: 'from-yellow-500 to-red-500',
-            textPrimary: 'from-yellow-500 via-amber-500 to-orange-500',
-            textSecondary: 'from-pink-500 via-rose-500 to-red-500',
-            cardPrimary: 'warning',
-            cardSecondary: 'error',
-            button: 'warning'
-        },
-        error: {
-            background: 'from-red-500/15 via-zinc-950 to-violet-500/15',
-            title: 'from-red-500 to-violet-500',
-            textPrimary: 'from-pink-500 via-rose-500 to-red-500',
-            textSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
-            cardPrimary: 'error',
-            cardSecondary: 'secondary',
-            button: 'error'
-        },
-        ghost: {
-            background: 'from-blue-200/15 via-zinc-950 to-zinc-400/15',
-            title: 'from-blue-200 to-zinc-400',
-            textPrimary: 'from-blue-200 via-indigo-200 to-violet-200',
-            textSecondary: 'from-slate-400 via-gray-400 to-zinc-400',
-            cardPrimary: 'ghost',
-            cardSecondary: 'default',
-            button: 'ghost'
-        }
-    }
 
     const firstCard = `
         <div
