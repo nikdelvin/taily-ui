@@ -33,8 +33,8 @@ export function Projects(config) {
                                                 src="${project.image}"
                                             />
                                             <div class="absolute right-0 top-0 flex h-full flex-col items-center justify-center">
-                                                <div class="relative m-8 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} text-center backdrop-blur-xl">
-                                                    <div class="relative flex h-full w-full flex-col items-center justify-start overflow-hidden bg-zinc-950/75">
+                                                <div class="relative m-8 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
+                                                    <div class="relative flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-zinc-950/75">
                                                         <input
                                                             class="peer/hide hidden"
                                                             id="${`${index}_project_hide`}"

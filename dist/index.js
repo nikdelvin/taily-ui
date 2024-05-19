@@ -193,7 +193,28 @@ const safeList = [
   "h-[421px]",
   "mix-blend-overlay",
   "my-2",
-  "w-auto"
+  "w-auto",
+  "from-slate-400/75",
+  "via-gray-400/75",
+  "to-zinc-400/75",
+  "from-blue-200/75",
+  "via-indigo-200/75",
+  "to-violet-200/75",
+  "from-cyan-500/75",
+  "via-sky-500/75",
+  "to-blue-500/75",
+  "from-purple-500/75",
+  "via-violet-500/75",
+  "to-indigo-500/75",
+  "from-teal-500/75",
+  "via-emerald-500/75",
+  "to-green-500/75",
+  "from-yellow-500/75",
+  "via-amber-500/75",
+  "to-orange-500/75",
+  "from-pink-500/75",
+  "via-rose-500/75",
+  "to-red-500/75"
 ]
 
 const tailyUI = plugin(
