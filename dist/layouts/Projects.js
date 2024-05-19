@@ -79,10 +79,10 @@ export function Projects(config) {
                                                         <div class="overflow-hidden transition-all duration-500 ease-in-out peer-checked/hide:!w-[60px] peer-checked/open:!w-[654px] peer-checked/hide:min-w-[60px] peer-checked/open:min-w-[654px]">
                                                             <div class="relative flex w-full min-w-[654px] flex-col items-center justify-start p-16 pt-14 transition-all duration-500 ease-in-out peer-checked/hide:opacity-0 peer-checked/open:opacity-100">
                                                                 <div class="absolute right-[-170px] top-[-80px] h-[225px] w-[450px]">
-                                                                    ${shape(shapeIndexes()[projects[index]].type, shapeIndexes()[projects[index]].index, 'xl')}
+                                                                    ${shape(shapeIndexes()[projects[index]].type, shapeIndexes()[projects[index]].index, 'xl', '60')}
                                                                 </div>
                                                                 <div class="absolute bottom-[calc(50%-210.5px-95px)] left-[calc(50%-360px-95px)] h-[421px] w-[720px]">
-                                                                    ${shape(shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].type, shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].index, 'md')}
+                                                                    ${shape(shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].type, shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].index, 'md', '60')}
                                                                 </div>
                                                                 <h1 class="bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
                                                                     ${project.title}

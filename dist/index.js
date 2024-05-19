@@ -216,7 +216,8 @@ const safeList = [
   "to-orange-500/60",
   "from-pink-500/60",
   "via-rose-500/60",
-  "to-red-500/60"
+  "to-red-500/60",
+  "opacity-60"
 ]
 
 const tailyUI = plugin(
