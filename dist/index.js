@@ -193,14 +193,7 @@ const safeList = [
   "h-[421px]",
   "mix-blend-overlay",
   "my-2",
-  "w-auto",
-  "bg-zinc-900/75",
-  "bg-sky-900/75",
-  "bg-violet-900/75",
-  "bg-emerald-900/75",
-  "bg-amber-900/75",
-  "bg-rose-900/75",
-  "bg-indigo-900/75"
+  "w-auto"
 ]
 
 const tailyUI = plugin(
