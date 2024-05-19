@@ -83,7 +83,7 @@ export function Projects(config) {
                                                             <div class="absolute bottom-[calc(50%-210.5px-95px)] left-[calc(50%-360px-95px)] h-[421px] w-[720px]">
                                                                 ${shape(shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].type, shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].index)}
                                                             </div>
-                                                            <h1 class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
+                                                            <h1 class="bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
                                                                 ${project.title}
                                                             </h1>
                                                             <h2 class="pb-12 text-center text-5xl font-bold">
@@ -92,7 +92,7 @@ export function Projects(config) {
                                                                         case 'default':
                                                                             return `<span>${text.value}${' '}</span>`
                                                                         case 'primary':
-                                                                            return `<span class="inline bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${text.value}${' '}</span>`
+                                                                            return `<span class="inline bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${text.value}${' '}</span>`
                                                                     }
                                                                 }).join('')}
                                                             </h2>
@@ -100,11 +100,11 @@ export function Projects(config) {
                                                                 return `
                                                                     <div class="mt-4 flex w-full items-start gap-4">
                                                                         <div class="flex h-full min-w-[48px] items-start justify-start">
-                                                                            <h3 class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
+                                                                            <h3 class="bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
                                                                                 ${optionIndex + 1}.
                                                                             </h3>
                                                                         </div>
-                                                                        ${optionIndex !== 1 ? `<p class="text-start text-[22px]/[30px] font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-[22px]/[30px] font-light text-transparent">${option}</p>`}
+                                                                        ${optionIndex !== 1 ? `<p class="text-start text-[22px]/[30px] font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-[22px]/[30px] font-light text-transparent">${option}</p>`}
                                                                     </div>
                                                                 `
                                                             }).join('')}
