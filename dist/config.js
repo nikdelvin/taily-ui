@@ -9,7 +9,8 @@ export const colorsConfig = {
         cardSecondary: 'ghost',
         button: 'default',
         github: 'ghost',
-        card: 'bg-zinc-900/75'
+        cardBGPrimary: 'bg-zinc-900/75',
+        cardBGSecondary: 'bg-indigo-900/75'
     },
     primary: {
         background: 'from-blue-500/15 via-zinc-950 to-green-500/15',
@@ -21,7 +22,8 @@ export const colorsConfig = {
         cardSecondary: 'success',
         button: 'primary',
         github: 'success',
-        card: 'bg-sky-900/75'
+        cardBGPrimary: 'bg-sky-900/75',
+        cardBGSecondary: 'bg-emerald-900/75'
     },
     secondary: {
         background: 'from-purple-500/15 via-zinc-950 to-blue-500/15',
@@ -33,7 +35,8 @@ export const colorsConfig = {
         cardSecondary: 'primary',
         button: 'secondary',
         github: 'primary',
-        card: 'bg-violet-900/75'
+        cardBGPrimary: 'bg-violet-900/75',
+        cardBGSecondary: 'bg-sky-900/75'
     },
     success: {
         background: 'from-green-500/15 via-zinc-950 to-orange-500/15',
@@ -45,7 +48,8 @@ export const colorsConfig = {
         cardSecondary: 'warning',
         button: 'success',
         github: 'warning',
-        card: 'bg-emerald-900/75'
+        cardBGPrimary: 'bg-emerald-900/75',
+        cardBGSecondary: 'bg-amber-900/75'
     },
     warning: {
         background: 'from-yellow-500/15 via-zinc-950 to-red-500/15',
@@ -57,7 +61,8 @@ export const colorsConfig = {
         cardSecondary: 'error',
         button: 'warning',
         github: 'error',
-        card: 'bg-amber-900/75'
+        cardBGPrimary: 'bg-amber-900/75',
+        cardBGSecondary: 'bg-rose-900/75'
     },
     error: {
         background: 'from-red-500/15 via-zinc-950 to-violet-500/15',
@@ -69,7 +74,8 @@ export const colorsConfig = {
         cardSecondary: 'secondary',
         button: 'error',
         github: 'secondary',
-        card: 'bg-rose-900/75'
+        cardBGPrimary: 'bg-rose-900/75',
+        cardBGSecondary: 'bg-violet-900/75'
     },
     ghost: {
         background: 'from-blue-200/15 via-zinc-950 to-zinc-400/15',
@@ -81,6 +87,7 @@ export const colorsConfig = {
         cardSecondary: 'default',
         button: 'ghost',
         github: 'default',
-        card: 'bg-indigo-900/75' 
+        cardBGPrimary: 'bg-indigo-900/75',
+        cardBGSecondary: 'bg-zinc-900/75'
     }
 }
