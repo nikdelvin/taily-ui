@@ -42,7 +42,7 @@ export function KPICards(config) {
                                             ${shape(shapeIndexes[index*2].type, shapeIndexes[index*2].index)}
                                         </div>
                                         <div class="absolute ${index % 2 === 0 ? 'left' : 'right'}-[-140px] top-[-70px] h-[180px] w-[360px]">
-                                            ${shape(shapeIndexes[index*2 + 1].type, shapeIndexes[index*2 + 1].index, true)}
+                                            ${shape(shapeIndexes[index*2 + 1].type, shapeIndexes[index*2 + 1].index, 'sm')}
                                         </div>
                                     </div>
                                 `

@@ -32,14 +32,14 @@ export function FeatureCards(config) {
             </h3>
             ${config.reverse ? `
             <div class="absolute top-[-80px] right-[-170px] h-[225px] w-[450px]">
-                ${shape(shapeIndexes[2].type, shapeIndexes[2].index, true)}
+                ${shape(shapeIndexes[2].type, shapeIndexes[2].index, 'sm')}
             </div>
             <div class="absolute bottom-[5px] right-[295px] h-[360px] w-[720px]">
                 ${shape(shapeIndexes[1].type, shapeIndexes[1].index)}
             </div>
             ` : `
             <div class="absolute bottom-[-40px] left-[-170px] h-[225px] w-[450px]">
-                ${shape(shapeIndexes[0].type, shapeIndexes[0].index, true)}
+                ${shape(shapeIndexes[0].type, shapeIndexes[0].index, 'sm')}
             </div>
             <div class="absolute bottom-[5px] left-[295px] h-[360px] w-[720px]">
                 ${shape(shapeIndexes[1].type, shapeIndexes[1].index)}
@@ -69,14 +69,14 @@ export function FeatureCards(config) {
             }).join('')}
             ${config.reverse ? `
             <div class="absolute bottom-[-40px] left-[-170px] h-[225px] w-[450px]">
-                ${shape(shapeIndexes[0].type, shapeIndexes[0].index, true)}
+                ${shape(shapeIndexes[0].type, shapeIndexes[0].index, 'sm')}
             </div>
             <div class="absolute bottom-[5px] left-[295px] h-[360px] w-[720px]">
                 ${shape(shapeIndexes[1].type, shapeIndexes[1].index)}
             </div>
             ` : `
             <div class="absolute top-[-80px] right-[-170px] h-[225px] w-[450px]">
-                ${shape(shapeIndexes[2].type, shapeIndexes[2].index, true)}
+                ${shape(shapeIndexes[2].type, shapeIndexes[2].index, 'sm')}
             </div>
             <div class="absolute bottom-[5px] right-[295px] h-[360px] w-[720px]">
                 ${shape(shapeIndexes[1].type, shapeIndexes[1].index)}

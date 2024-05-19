@@ -69,6 +69,7 @@ const safeList = [
   "blur-sm",
   "scale-[0.8]",
   "blur-md",
+  "blur-xl",
   "from-blue-500/15",
   "to-green-500/15",
   "from-blue-500",
