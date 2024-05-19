@@ -8,7 +8,8 @@ export const colorsConfig = {
         cardPrimary: 'default',
         cardSecondary: 'ghost',
         button: 'default',
-        github: 'ghost'
+        github: 'ghost',
+        card: 'bg-zinc-900/75'
     },
     primary: {
         background: 'from-blue-500/15 via-zinc-950 to-green-500/15',
@@ -19,7 +20,8 @@ export const colorsConfig = {
         cardPrimary: 'primary',
         cardSecondary: 'success',
         button: 'primary',
-        github: 'success'
+        github: 'success',
+        card: 'bg-sky-900/75'
     },
     secondary: {
         background: 'from-purple-500/15 via-zinc-950 to-blue-500/15',
@@ -30,7 +32,8 @@ export const colorsConfig = {
         cardPrimary: 'secondary',
         cardSecondary: 'primary',
         button: 'secondary',
-        github: 'primary' 
+        github: 'primary',
+        card: 'bg-violet-900/75'
     },
     success: {
         background: 'from-green-500/15 via-zinc-950 to-orange-500/15',
@@ -41,7 +44,8 @@ export const colorsConfig = {
         cardPrimary: 'success',
         cardSecondary: 'warning',
         button: 'success',
-        github: 'warning'
+        github: 'warning',
+        card: 'bg-emerald-900/75'
     },
     warning: {
         background: 'from-yellow-500/15 via-zinc-950 to-red-500/15',
@@ -52,7 +56,8 @@ export const colorsConfig = {
         cardPrimary: 'warning',
         cardSecondary: 'error',
         button: 'warning',
-        github: 'error'
+        github: 'error',
+        card: 'bg-amber-900/75'
     },
     error: {
         background: 'from-red-500/15 via-zinc-950 to-violet-500/15',
@@ -63,7 +68,8 @@ export const colorsConfig = {
         cardPrimary: 'error',
         cardSecondary: 'secondary',
         button: 'error',
-        github: 'secondary'
+        github: 'secondary',
+        card: 'bg-rose-900/75'
     },
     ghost: {
         background: 'from-blue-200/15 via-zinc-950 to-zinc-400/15',
@@ -74,6 +80,7 @@ export const colorsConfig = {
         cardPrimary: 'ghost',
         cardSecondary: 'default',
         button: 'ghost',
-        github: 'default'  
+        github: 'default',
+        card: 'bg-indigo-900/75' 
     }
 }
