@@ -11,7 +11,9 @@ export const colorsConfig = {
         github: 'ghost',
         cardBG: '!from-zinc-500 !to-violet-200',
         cardBGPrimary: 'from-slate-400/60 via-gray-400/60 to-zinc-400/60',
-        cardBGSecondary: 'from-blue-200/60 via-indigo-200/60 to-violet-200/60'
+        cardBGSecondary: 'from-blue-200/60 via-indigo-200/60 to-violet-200/60',
+        musicCardBGPrimary: 'from-slate-600 via-gray-600 to-zinc-600',
+        musicCardBGSecondary: 'from-blue-200 via-indigo-200 to-violet-200'
     },
     primary: {
         background: 'from-blue-500/15 via-zinc-950 to-green-500/15',
@@ -25,7 +27,9 @@ export const colorsConfig = {
         github: 'success',
         cardBG: '!from-blue-500 !to-green-500',
         cardBGPrimary: 'from-cyan-500/60 via-sky-500/60 to-blue-500/60',
-        cardBGSecondary: 'from-teal-500/60 via-emerald-500/60 to-green-500/60'
+        cardBGSecondary: 'from-teal-500/60 via-emerald-500/60 to-green-500/60',
+        musicCardBGPrimary: 'from-cyan-500 via-sky-500 to-blue-500',
+        musicCardBGSecondary: 'from-teal-500 via-emerald-500 to-green-500'
     },
     secondary: {
         background: 'from-purple-500/15 via-zinc-950 to-blue-500/15',
@@ -39,7 +43,9 @@ export const colorsConfig = {
         github: 'primary',
         cardBG: '!from-purple-500 !to-blue-500',
         cardBGPrimary: 'from-purple-500/60 via-violet-500/60 to-indigo-500/60',
-        cardBGSecondary: 'from-cyan-500/60 via-sky-500/60 to-blue-500/60'
+        cardBGSecondary: 'from-cyan-500/60 via-sky-500/60 to-blue-500/60',
+        musicCardBGPrimary: 'from-purple-500 via-violet-500 to-indigo-500',
+        musicCardBGSecondary: 'from-cyan-500 via-sky-500 to-blue-500'
     },
     success: {
         background: 'from-green-500/15 via-zinc-950 to-orange-500/15',
@@ -53,7 +59,9 @@ export const colorsConfig = {
         github: 'warning',
         cardBG: '!from-green-500 !to-orange-500',
         cardBGPrimary: 'from-teal-500/60 via-emerald-500/60 to-green-500/60',
-        cardBGSecondary: 'from-yellow-500/60 via-amber-500/60 to-orange-500/60'
+        cardBGSecondary: 'from-yellow-500/60 via-amber-500/60 to-orange-500/60',
+        musicCardBGPrimary: 'from-teal-500 via-emerald-500 to-green-500',
+        musicCardBGSecondary: 'from-yellow-500 via-amber-500 to-orange-500'
     },
     warning: {
         background: 'from-yellow-500/15 via-zinc-950 to-red-500/15',
@@ -67,7 +75,9 @@ export const colorsConfig = {
         github: 'error',
         cardBG: '!from-yellow-500 !to-red-500',
         cardBGPrimary: 'from-yellow-500/60 via-amber-500/60 to-orange-500/60',
-        cardBGSecondary: 'from-pink-500/60 via-rose-500/60 to-red-500/60'
+        cardBGSecondary: 'from-pink-500/60 via-rose-500/60 to-red-500/60',
+        musicCardBGPrimary: 'from-yellow-500 via-amber-500 to-orange-500',
+        musicCardBGSecondary: 'from-pink-500 via-rose-500 to-red-500'
     },
     error: {
         background: 'from-red-500/15 via-zinc-950 to-violet-500/15',
@@ -81,7 +91,9 @@ export const colorsConfig = {
         github: 'secondary',
         cardBG: '!from-red-500 !to-violet-500',
         cardBGPrimary: 'from-pink-500/60 via-rose-500/60 to-red-500/60',
-        cardBGSecondary: 'from-purple-500/60 via-violet-500/60 to-indigo-500/60'
+        cardBGSecondary: 'from-purple-500/60 via-violet-500/60 to-indigo-500/60',
+        musicCardBGPrimary: 'from-pink-500 via-rose-500 to-red-500',
+        musicCardBGSecondary: 'from-purple-500 via-violet-500 to-indigo-500'
     },
     ghost: {
         background: 'from-blue-200/15 via-zinc-950 to-zinc-400/15',
@@ -95,6 +107,8 @@ export const colorsConfig = {
         github: 'default',
         cardBG: '!from-blue-200 !to-zinc-500',
         cardBGPrimary: 'from-blue-200/60 via-indigo-200/60 to-violet-200/60',
-        cardBGSecondary: 'from-slate-400/60 via-gray-400/60 to-zinc-400/60'
+        cardBGSecondary: 'from-slate-400/60 via-gray-400/60 to-zinc-400/60',
+        musicCardBGPrimary: 'from-blue-200 via-indigo-200 to-violet-200',
+        musicCardBGSecondary: 'from-slate-600 via-gray-600 to-zinc-600'
     }
 }

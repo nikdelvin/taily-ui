@@ -1,5 +1,5 @@
 import { shape } from "../icons/shape"
-import { shuffle, getRandomInt } from "../utils"
+import { getRandomInt } from "../utils"
 import { colorsConfig } from "../config"
 
 export function Projects(config) {
@@ -15,8 +15,8 @@ export function Projects(config) {
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
-                        <h1 class="mb-[-32px] bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-black leading-tight text-transparent opacity-50">
-                            ${config.title.toUpperCase()}
+                        <h1 class="mb-[-32px] bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-50">
+                            ${config.title}
                         </h1>
                         <div
                             data-color="${colorsConfig[config.color].cardPrimary}"

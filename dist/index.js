@@ -6,6 +6,7 @@ import { OpenSourcePromo } from './layouts/OpenSourcePromo'
 import { KPICards } from './layouts/KPICards'
 import { FeatureCards } from './layouts/FeatureCards'
 import { Projects } from './layouts/Projects'
+import { Skills } from './layouts/Skills'
 
 const safeList = [
   "bg-zinc-950",
@@ -231,7 +232,40 @@ const safeList = [
   "!from-red-500",
   "!to-violet-500",
   "!from-blue-200",
-  "!to-zinc-500"
+  "!to-zinc-500",
+  "!flex-row",
+  "!min-h-[60px]",
+  "!min-w-[200px]",
+  "!py-3",
+  "bottom-[-55px]",
+  "bottom-[60px]",
+  "brightness-[0.35]",
+  "brightness-[0.75]",
+  "gap-6",
+  "grid-cols-3",
+  "left-[-70px]",
+  "left-[325px]",
+  "lg:grid-cols-5",
+  "me-3",
+  "right-[-60px]",
+  "right-[320px]",
+  "top-[-40px]",
+  "top-[-65px]",
+  "w-[640px]",
+  "z-[-1]",
+  "grayscale",
+  "!min-h-[156px]",
+  "!min-w-[200px]",
+  "!p-[2px]",
+  "opacity-25",
+  "pointer-events-none",
+  "h-[152px]",
+  "w-[calc(100%-4px)]",
+  "left-[2px]",
+  "top-[2px]",
+  "from-slate-600",
+  "via-gray-600",
+  "to-zinc-600"
 ]
 
 const tailyUI = plugin(
@@ -253,4 +287,4 @@ const tailyUI = plugin(
   }
 )
 
-export { tailyUI, safeList, OpenSourcePromo, KPICards, FeatureCards, Projects }
+export { tailyUI, safeList, OpenSourcePromo, KPICards, FeatureCards, Projects, Skills }

@@ -50,4 +50,13 @@ declare module './index.js' {
             options: string[]
         }>
     }): void
+    function Skills(config: {
+        title: string
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        skills: Array<{
+            icon: string,
+            title: string
+        }>
+        music: string[]
+    }): void
 }
