@@ -23,11 +23,11 @@ export function Jobs(config) {
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-8">
                         ${config.jobs.map((job, index) => (
                             `<div class="relative grid w-full grid-flow-row grid-cols-1 gap-16 pb-16 pt-8 lg:grid-cols-2">
-                                <div class="relative mb-auto grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
+                                <div class="relative mb-auto mt-2 grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
                                     <div
                                         data-shadow
                                         data-color="${colorsConfig[config.color].cardPrimary}"
-                                        class="${`card mb-auto mt-3 aspect-square ${!(index % 2 > 0) ? '!rotate-[10deg]' : '!rotate-[-10deg]'} !scale-[0.88]`}"
+                                        class="${`card mb-auto aspect-square ${!(index % 2 > 0) ? '!rotate-[10deg]' : '!rotate-[-10deg]'} !scale-[0.88]`}"
                                     >
                                         <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl font-semibold text-transparent">
                                             From

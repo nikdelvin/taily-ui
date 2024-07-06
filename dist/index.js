@@ -392,7 +392,8 @@ const safeList = [
   "z-[2]",
   "pb-8",
   "underline",
-  "decoration-zinc-50/50"
+  "decoration-zinc-50/50",
+  "mt-2"
 ]
 
 const tailyUI = plugin(
