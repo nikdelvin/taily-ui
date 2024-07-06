@@ -19,7 +19,7 @@ export function Projects(config) {
                             ${config.title}
                         </h1>
                         <div
-                            data-shadow
+                            ${config.shadow != null ? 'data-shadow' : ''}
                             data-color="${colorsConfig[config.color].cardPrimary}"
                             class="card !items-start !justify-start !p-0 ${colorsConfig[config.color].cardBG}"
                         >
@@ -111,6 +111,7 @@ export function Projects(config) {
                                                                 }).join('')}
                                                                 <div class="flex h-auto w-full flex-col items-center justify-start p-0 pt-8">
                                                                     <a
+                                                                        ${config.shadow != null ? 'data-shadow' : ''}
                                                                         data-color="${(index % 2 > 0) ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
                                                                         data-type="bordered"
                                                                         data-size="medium"
@@ -134,6 +135,7 @@ export function Projects(config) {
                         </div>
                         <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
                             <a
+                                ${config.shadow != null ? 'data-shadow' : ''}
                                 data-color="${colorsConfig[config.color].button}"
                                 data-type="solid"
                                 data-size="large"

@@ -28,7 +28,7 @@ export function KPICards(config) {
                             ${config.cards.map((card, index) => {
                                 return `
                                     <div
-                                        data-shadow
+                                        ${config.shadow != null ? 'data-shadow' : ''}
                                         data-color="${!(index % 4 > 1) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                         class="card aspect-square"
                                     >
@@ -51,6 +51,7 @@ export function KPICards(config) {
                     </div>
                     <div class="flex h-auto w-full flex-col items-center justify-start pb-16 pt-0">
                         <a
+                            ${config.shadow != null ? 'data-shadow' : ''}
                             data-color="${colorsConfig[config.color].github}"
                             data-type="solid"
                             data-size="large"

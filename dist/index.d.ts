@@ -10,6 +10,7 @@ declare module './index.js' {
         logo: any
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        shadow?: true
         text: Array<{ type: 'default' | 'primary' | 'secondary', value: string }>
         description: string
         button: {
@@ -23,6 +24,7 @@ declare module './index.js' {
     function KPICards(config: {
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        shadow?: true
         cards: Array<{ title: string, description1: string, description2: string }>
         button: {
             title: string
@@ -33,6 +35,7 @@ declare module './index.js' {
     function FeatureCards(config: {
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        shadow?: true
         reverse: boolean
         featureTitle: string
         featureDescription: Array<{ type: 'default' | 'primary' | 'secondary', value: string }>
@@ -46,6 +49,7 @@ declare module './index.js' {
     function Projects(config: {
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        shadow?: true
         projects: Array<{
             image: string,
             title: string,
@@ -66,6 +70,7 @@ declare module './index.js' {
     function Skills(config: {
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        shadow?: true
         skills: Array<{
             icon: string,
             title: string
@@ -80,6 +85,7 @@ declare module './index.js' {
     function Jobs(config: {
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        shadow?: true
         jobs: Array<{
             from: string[],
             to: string[],

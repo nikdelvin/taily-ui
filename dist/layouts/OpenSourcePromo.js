@@ -47,6 +47,7 @@ export function OpenSourcePromo(config) {
                                 </h3>
                                 <div class="grid w-[400px] grid-flow-row grid-cols-2 gap-4">
                                     <a
+                                        ${config.shadow != null ? 'data-shadow' : ''}
                                         data-color="${colorsConfig[config.color].button}"
                                         data-type="solid"
                                         data-size="large"
@@ -57,6 +58,7 @@ export function OpenSourcePromo(config) {
                                         <span class="font-medium">${config.button.title}</span>
                                     </a>
                                     <a
+                                        ${config.shadow != null ? 'data-shadow' : ''}
                                         data-color="${colorsConfig[config.color].github}"
                                         data-type="bordered"
                                         data-size="large"

@@ -11,7 +11,7 @@ export function FeatureCards(config) {
 
     const firstCard = `
         <div
-            data-shadow
+            ${config.shadow != null ? 'data-shadow' : ''}
             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].cardPrimary}"
             class="card ${config.reverse ? '!items-start' : '!items-end'} !justify-start !px-10"
         >
@@ -51,7 +51,7 @@ export function FeatureCards(config) {
     
     const secondCard = `
         <div
-            data-shadow
+            ${config.shadow != null ? 'data-shadow' : ''}
             data-color="${config.reverse ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
             class="card !items-start !justify-start !px-10 !py-6"
         >
@@ -101,6 +101,7 @@ export function FeatureCards(config) {
                     </div>
                     <div class="flex h-auto w-full flex-col ${config.reverse ? 'items-end' : 'items-start'} justify-start pb-16 pt-0 px-16">
                         <a
+                            ${config.shadow != null ? 'data-shadow' : ''}
                             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
                             data-type="bordered"
                             data-size="medium"

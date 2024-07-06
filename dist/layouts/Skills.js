@@ -24,7 +24,7 @@ export function Skills(config) {
                             ${config.skills.map((text, index) => (
                                 `<div
                                     class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3"
-                                    data-shadow
+                                    ${config.shadow != null ? 'data-shadow' : ''}
                                     data-color="${[0,1,2,5,6,7,10,11,12,15,16,17,20,21,22].some((el) => index === el) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                 >
                                     <img
@@ -40,7 +40,7 @@ export function Skills(config) {
                             ${config.music.map((link, index) => (
                                 `<div
                                     class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px]"
-                                    data-shadow
+                                    ${config.shadow != null ? 'data-shadow' : ''}
                                     data-color="${index < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                 >
                                     <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary} opacity-25"></div>
@@ -72,6 +72,7 @@ export function Skills(config) {
                         </div>
                         <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
                             <a
+                                ${config.shadow != null ? 'data-shadow' : ''}
                                 data-color="${colorsConfig[config.color].button}"
                                 data-type="bordered"
                                 data-size="large"
