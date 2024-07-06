@@ -23,7 +23,7 @@ export function Jobs(config) {
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-8">
                         ${config.jobs.map((job, index) => (
                             `<div class="relative grid w-full grid-flow-row grid-cols-1 gap-16 pb-16 pt-8 lg:grid-cols-2">
-                                <div class="relative mb-auto mt-2 grid grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
+                                <div class="relative mb-auto mt-1.5 grid grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
                                     <div
                                         data-shadow
                                         data-color="${colorsConfig[config.color].cardPrimary}"
