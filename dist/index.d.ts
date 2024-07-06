@@ -74,4 +74,11 @@ declare module './index.js' {
             role: string[]
         }>
     }): void
+    function Footer(config: {
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        blocks: Array<{
+            title: string
+            text: string
+        }>
+    }): void
 }

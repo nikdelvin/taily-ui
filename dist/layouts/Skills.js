@@ -23,7 +23,7 @@ export function Skills(config) {
                         <div class="relative grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5">
                             ${config.skills.map((text, index) => (
                                 `<div
-                                    class="card !min-h-[60px] !min-w-[200px] !flex-row !py-3"
+                                    class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3"
                                     data-shadow
                                     data-color="${[0,1,2,5,6,7,10,11,12,15,16,17,20,21,22].some((el) => index === el) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                 >
@@ -39,7 +39,7 @@ export function Skills(config) {
                             }
                             ${config.music.map((link, index) => (
                                 `<div
-                                    class="card !min-h-[156px] !min-w-[200px] !p-[2px]"
+                                    class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px]"
                                     data-shadow
                                     data-color="${index < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                 >
@@ -57,17 +57,17 @@ export function Skills(config) {
                                 </div>`
                                 )).join('')
                             }
-                            <div class="absolute left-[-70px] top-[-65px] z-[-1] h-[360px] w-[640px] brightness-[0.35]">
-                                ${shape(shapeIndexes()[0].type, shapeIndexes()[0].index)}
+                            <div class="absolute left-[-70px] top-[-65px] h-[360px] w-[640px]">
+                                ${shape(shapeIndexes()[0].type, shapeIndexes()[0].index, undefined, '60')}
                             </div>
-                            <div class="absolute bottom-[-55px] right-[-60px] z-[-1] h-[360px] w-[640px] brightness-[0.35]">
-                                ${shape(shapeIndexes()[1].type, shapeIndexes()[1].index)}
+                            <div class="absolute bottom-[-55px] right-[-60px] h-[360px] w-[640px]">
+                                ${shape(shapeIndexes()[1].type, shapeIndexes()[1].index, undefined, '60')}
                             </div>
-                            <div class="absolute right-[320px] top-[-40px] z-[-1] h-[225px] w-[400px] brightness-[0.75] blur-sm">
-                                ${shape(shapeIndexes()[2].type, shapeIndexes()[2].index)}
+                            <div class="absolute right-[320px] top-[-40px] h-[225px] w-[400px]">
+                                ${shape(shapeIndexes()[2].type, shapeIndexes()[2].index, 'md', '60')}
                             </div>
-                            <div class="absolute bottom-[60px] left-[325px] z-[-1] h-[225px] w-[400px] brightness-[0.75] blur-sm">
-                                ${shape(shapeIndexes()[3].type, shapeIndexes()[3].index)}
+                            <div class="absolute bottom-[60px] left-[325px] h-[225px] w-[400px]">
+                                ${shape(shapeIndexes()[3].type, shapeIndexes()[3].index, 'md', '60')}
                             </div>
                         </div>
                     </div>

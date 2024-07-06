@@ -27,7 +27,7 @@ export function Jobs(config) {
                                     <div
                                         data-shadow
                                         data-color="${colorsConfig[config.color].cardPrimary}"
-                                        class="${`card mb-auto aspect-square ${!(index % 2 > 0) ? '!rotate-[10deg]' : '!rotate-[-10deg]'} !scale-[0.88]`}"
+                                        class="${`card mb-auto mt-3 aspect-square ${!(index % 2 > 0) ? '!rotate-[10deg]' : '!rotate-[-10deg]'} !scale-[0.88]`}"
                                     >
                                         <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl font-semibold text-transparent">
                                             From

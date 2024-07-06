@@ -13,7 +13,16 @@ export const colorsConfig = {
         cardBGPrimary: 'from-slate-400/60 via-gray-400/60 to-zinc-400/60',
         cardBGSecondary: 'from-blue-200/60 via-indigo-200/60 to-violet-200/60',
         musicCardBGPrimary: 'from-slate-600 via-gray-600 to-zinc-600',
-        musicCardBGSecondary: 'from-blue-200 via-indigo-200 to-violet-200'
+        musicCardBGSecondary: 'from-blue-200 via-indigo-200 to-violet-200',
+        footerBorders: [
+            'border-b-zinc-500/25 border-l-zinc-500 border-r-zinc-500/25 border-t-zinc-500',
+            'border-b-zinc-500/25 border-l-zinc-500/25 border-r-zinc-500 border-t-zinc-500',
+            'border-b-violet-200/25 border-l-violet-200 border-r-violet-200/25 border-t-violet-200',
+            'border-b-violet-200/25 border-l-violet-200/25 border-r-violet-200 border-t-violet-200',
+            'border-zinc-500 border-t-zinc-500/25',
+            'border-b-violet-200 border-l-violet-200 border-r-violet-200/25 border-t-violet-200/25',
+            'border-b-violet-200 border-l-violet-200/25 border-r-violet-200 border-t-violet-200/25'
+        ]
     },
     primary: {
         background: 'from-blue-500/15 via-zinc-950 to-green-500/15',
@@ -29,7 +38,16 @@ export const colorsConfig = {
         cardBGPrimary: 'from-cyan-500/60 via-sky-500/60 to-blue-500/60',
         cardBGSecondary: 'from-teal-500/60 via-emerald-500/60 to-green-500/60',
         musicCardBGPrimary: 'from-cyan-500 via-sky-500 to-blue-500',
-        musicCardBGSecondary: 'from-teal-500 via-emerald-500 to-green-500'
+        musicCardBGSecondary: 'from-teal-500 via-emerald-500 to-green-500',
+        footerBorders: [
+            'border-b-blue-500/25 border-l-blue-500 border-r-blue-500/25 border-t-blue-500',
+            'border-b-blue-500/25 border-l-blue-500/25 border-r-blue-500 border-t-blue-500',
+            'border-b-green-500/25 border-l-green-500 border-r-green-500/25 border-t-green-500',
+            'border-b-green-500/25 border-l-green-500/25 border-r-green-500 border-t-green-500',
+            'border-blue-500 border-t-blue-500/25',
+            'border-b-green-500 border-l-green-500 border-r-green-500/25 border-t-green-500/25',
+            'border-b-green-500 border-l-green-500/25 border-r-green-500 border-t-green-500/25'
+        ]
     },
     secondary: {
         background: 'from-purple-500/15 via-zinc-950 to-blue-500/15',
@@ -45,7 +63,16 @@ export const colorsConfig = {
         cardBGPrimary: 'from-purple-500/60 via-violet-500/60 to-indigo-500/60',
         cardBGSecondary: 'from-cyan-500/60 via-sky-500/60 to-blue-500/60',
         musicCardBGPrimary: 'from-purple-500 via-violet-500 to-indigo-500',
-        musicCardBGSecondary: 'from-cyan-500 via-sky-500 to-blue-500'
+        musicCardBGSecondary: 'from-cyan-500 via-sky-500 to-blue-500',
+        footerBorders: [
+            'border-b-purple-500/25 border-l-purple-500 border-r-purple-500/25 border-t-purple-500',
+            'border-b-purple-500/25 border-l-purple-500/25 border-r-purple-500 border-t-purple-500',
+            'border-b-blue-500/25 border-l-blue-500 border-r-blue-500/25 border-t-blue-500',
+            'border-b-blue-500/25 border-l-blue-500/25 border-r-blue-500 border-t-blue-500',
+            'border-purple-500 border-t-purple-500/25',
+            'border-b-blue-500 border-l-blue-500 border-r-blue-500/25 border-t-blue-500/25',
+            'border-b-blue-500 border-l-blue-500/25 border-r-blue-500 border-t-blue-500/25'
+        ]
     },
     success: {
         background: 'from-green-500/15 via-zinc-950 to-orange-500/15',
@@ -61,7 +88,16 @@ export const colorsConfig = {
         cardBGPrimary: 'from-teal-500/60 via-emerald-500/60 to-green-500/60',
         cardBGSecondary: 'from-yellow-500/60 via-amber-500/60 to-orange-500/60',
         musicCardBGPrimary: 'from-teal-500 via-emerald-500 to-green-500',
-        musicCardBGSecondary: 'from-yellow-500 via-amber-500 to-orange-500'
+        musicCardBGSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
+        footerBorders: [
+            'border-b-green-500/25 border-l-green-500 border-r-green-500/25 border-t-green-500',
+            'border-b-green-500/25 border-l-green-500/25 border-r-green-500 border-t-green-500',
+            'border-b-orange-500/25 border-l-orange-500 border-r-orange-500/25 border-t-orange-500',
+            'border-b-orange-500/25 border-l-orange-500/25 border-r-orange-500 border-t-orange-500',
+            'border-green-500 border-t-green-500/25',
+            'border-b-orange-500 border-l-orange-500 border-r-orange-500/25 border-t-orange-500/25',
+            'border-b-orange-500 border-l-orange-500/25 border-r-orange-500 border-t-orange-500/25'
+        ]
     },
     warning: {
         background: 'from-yellow-500/15 via-zinc-950 to-red-500/15',
@@ -77,7 +113,16 @@ export const colorsConfig = {
         cardBGPrimary: 'from-yellow-500/60 via-amber-500/60 to-orange-500/60',
         cardBGSecondary: 'from-pink-500/60 via-rose-500/60 to-red-500/60',
         musicCardBGPrimary: 'from-yellow-500 via-amber-500 to-orange-500',
-        musicCardBGSecondary: 'from-pink-500 via-rose-500 to-red-500'
+        musicCardBGSecondary: 'from-pink-500 via-rose-500 to-red-500',
+        footerBorders: [
+            'border-b-yellow-500/25 border-l-yellow-500 border-r-yellow-500/25 border-t-yellow-500',
+            'border-b-yellow-500/25 border-l-yellow-500/25 border-r-yellow-500 border-t-yellow-500',
+            'border-b-red-500/25 border-l-red-500 border-r-red-500/25 border-t-red-500',
+            'border-b-red-500/25 border-l-red-500/25 border-r-red-500 border-t-red-500',
+            'border-yellow-500 border-t-yellow-500/25',
+            'border-b-red-500 border-l-red-500 border-r-red-500/25 border-t-red-500/25',
+            'border-b-red-500 border-l-red-500/25 border-r-red-500 border-t-red-500/25'
+        ]
     },
     error: {
         background: 'from-red-500/15 via-zinc-950 to-violet-500/15',
@@ -93,7 +138,16 @@ export const colorsConfig = {
         cardBGPrimary: 'from-pink-500/60 via-rose-500/60 to-red-500/60',
         cardBGSecondary: 'from-purple-500/60 via-violet-500/60 to-indigo-500/60',
         musicCardBGPrimary: 'from-pink-500 via-rose-500 to-red-500',
-        musicCardBGSecondary: 'from-purple-500 via-violet-500 to-indigo-500'
+        musicCardBGSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
+        footerBorders: [
+            'border-b-red-500/25 border-l-red-500 border-r-red-500/25 border-t-red-500',
+            'border-b-red-500/25 border-l-red-500/25 border-r-red-500 border-t-red-500',
+            'border-b-violet-500/25 border-l-violet-500 border-r-violet-500/25 border-t-violet-500',
+            'border-b-violet-500/25 border-l-violet-500/25 border-r-violet-500 border-t-violet-500',
+            'border-red-500 border-t-red-500/25',
+            'border-b-violet-500 border-l-violet-500 border-r-violet-500/25 border-t-violet-500/25',
+            'border-b-violet-500 border-l-violet-500/25 border-r-violet-500 border-t-violet-500/25'
+        ]
     },
     ghost: {
         background: 'from-blue-200/15 via-zinc-950 to-zinc-400/15',
@@ -109,6 +163,15 @@ export const colorsConfig = {
         cardBGPrimary: 'from-blue-200/60 via-indigo-200/60 to-violet-200/60',
         cardBGSecondary: 'from-slate-400/60 via-gray-400/60 to-zinc-400/60',
         musicCardBGPrimary: 'from-blue-200 via-indigo-200 to-violet-200',
-        musicCardBGSecondary: 'from-slate-600 via-gray-600 to-zinc-600'
+        musicCardBGSecondary: 'from-slate-600 via-gray-600 to-zinc-600',
+        footerBorders: [
+            'border-b-blue-200/25 border-l-blue-200 border-r-blue-200/25 border-t-blue-200',
+            'border-b-blue-200/25 border-l-blue-200/25 border-r-blue-200 border-t-blue-200',
+            'border-b-zinc-500/25 border-l-zinc-500 border-r-zinc-500/25 border-t-zinc-500',
+            'border-b-zinc-500/25 border-l-zinc-500/25 border-r-zinc-500 border-t-zinc-500',
+            'border-blue-200 border-t-blue-200/25',
+            'border-b-zinc-500 border-l-zinc-500 border-r-zinc-500/25 border-t-zinc-500/25',
+            'border-b-zinc-500 border-l-zinc-500/25 border-r-zinc-500 border-t-zinc-500/25'
+        ]
     }
 }
