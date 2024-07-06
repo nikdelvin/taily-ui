@@ -52,6 +52,7 @@ export function OpenSourcePromo(config) {
                                         data-size="large"
                                         class="button"
                                         href="${config.button.link}"
+                                        target="_${config.button.newPage != null ? 'blank' : 'self'}"
                                     >
                                         <span class="font-medium">${config.button.title}</span>
                                     </a>
@@ -61,13 +62,14 @@ export function OpenSourcePromo(config) {
                                         data-size="large"
                                         class="button"
                                         href="${config.github}"
+                                        target="_blank"
                                     >
                                         ${gitHub(colorsConfig[config.color].github)}
                                         <span class="font-medium">GitHub</span>
                                     </a>
                                 </div>
                             </div>
-                            <div class="mx-8 mt-16 mb-0 grid grid-flow-row grid-cols-2 gap-4">
+                            <div class="mx-8 mt-10 mb-0 grid grid-flow-row grid-cols-2 gap-4">
                                 <div class="flex h-full w-full rotate-[-10deg] scale-100 flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image}">
                                     ${config.images != null && config.images[0] != null ? `<img
                                         alt="Main 1"
@@ -86,7 +88,7 @@ export function OpenSourcePromo(config) {
                                         height="360"
                                     />` : shape(shapeIndexes[1].type, shapeIndexes[1].index)}
                                 </div>
-                                <div class="flex h-full w-full rotate-[-10deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
+                                <div class="flex h-full w-full rotate-[20deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
                                     ${config.images != null && config.images[2] != null ? `<img
                                         alt="Main 3"
                                         src="${config.images[2]}"

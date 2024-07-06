@@ -43,7 +43,7 @@ export function Footer(config) {
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
@@ -69,7 +69,7 @@ export function Footer(config) {
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
@@ -95,7 +95,7 @@ export function Footer(config) {
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
@@ -121,7 +121,7 @@ export function Footer(config) {
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
@@ -149,7 +149,7 @@ export function Footer(config) {
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
@@ -176,7 +176,7 @@ export function Footer(config) {
                                             case 'primary': {
                                                 if (text.link != null) {
                                                     return (
-                                                        `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                             ${text.value}${' '}
                                                         </a>`
                                                     )
@@ -202,7 +202,7 @@ export function Footer(config) {
                                             case 'primary': {
                                                 if (text.link != null) {
                                                     return (
-                                                        `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                             ${text.value}${' '}
                                                         </a>`
                                                     )

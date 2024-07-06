@@ -15,6 +15,7 @@ declare module './index.js' {
         button: {
             title: string
             link: string
+            newPage?: true
         }
         github: string
         images?: string[]
@@ -26,6 +27,7 @@ declare module './index.js' {
         button: {
             title: string
             link: string
+            newPage?: true
         }
     }): void
     function FeatureCards(config: {
@@ -38,6 +40,7 @@ declare module './index.js' {
         button: {
             title: string
             link: string
+            newPage?: true
         }
     }): void
     function Projects(config: {
@@ -51,6 +54,7 @@ declare module './index.js' {
             button: {
                 title: string
                 link: string
+                newPage?: true
             }
         }>
     }): void
@@ -75,6 +79,7 @@ declare module './index.js' {
             button: {
                 title: string
                 link: string
+                newPage?: true
             }
         }>
     }): void
@@ -82,7 +87,7 @@ declare module './index.js' {
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
         blocks: Array<{
             title: string
-            text: Array<{ type: 'default' | 'primary', value: string, link?: string }>
+            text: Array<{ type: 'default' | 'primary', value: string, link?: string, newPage?: true }>
         }>
     }): void
 }

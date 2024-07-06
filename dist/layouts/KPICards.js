@@ -57,6 +57,7 @@ export function KPICards(config) {
                             data-size="large"
                             class="button !w-[200px]"
                             href="${config.button.link}"
+                            target="_${config.button.newPage != null ? 'blank' : 'self'}"
                         >
                             <span class="font-medium">${config.button.title}</span>
                         </a>

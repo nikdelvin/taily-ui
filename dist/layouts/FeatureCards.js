@@ -107,6 +107,7 @@ export function FeatureCards(config) {
                             data-size="medium"
                             class="button !w-[150px]"
                             href="${config.button.link}"
+                            target="_${config.button.newPage != null ? 'blank' : 'self'}"
                         >
                             <span class="font-medium">${config.button.title}</span>
                         </a>

@@ -116,6 +116,7 @@ export function Projects(config) {
                                                                         data-size="medium"
                                                                         class="button !w-[150px]"
                                                                         href="${project.button.link}"
+                                                                        target="_${project.button.newPage != null ? 'blank' : 'self'}"
                                                                     >
                                                                         <span class="font-medium">${project.button.title}</span>
                                                                     </a>
