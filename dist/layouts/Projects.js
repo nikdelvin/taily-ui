@@ -15,7 +15,7 @@ export function Projects(config) {
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
-                        <h1 class="mb-[-32px] bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-50">
+                        <h1 class="mb-[-34px] bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-50">
                             ${config.title}
                         </h1>
                         <div
@@ -131,6 +131,19 @@ export function Projects(config) {
                                     }
                                 </div>
                             </div>
+                        </div>
+                        <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
+                            <a
+                                data-color="${colorsConfig[config.color].button}"
+                                data-shadow
+                                data-type="solid"
+                                data-size="large"
+                                class="button !w-[200px]"
+                                href="${config.button.link}"
+                                target="_${config.button.newPage != null ? 'blank' : 'self'}"
+                            >
+                                <span class="font-medium">${config.button.title}</span>
+                            </a>
                         </div>
                     </div>
                 </div>

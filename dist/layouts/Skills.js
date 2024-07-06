@@ -70,6 +70,19 @@ export function Skills(config) {
                                 ${shape(shapeIndexes()[3].type, shapeIndexes()[3].index, 'md', '60')}
                             </div>
                         </div>
+                        <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
+                            <a
+                                data-color="${colorsConfig[config.color].button}"
+                                data-shadow
+                                data-type="bordered"
+                                data-size="large"
+                                class="button !w-[200px]"
+                                href="${config.button.link}"
+                                target="_${config.button.newPage != null ? 'blank' : 'self'}"
+                            >
+                                <span class="font-medium">${config.button.title}</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

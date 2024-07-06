@@ -153,7 +153,7 @@ const safeList = [
   "px-16",
   "!w-[150px]",
   "items-end",
-  "mb-[-32px]",
+  "mb-[-34px]",
   "font-black",
   "!p-0",
   "aspect-video",
@@ -396,7 +396,8 @@ const safeList = [
   "mt-1.5",
   "rotate-[20deg]",
   "mt-10",
-  "mb-6"
+  "mb-6",
+  "pt-16"
 ]
 
 const tailyUI = plugin(

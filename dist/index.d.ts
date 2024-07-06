@@ -57,6 +57,11 @@ declare module './index.js' {
                 newPage?: true
             }
         }>
+        button: {
+            title: string
+            link: string
+            newPage?: true
+        }
     }): void
     function Skills(config: {
         title: string
@@ -66,6 +71,11 @@ declare module './index.js' {
             title: string
         }>
         music: string[]
+        button: {
+            title: string
+            link: string
+            newPage?: true
+        }
     }): void
     function Jobs(config: {
         title: string
