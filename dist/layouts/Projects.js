@@ -86,7 +86,7 @@ export function Projects(config) {
                                                                 <h1 class="bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
                                                                     ${project.title}
                                                                 </h1>
-                                                                <h2 class="pb-12 text-center text-5xl font-bold">
+                                                                <h2 class="pb-8 text-center text-5xl font-bold">
                                                                     ${project.description.map((text) => {
                                                                         switch (text.type) {
                                                                             case 'default':
@@ -113,7 +113,7 @@ export function Projects(config) {
                                                                         data-color="${(index % 2 > 0) ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
                                                                         data-shadow
                                                                         data-type="bordered"
-                                                                        data-size="small"
+                                                                        data-size="medium"
                                                                         class="button !w-[150px]"
                                                                         href="${project.button.link}"
                                                                     >

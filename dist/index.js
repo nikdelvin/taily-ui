@@ -389,7 +389,10 @@ const safeList = [
   "right-[-50px]",
   "left-[-50px]",
   "top-[180px]",
-  "z-[2]"
+  "z-[2]",
+  "pb-8",
+  "underline",
+  "decoration-zinc-50/50"
 ]
 
 const tailyUI = plugin(

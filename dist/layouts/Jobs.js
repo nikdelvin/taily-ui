@@ -110,6 +110,18 @@ export function Jobs(config) {
                                             )}
                                         </div>`
                                     )).join('')}
+                                    <div class="flex h-auto w-full flex-col items-start justify-start p-0 pt-8">
+                                        <a
+                                            data-color="${colorsConfig[config.color].cardSecondary}"
+                                            data-shadow
+                                            data-type="bordered"
+                                            data-size="medium"
+                                            class="button !w-[150px]"
+                                            href="${job.button.link}"
+                                        >
+                                            <span class="font-medium">${job.button.title}</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>`
                         )).join('')}

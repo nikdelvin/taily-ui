@@ -36,25 +36,105 @@ export function Footer(config) {
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
                                     ${config.blocks[0].title}
                                 </h1>
-                                ${config.blocks[0].text}
+                                ${config.blocks[0].text.map((text) => {
+                                    switch (text.type) {
+                                        case 'default':
+                                            return `<span>${text.value}${' '}</span>`
+                                        case 'primary': {
+                                            if (text.link != null) {
+                                                return (
+                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </a>`
+                                                )
+                                            } else {
+                                                return (
+                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </span>`
+                                                )
+                                            }
+                                        }
+                                    }
+                                }).join('')}
                             </div>
                             <div class="aspect-square h-auto w-full rounded-3xl rounded-br-none rounded-tl-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[1]} p-4">
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
                                     ${config.blocks[1].title}
                                 </h1>
-                                ${config.blocks[1].text}
+                                ${config.blocks[1].text.map((text) => {
+                                    switch (text.type) {
+                                        case 'default':
+                                            return `<span>${text.value}${' '}</span>`
+                                        case 'primary': {
+                                            if (text.link != null) {
+                                                return (
+                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </a>`
+                                                )
+                                            } else {
+                                                return (
+                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </span>`
+                                                )
+                                            }
+                                        }
+                                    }
+                                }).join('')}
                             </div>
                             <div class="aspect-square h-auto w-full rounded-3xl rounded-bl-none rounded-tr-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[2]} p-4">
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
                                     ${config.blocks[2].title}
                                 </h1>
-                                ${config.blocks[2].text}
+                                ${config.blocks[2].text.map((text) => {
+                                    switch (text.type) {
+                                        case 'default':
+                                            return `<span>${text.value}${' '}</span>`
+                                        case 'primary': {
+                                            if (text.link != null) {
+                                                return (
+                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </a>`
+                                                )
+                                            } else {
+                                                return (
+                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </span>`
+                                                )
+                                            }
+                                        }
+                                    }
+                                }).join('')}
                             </div>
                             <div class="aspect-square h-auto w-full rounded-3xl rounded-br-none rounded-tl-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[3]} p-4">
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
                                     ${config.blocks[3].title}
                                 </h1>
-                                ${config.blocks[3].text}
+                                ${config.blocks[3].text.map((text) => {
+                                    switch (text.type) {
+                                        case 'default':
+                                            return `<span>${text.value}${' '}</span>`
+                                        case 'primary': {
+                                            if (text.link != null) {
+                                                return (
+                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </a>`
+                                                )
+                                            } else {
+                                                return (
+                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </span>`
+                                                )
+                                            }
+                                        }
+                                    }
+                                }).join('')}
                             </div>
                         </div>
                         <div class="relative grid w-full grid-flow-row grid-cols-1 gap-4 p-4 pt-0 lg:grid-cols-2">
@@ -62,20 +142,80 @@ export function Footer(config) {
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
                                     ${config.blocks[4].title}
                                 </h1>
-                                ${config.blocks[4].text}
+                                ${config.blocks[4].text.map((text) => {
+                                    switch (text.type) {
+                                        case 'default':
+                                            return `<span>${text.value}${' '}</span>`
+                                        case 'primary': {
+                                            if (text.link != null) {
+                                                return (
+                                                    `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </a>`
+                                                )
+                                            } else {
+                                                return (
+                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                        ${text.value}${' '}
+                                                    </span>`
+                                                )
+                                            }
+                                        }
+                                    }
+                                }).join('')}
                             </div>
                             <div class="relative grid w-full grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
                                 <div class="aspect-square h-auto w-full rounded-3xl rounded-br-none rounded-tl-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[5]} p-4">
                                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
                                         ${config.blocks[5].title}
                                     </h1>
-                                    ${config.blocks[5].text}
+                                    ${config.blocks[5].text.map((text) => {
+                                        switch (text.type) {
+                                            case 'default':
+                                                return `<span>${text.value}${' '}</span>`
+                                            case 'primary': {
+                                                if (text.link != null) {
+                                                    return (
+                                                        `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                            ${text.value}${' '}
+                                                        </a>`
+                                                    )
+                                                } else {
+                                                    return (
+                                                        `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                            ${text.value}${' '}
+                                                        </span>`
+                                                    )
+                                                }
+                                            }
+                                        }
+                                    }).join('')}
                                 </div>
                                 <div class="aspect-square h-auto w-full rounded-3xl rounded-bl-none rounded-tr-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[6]} p-4">
                                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
                                         ${config.blocks[6].title}
                                     </h1>
-                                    ${config.blocks[6].text}
+                                    ${config.blocks[6].text.map((text) => {
+                                        switch (text.type) {
+                                            case 'default':
+                                                return `<span>${text.value}${' '}</span>`
+                                            case 'primary': {
+                                                if (text.link != null) {
+                                                    return (
+                                                        `<a href="${text.link}" target="_blank" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                            ${text.value}${' '}
+                                                        </a>`
+                                                    )
+                                                } else {
+                                                    return (
+                                                        `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                            ${text.value}${' '}
+                                                        </span>`
+                                                    )
+                                                }
+                                            }
+                                        }
+                                    }).join('')}
                                 </div>
                             </div>
                         </div>
