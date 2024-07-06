@@ -32,7 +32,7 @@ export function Projects(config) {
                                                 src="${project.image}"
                                             />
                                             <div class="absolute right-0 top-0 flex h-full flex-col items-center justify-center">
-                                                <div class="relative m-8 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
+                                                <div class="relative m-5 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${!(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
                                                     <div class="relative flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-zinc-950/60">
                                                         <input
                                                             class="peer/hide hidden"
@@ -76,7 +76,7 @@ export function Projects(config) {
                                                             </svg>
                                                         </label>
                                                         <div class="overflow-hidden transition-all duration-500 ease-in-out peer-checked/hide:!w-[60px] peer-checked/open:!w-[654px] peer-checked/hide:min-w-[60px] peer-checked/open:min-w-[654px]">
-                                                            <div class="relative flex w-full min-w-[654px] flex-col items-center justify-start p-16 pt-14 transition-all duration-500 ease-in-out peer-checked/hide:opacity-0 peer-checked/open:opacity-100">
+                                                            <div class="relative flex w-full min-w-[654px] flex-col items-center justify-start p-16 pt-12 transition-all duration-500 ease-in-out peer-checked/hide:opacity-0 peer-checked/open:opacity-100">
                                                                 <div class="absolute right-[-170px] top-[-80px] h-[225px] w-[450px]">
                                                                     ${shape(shapeIndexes()[projects[index]].type, shapeIndexes()[projects[index]].index, 'xl', '60')}
                                                                 </div>
@@ -108,6 +108,18 @@ export function Projects(config) {
                                                                         </div>
                                                                     `
                                                                 }).join('')}
+                                                                <div class="flex h-auto w-full flex-col items-center justify-start p-0 pt-8">
+                                                                    <a
+                                                                        data-color="${(index % 2 > 0) ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
+                                                                        data-shadow
+                                                                        data-type="bordered"
+                                                                        data-size="small"
+                                                                        class="button !w-[150px]"
+                                                                        href="${project.button.link}"
+                                                                    >
+                                                                        <span class="font-medium">${project.button.title}</span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>

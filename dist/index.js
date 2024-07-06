@@ -7,6 +7,7 @@ import { KPICards } from './layouts/KPICards'
 import { FeatureCards } from './layouts/FeatureCards'
 import { Projects } from './layouts/Projects'
 import { Skills } from './layouts/Skills'
+import { Jobs } from './layouts/Jobs'
 
 const safeList = [
   "bg-zinc-950",
@@ -187,7 +188,7 @@ const safeList = [
   "peer-checked/hide:min-w-[60px]",
   "peer-checked/open:min-w-[654px]",
   "min-w-[654px]",
-  "pt-14",
+  "pt-12",
   "peer-checked/hide:opacity-0",
   "peer-checked/open:opacity-100",
   "bottom-[calc(50%-210.5px-95px)]",
@@ -265,7 +266,49 @@ const safeList = [
   "top-[2px]",
   "from-slate-600",
   "via-gray-600",
-  "to-zinc-600"
+  "to-zinc-600",
+  "m-5",
+  "pt-8",
+  "gap-16",
+  "mb-auto",
+  "!rotate-[10deg]",
+  "!scale-[0.88]",
+  "left-[16px]",
+  "top-[12px]",
+  "font-semibold",
+  "ml-3",
+  "!rotate-[-10deg]",
+  "!scale-[0.8]",
+  "bottom-[30px]",
+  "left-[-60px]",
+  "text-3xl",
+  "min-w-[24px]",
+  "text-xl",
+  "p-12",
+  "rounded-bl-none",
+  "rounded-tr-none",
+  "border",
+  "border-b-zinc-500/25",
+  "border-l-zinc-500",
+  "border-r-zinc-500/25",
+  "border-t-zinc-500",
+  "pb-4",
+  "rounded-br-none",
+  "rounded-tl-none",
+  "border-l-zinc-500/25",
+  "border-r-zinc-500",
+  "border-b-violet-200/25",
+  "border-l-violet-200",
+  "border-r-violet-200/25",
+  "border-t-violet-200",
+  "border-l-violet-200/25",
+  "border-r-violet-200",
+  "pt-0",
+  "rounded-t-none",
+  "border-zinc-500",
+  "border-t-zinc-500/25",
+  "border-b-violet-200",
+  "border-t-violet-200/25"
 ]
 
 const tailyUI = plugin(
@@ -287,4 +330,4 @@ const tailyUI = plugin(
   }
 )
 
-export { tailyUI, safeList, OpenSourcePromo, KPICards, FeatureCards, Projects, Skills }
+export { tailyUI, safeList, OpenSourcePromo, KPICards, FeatureCards, Projects, Skills, Jobs }

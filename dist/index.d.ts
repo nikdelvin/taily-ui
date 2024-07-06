@@ -47,7 +47,11 @@ declare module './index.js' {
             image: string,
             title: string,
             description: Array<{ type: 'default' | 'primary', value: string }>,
-            options: string[]
+            options: string[],
+            button: {
+                title: string
+                link: string
+            }
         }>
     }): void
     function Skills(config: {
@@ -58,5 +62,16 @@ declare module './index.js' {
             title: string
         }>
         music: string[]
+    }): void
+    function Jobs(config: {
+        title: string
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        jobs: Array<{
+            from: string[],
+            to: string[],
+            title: string,
+            description: Array<{ type: 'default' | 'primary', value: string }>,
+            role: string[]
+        }>
     }): void
 }
