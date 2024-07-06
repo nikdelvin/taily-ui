@@ -73,7 +73,6 @@ export function Skills(config) {
                         <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
                             <a
                                 data-color="${colorsConfig[config.color].button}"
-                                data-shadow
                                 data-type="bordered"
                                 data-size="large"
                                 class="button !w-[200px]"

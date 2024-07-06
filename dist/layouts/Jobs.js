@@ -113,7 +113,6 @@ export function Jobs(config) {
                                     <div class="flex h-auto w-full flex-col items-start justify-start p-0 pt-8">
                                         <a
                                             data-color="${colorsConfig[config.color].cardSecondary}"
-                                            data-shadow
                                             data-type="bordered"
                                             data-size="medium"
                                             class="button !w-[150px]"

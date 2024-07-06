@@ -52,7 +52,6 @@ export function KPICards(config) {
                     <div class="flex h-auto w-full flex-col items-center justify-start pb-16 pt-0">
                         <a
                             data-color="${colorsConfig[config.color].github}"
-                            data-shadow
                             data-type="solid"
                             data-size="large"
                             class="button !w-[200px]"

@@ -102,7 +102,6 @@ export function FeatureCards(config) {
                     <div class="flex h-auto w-full flex-col ${config.reverse ? 'items-end' : 'items-start'} justify-start pb-16 pt-0 px-16">
                         <a
                             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
-                            data-shadow
                             data-type="bordered"
                             data-size="medium"
                             class="button !w-[150px]"
