@@ -42,7 +42,7 @@ export function OpenSourcePromo(config) {
                                         }
                                     }).join('')}
                                 </h1>
-                                <h3 class="mb-10 text-2xl text-zinc-500">
+                                <h3 class="mb-10 text-2xl bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-transparent">
                                     ${config.description}
                                 </h3>
                                 <div class="grid w-[400px] grid-flow-row grid-cols-2 gap-4">
