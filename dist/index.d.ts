@@ -71,11 +71,13 @@ declare module './index.js' {
         title: string
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
         shadow?: true
-        skills: Array<{
-            icon: string,
+        rows: Array<{
             title: string
+            skills: Array<{
+                icon: string,
+                title: string
+            }>
         }>
-        music: string[]
         button: {
             title: string
             link: string

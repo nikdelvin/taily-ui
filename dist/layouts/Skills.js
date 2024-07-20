@@ -20,30 +20,37 @@ export function Skills(config) {
                         </h1>
                     </div>
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
+                        ${config.rows.map((row, rowIndex) => (
+                            `<div class="flex h-auto w-full flex-col items-${rowIndex % 2 === 0 ? "start" : "end"} justify-start">
+                                <h1 class="bg-gradient-to-r ${rowIndex % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-start text-4xl font-bold text-transparent">${row.title}</h1>
+                                <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5 pb-12">
+                                    ${row.skills.map((text, index) => (
+                                        `<div
+                                            class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3 ${index % 5 === 2 ? colorsConfig[config.color].cardBG : ''}"
+                                            ${config.shadow != null ? 'data-shadow' : ''} 2,7,12,17,22
+                                            data-color="${[0,1,2].some((el) => index % 5 === el) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                        >
+                                            <img
+                                                height="25px"
+                                                width="25px"
+                                                src="${text.icon}"
+                                                class="me-3 my-2"
+                                            />
+                                            ${text.title}
+                                        </div>`
+                                        )).join('')
+                                    }
+                                </div>
+                            </div>`
+                        )).join('')}
                         <div class="relative grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5">
-                            ${config.skills.map((text, index) => (
-                                `<div
-                                    class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3"
-                                    ${config.shadow != null ? 'data-shadow' : ''}
-                                    data-color="${[0,1,2,5,6,7,10,11,12,15,16,17,20,21,22].some((el) => index === el) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
-                                >
-                                    <img
-                                        height="40px"
-                                        width="40px"
-                                        src="${text.icon}"
-                                        class="me-3"
-                                    />
-                                    ${text.title}
-                                </div>`
-                                )).join('')
-                            }
                             ${config.music.map((link, index) => (
                                 `<div
-                                    class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px]"
+                                    class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index === 2 ? colorsConfig[config.color].cardBG : ''}"
                                     ${config.shadow != null ? 'data-shadow' : ''}
                                     data-color="${index < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                 >
-                                    <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary} opacity-25"></div>
+                                    <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index === 2 ? colorsConfig[config.color].cardBG : (index < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
                                     <iframe
                                         class="grayscale"
                                         style="border-radius:22px"
