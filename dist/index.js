@@ -398,7 +398,14 @@ const safeList = [
   "pt-16",
   "pb-10",
   "pt-10",
-  "mx-32"
+  "mx-32",
+  "!to-blue-200",
+  "!to-teal-500",
+  "!to-cyan-500",
+  "!to-yellow-500",
+  "!to-pink-500",
+  "!to-purple-500",
+  "!to-slate-500"
 ]
 
 const tailyUI = plugin(

@@ -26,7 +26,7 @@ export function Skills(config) {
                                 <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5 pb-16">
                                     ${row.skills.map((text, index) => (
                                         `<div
-                                            class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3 ${index % 5 === 2 ? colorsConfig[config.color].cardBG : ''}"
+                                            class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3 ${index % 5 === 2 ? colorsConfig[config.color].cardBGMiddle : ''}"
                                             ${config.shadow != null ? 'data-shadow' : ''}
                                             data-color="${index % 5 < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                         >
@@ -51,11 +51,11 @@ export function Skills(config) {
                             <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5">
                                 ${config.music.map((link, index) => (
                                     `<div
-                                        class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index % 5 === 2 ? colorsConfig[config.color].cardBG : ''}"
+                                        class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index % 5 === 2 ? colorsConfig[config.color].cardBGMiddle : ''}"
                                         ${config.shadow != null ? 'data-shadow' : ''}
                                         data-color="${index % 5 < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                     >
-                                        <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index % 5 === 2 ? colorsConfig[config.color].cardBG : (index % 5 < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
+                                        <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index % 5 === 2 ? colorsConfig[config.color].cardBGMiddle : (index % 5 < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
                                         <iframe
                                             class="grayscale"
                                             style="border-radius:22px"
