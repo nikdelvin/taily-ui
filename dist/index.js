@@ -395,7 +395,8 @@ const safeList = [
   "rotate-[20deg]",
   "mt-10",
   "mb-6",
-  "pt-16"
+  "pt-16",
+  "pb-10"
 ]
 
 const tailyUI = plugin(

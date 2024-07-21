@@ -22,8 +22,8 @@ export function Skills(config) {
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
                         ${config.rows.map((row, rowIndex) => (
                             `<div class="flex h-auto w-full flex-col items-${rowIndex % 2 === 0 ? "start" : "end"} justify-start">
-                                <h1 class="bg-gradient-to-r ${rowIndex % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-start text-4xl font-bold text-transparent">${row.title}</h1>
-                                <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5 pb-12">
+                                <h1 class="bg-gradient-to-r ${rowIndex % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 text-start text-4xl font-bold text-transparent">${row.title}</h1>
+                                <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5 pb-10">
                                     ${row.skills.map((text, index) => (
                                         `<div
                                             class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3 ${index % 5 === 2 ? colorsConfig[config.color].cardBG : ''}"
@@ -43,33 +43,36 @@ export function Skills(config) {
                                     <div class="absolute ${rowIndex % 2 === 0 ? 'left-[-70px]' : 'right-[-70px]'} top-[-165px] h-[360px] w-[640px]">
                                         ${shape(shapeIndexes()[rowIndex % 4].type, shapeIndexes()[rowIndex % 4].index, undefined, '60')}
                                     </div>
-                                    <div class="absolute ${rowIndex % 2 === 0 ? 'right' : 'left'}-[55px] bottom-[-55px] h-[225px] w-[400px]">
-                                        ${shape(shapeIndexes()[rowIndex % 4].type, shapeIndexes()[rowIndex % 4].index, 'md', '60')}
-                                    </div>
                                 </div>
                             </div>`
                         )).join('')}
-                        <div class="relative grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5">
-                            ${config.music.map((link, index) => (
-                                `<div
-                                    class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index === 2 ? colorsConfig[config.color].cardBG : ''}"
-                                    ${config.shadow != null ? 'data-shadow' : ''}
-                                    data-color="${index < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
-                                >
-                                    <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index === 2 ? colorsConfig[config.color].cardBG : (index < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
-                                    <iframe
-                                        class="grayscale"
-                                        style="border-radius:22px"
-                                        src="${link}?utm_source=generator&theme=0"
-                                        width="100%"
-                                        height="152"
-                                        scrolling="no"
-                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                        loading="lazy"
-                                    ></iframe>
-                                </div>`
-                                )).join('')
-                            }
+                        <div class="flex h-auto w-full flex-col items-${rows.length % 2 === 0 ? "start" : "end"} justify-start">
+                            <h1 class="bg-gradient-to-r ${rows.length % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 text-start text-4xl font-bold text-transparent">${row.title}</h1>
+                            <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5">
+                                ${config.music.map((link, index) => (
+                                    `<div
+                                        class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index === 2 ? colorsConfig[config.color].cardBG : ''}"
+                                        ${config.shadow != null ? 'data-shadow' : ''}
+                                        data-color="${index < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                    >
+                                        <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index === 2 ? colorsConfig[config.color].cardBG : (index < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
+                                        <iframe
+                                            class="grayscale"
+                                            style="border-radius:22px"
+                                            src="${link}?utm_source=generator&theme=0"
+                                            width="100%"
+                                            height="152"
+                                            scrolling="no"
+                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                            loading="lazy"
+                                        ></iframe>
+                                    </div>`
+                                    )).join('')
+                                }
+                                <div class="absolute ${rows.length % 2 === 0 ? 'left-[-70px]' : 'right-[-70px]'} top-[-165px] h-[360px] w-[640px]">
+                                    ${shape(shapeIndexes()[rows.length % 4].type, shapeIndexes()[rows.length % 4].index, undefined, '60')}
+                                </div>
+                            </div>
                         </div>
                         <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
                             <a
