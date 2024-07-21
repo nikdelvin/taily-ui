@@ -78,6 +78,8 @@ declare module './index.js' {
                 title: string
             }>
         }>
+        musicTitle: string
+        music: string[]
         button: {
             title: string
             link: string

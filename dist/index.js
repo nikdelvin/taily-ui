@@ -396,7 +396,9 @@ const safeList = [
   "mt-10",
   "mb-6",
   "pt-16",
-  "pb-10"
+  "pb-10",
+  "pt-10",
+  "mx-32"
 ]
 
 const tailyUI = plugin(

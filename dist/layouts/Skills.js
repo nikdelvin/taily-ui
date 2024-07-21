@@ -19,16 +19,16 @@ export function Skills(config) {
                             ${config.title}
                         </h1>
                     </div>
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pt-12">
                         ${config.rows.map((row, rowIndex) => (
                             `<div class="flex h-auto w-full flex-col items-${rowIndex % 2 === 0 ? "start" : "end"} justify-start">
                                 <h1 class="bg-gradient-to-r ${rowIndex % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 text-start text-4xl font-bold text-transparent">${row.title}</h1>
-                                <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5 pb-10">
+                                <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5 pb-16">
                                     ${row.skills.map((text, index) => (
                                         `<div
                                             class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3 ${index % 5 === 2 ? colorsConfig[config.color].cardBG : ''}"
-                                            ${config.shadow != null ? 'data-shadow' : ''} 2,7,12,17,22
-                                            data-color="${[0,1,2].some((el) => index % 5 === el) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                            ${config.shadow != null ? 'data-shadow' : ''}
+                                            data-color="${index % 5 < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                         >
                                             <img
                                                 height="25px"
@@ -46,16 +46,16 @@ export function Skills(config) {
                                 </div>
                             </div>`
                         )).join('')}
-                        <div class="flex h-auto w-full flex-col items-${rows.length % 2 === 0 ? "start" : "end"} justify-start">
-                            <h1 class="bg-gradient-to-r ${rows.length % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 text-start text-4xl font-bold text-transparent">${row.title}</h1>
+                        <div class="flex h-auto w-full flex-col items-${config.rows.length % 2 === 0 ? "start" : "end"} justify-start">
+                            <h1 class="bg-gradient-to-r ${config.rows.length % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 text-start text-4xl font-bold text-transparent">${config.musicTitle}</h1>
                             <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5">
                                 ${config.music.map((link, index) => (
                                     `<div
-                                        class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index === 2 ? colorsConfig[config.color].cardBG : ''}"
+                                        class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index % 5 === 2 ? colorsConfig[config.color].cardBG : ''}"
                                         ${config.shadow != null ? 'data-shadow' : ''}
-                                        data-color="${index < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                        data-color="${index % 5 < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                     >
-                                        <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index === 2 ? colorsConfig[config.color].cardBG : (index < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
+                                        <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index % 5 === 2 ? colorsConfig[config.color].cardBG : (index % 5 < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
                                         <iframe
                                             class="grayscale"
                                             style="border-radius:22px"
@@ -69,8 +69,8 @@ export function Skills(config) {
                                     </div>`
                                     )).join('')
                                 }
-                                <div class="absolute ${rows.length % 2 === 0 ? 'left-[-70px]' : 'right-[-70px]'} top-[-165px] h-[360px] w-[640px]">
-                                    ${shape(shapeIndexes()[rows.length % 4].type, shapeIndexes()[rows.length % 4].index, undefined, '60')}
+                                <div class="absolute ${config.rows.length % 2 === 0 ? 'left-[-70px]' : 'right-[-70px]'} top-[-165px] h-[360px] w-[640px]">
+                                    ${shape(shapeIndexes()[config.rows.length % 4].type, shapeIndexes()[config.rows.length % 4].index, undefined, '60')}
                                 </div>
                             </div>
                         </div>
