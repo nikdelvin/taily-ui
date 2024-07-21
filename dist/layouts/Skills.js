@@ -40,6 +40,12 @@ export function Skills(config) {
                                         </div>`
                                         )).join('')
                                     }
+                                    <div class="absolute ${rowIndex % 2 === 0 ? 'left-[-70px]' : 'right-[-70px]'} top-[-165px] h-[360px] w-[640px]">
+                                        ${shape(shapeIndexes()[rowIndex % 4].type, shapeIndexes()[rowIndex % 4].index, undefined, '60')}
+                                    </div>
+                                    <div class="absolute ${rowIndex % 2 === 0 ? 'right' : 'left'}-[55px] bottom-[-55px] h-[225px] w-[400px]">
+                                        ${shape(shapeIndexes()[rowIndex % 4].type, shapeIndexes()[rowIndex % 4].index, 'md', '60')}
+                                    </div>
                                 </div>
                             </div>`
                         )).join('')}
@@ -64,18 +70,6 @@ export function Skills(config) {
                                 </div>`
                                 )).join('')
                             }
-                            <div class="absolute left-[-70px] top-[-65px] h-[360px] w-[640px]">
-                                ${shape(shapeIndexes()[0].type, shapeIndexes()[0].index, undefined, '60')}
-                            </div>
-                            <div class="absolute bottom-[-55px] right-[-60px] h-[360px] w-[640px]">
-                                ${shape(shapeIndexes()[1].type, shapeIndexes()[1].index, undefined, '60')}
-                            </div>
-                            <div class="absolute right-[320px] top-[-40px] h-[225px] w-[400px]">
-                                ${shape(shapeIndexes()[2].type, shapeIndexes()[2].index, 'md', '60')}
-                            </div>
-                            <div class="absolute bottom-[60px] left-[325px] h-[225px] w-[400px]">
-                                ${shape(shapeIndexes()[3].type, shapeIndexes()[3].index, 'md', '60')}
-                            </div>
                         </div>
                         <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
                             <a
