@@ -405,7 +405,10 @@ const safeList = [
   "!to-yellow-500",
   "!to-pink-500",
   "!to-purple-500",
-  "!to-slate-500"
+  "!to-slate-500",
+  "!from-violet-200",
+  "!from-orange-500",
+  "!from-indigo-500"
 ]
 
 const tailyUI = plugin(
