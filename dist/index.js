@@ -408,7 +408,12 @@ const safeList = [
   "!to-slate-500",
   "!from-violet-200",
   "!from-orange-500",
-  "!from-indigo-500"
+  "!from-indigo-500",
+  "grid-cols-[repeat(15,_minmax(0,_1fr))]",
+  "!min-h-[65px]",
+  "!min-w-[65px]",
+  "!p-2",
+  "grid-cols-7"
 ]
 
 const tailyUI = plugin(

@@ -1,4 +1,5 @@
 import { shape } from "../icons/shape"
+import { icon } from "../icons/icon"
 import { getRandomInt } from "../utils"
 import { colorsConfig } from "../config"
 
@@ -23,20 +24,21 @@ export function Skills(config) {
                         ${config.rows.map((row, rowIndex) => (
                             `<div class="flex h-auto w-full flex-col items-${rowIndex % 2 === 0 ? "start" : "end"} justify-start">
                                 <h1 class="bg-gradient-to-r ${rowIndex % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 text-start text-4xl font-bold text-transparent">${row.title}</h1>
-                                <div class="relative w-full grid grid-flow-row grid-cols-3 gap-6 lg:grid-cols-5 pb-16">
+                                <div class="relative w-full grid grid-flow-row gap-6 grid-cols-[repeat(15,_minmax(0,_1fr))] pb-16">
                                     ${row.skills.map((text, index) => (
                                         `<div
-                                            class="card z-[2] !min-h-[60px] !min-w-[200px] !flex-row !py-3 ${index % 5 === 2 ? colorsConfig[config.color].cardBGMiddle : ''}"
+                                            class="group card z-[2] !min-h-[65px] !min-w-[65px] !flex-row !p-2 ${index % 15 === 7 ? colorsConfig[config.color].cardBGMiddle : ''}"
                                             ${config.shadow != null ? 'data-shadow' : ''}
-                                            data-color="${index % 5 < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                            data-color="${index % 15 < 8 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
+                                            data-hint-group="skill"
+                                            data-hint-text="${text.title}"
                                         >
-                                            <img
-                                                height="25px"
-                                                width="25px"
-                                                src="${text.icon}"
-                                                class="me-3 my-2"
-                                            />
-                                            ${text.title}
+                                            <div
+                                                height="32px"
+                                                width="32px"
+                                                class="mx-auto my-auto">
+                                                ${icon(config.color, (index % 15 < 7 ? 'primary' : (index % 15 === 7 ? 'middle' : 'secondary')), text.icon, 32, 32)}
+                                            </div>
                                         </div>`
                                         )).join('')
                                     }
