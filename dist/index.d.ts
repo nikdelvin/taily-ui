@@ -60,6 +60,7 @@ declare module './index.js' {
                 link: string
                 newPage?: true
             }
+            color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
         }>
         button: {
             title: string
