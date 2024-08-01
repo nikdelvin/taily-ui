@@ -27,7 +27,6 @@ export function Projects(config) {
                                 <div class="flex w-full overflow-hidden overflow-x-scroll rounded-[22px]">
                                     ${config.projects.map((project, index) => (
                                         `<div class="relative aspect-video h-[calc(100%+2px)]">
-                                            <div class="absolute right-0 top-0 flex h-full w-full opacity-50 bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].cardBGPrimary : !(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary}"></div>
                                             <img
                                                 width="100%"
                                                 height="auto"
