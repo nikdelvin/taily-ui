@@ -451,7 +451,9 @@ const safeList = [
   "peer-checked/project-5:!flex",
   "peer/project-5",
   "peer-checked/project-6:!flex",
-  "peer/project-6"
+  "peer/project-6",
+  "pl-3",
+  "!min-w-[285px]"
 ]
 
 const tailyUI = plugin(
