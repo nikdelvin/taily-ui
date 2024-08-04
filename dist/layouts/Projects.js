@@ -24,9 +24,28 @@ export function Projects(config) {
                             class="card !items-start !justify-start !p-0 ${colorsConfig[config.color].cardBG}"
                         >
                             <div class="flex aspect-video w-full p-[2px]">
-                                <div class="flex w-full overflow-hidden overflow-x-scroll rounded-[22px]">
+                                <div class="flex w-full overflow-hidden rounded-[22px]">
                                     ${config.projects.map((project, index) => (
-                                        `<div class="relative aspect-video h-[calc(100%+2px)]">
+                                        `<input
+                                            class="peer/project-${index} hidden"
+                                            id="project-${index}"
+                                            type="radio"
+                                            name="project"
+                                            ${index === 0 ? 'checked' : ''}
+                                        />
+                                        <div class="absolute bottom-0 left-0 w-full z-[4] justify-center p-[5px] hidden peer-checked/project-${index}:!flex">
+                                            <div
+                                                class="card !flex-row !min-h-min !min-w-min !w-min p-2 ${colorsConfig[config.color].cardBG}"
+                                                data-color="default"
+                                            >
+                                                ${config.projects.map((projectLabel, indexLabel) => (
+                                                    `<label for="project-${indexLabel}"
+                                                        class="${indexLabel+1 < config.projects.length ? 'mr-2' : ''} h-[15px] w-[15px] rounded-full ${index === indexLabel ? 'border border-solid border-zinc-50' : ''} bg-gradient-to-r ${projectLabel.color != null ? colorsConfig[projectLabel.color].textPrimary : !(indexLabel % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} cursor-pointer select-none appearance-none"
+                                                    ></label>`
+                                                )).join('')}
+                                            </div>
+                                        </div>
+                                        <div class="relative aspect-video h-[calc(100%+2px)] hidden peer-checked/project-${index}:!flex">
                                             <img
                                                 width="100%"
                                                 height="auto"
@@ -44,7 +63,7 @@ export function Projects(config) {
                                                         />
                                                         <label
                                                             for="${`${index}_project_hide`}"
-                                                            class="absolute left-2 top-3 z-[1] cursor-pointer select-none appearance-none p-4 peer-checked/hide:!hidden"
+                                                            class="absolute left-2 top-2 z-[1] cursor-pointer select-none appearance-none p-4 peer-checked/hide:!hidden"
                                                         >
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +83,7 @@ export function Projects(config) {
                                                         />
                                                         <label
                                                             for="${`${index}_project_open`}"
-                                                            class="absolute left-2 top-3 z-[1] cursor-pointer select-none appearance-none p-4 peer-checked/open:!hidden"
+                                                            class="absolute left-2 top-2 z-[1] cursor-pointer select-none appearance-none p-4 peer-checked/open:!hidden"
                                                         >
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"

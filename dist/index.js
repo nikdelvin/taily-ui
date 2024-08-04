@@ -9,6 +9,7 @@ import { Projects } from './layouts/Projects'
 import { Skills } from './layouts/Skills'
 import { Jobs } from './layouts/Jobs'
 import { Footer } from './layouts/Footer'
+import { Theme } from './layouts/Theme'
 
 const safeList = [
   "bg-zinc-950",
@@ -173,7 +174,7 @@ const safeList = [
   "peer/hide",
   "hidden",
   "left-2",
-  "top-3",
+  "top-2",
   "z-[1]",
   "cursor-pointer",
   "appearance-none",
@@ -413,7 +414,44 @@ const safeList = [
   "!min-h-[65px]",
   "!min-w-[65px]",
   "!p-2",
-  "grid-cols-7"
+  "grid-cols-7",
+  "right-0",
+  "top-0",
+  "p-4",
+  "p-2",
+  "!min-w-min",
+  "!min-h-min",
+  "mb-2",
+  "h-[15px]",
+  "w-[15px]",
+  "rounded-full",
+  "border",
+  "border-solid",
+  "border-zinc-50",
+  "hover:border",
+  "hover:border-solid",
+  "hover:border-zinc-50",
+  "mr-2",
+  "bottom-0",
+  "left-0",
+  "!flex-row",
+  "!w-min",
+  "p-[5px]",
+  "z-[4]",
+  "peer-checked/project-0:!flex",
+  "peer/project-0",
+  "peer-checked/project-1:!flex",
+  "peer/project-1",
+  "peer-checked/project-2:!flex",
+  "peer/project-2",
+  "peer-checked/project-3:!flex",
+  "peer/project-3",
+  "peer-checked/project-4:!flex",
+  "peer/project-4",
+  "peer-checked/project-5:!flex",
+  "peer/project-5",
+  "peer-checked/project-6:!flex",
+  "peer/project-6"
 ]
 
 const tailyUI = plugin(
@@ -435,4 +473,4 @@ const tailyUI = plugin(
   }
 )
 
-export { tailyUI, safeList, OpenSourcePromo, KPICards, FeatureCards, Projects, Skills, Jobs, Footer }
+export { tailyUI, safeList, OpenSourcePromo, KPICards, FeatureCards, Projects, Skills, Jobs, Footer, Theme }

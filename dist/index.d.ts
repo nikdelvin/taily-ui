@@ -111,4 +111,8 @@ declare module './index.js' {
             text: Array<{ type: 'default' | 'primary', value: string, link?: string, newPage?: true }>
         }>
     }): void
+    function Theme(config: {
+        color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
+        shadow?: true
+    }): void
 }
