@@ -15,7 +15,7 @@ export function Jobs(config) {
         <div class="flex h-full w-screen flex-col">
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6">
                         <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>
@@ -23,7 +23,7 @@ export function Jobs(config) {
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-8">
                         ${config.jobs.map((job, index) => (
                             `<div class="relative grid w-full grid-flow-row grid-cols-1 gap-16 pb-16 pt-8 lg:grid-cols-2">
-                                <div class="relative mb-auto mt-1.5 grid grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
+                                <div class="relative mb-auto mt-2 grid grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
                                     <div
                                         ${config.shadow != null ? 'data-shadow' : ''}
                                         data-color="${colorsConfig[config.color].cardPrimary}"
@@ -32,11 +32,11 @@ export function Jobs(config) {
                                         <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl font-semibold text-transparent">
                                             From
                                         </h2>
-                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
+                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-8xl font-bold text-transparent">
                                             ${job.from[0]}
                                         </h1>
-                                        <h2 class="pb-3 text-center text-4xl font-bold">${job.from[1]}</h2>
-                                        <h2 class="pb-3 text-center text-4xl font-bold">
+                                        <h2 class="pb-2 text-center text-4xl font-bold">${job.from[1]}</h2>
+                                        <h2 class="text-center text-4xl font-bold">
                                             <span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                 ${job.from[2]}
                                             </span>
@@ -56,11 +56,11 @@ export function Jobs(config) {
                                         <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl font-semibold text-transparent">
                                             To
                                         </h2>
-                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-3 pt-1 text-8xl font-bold text-transparent">
+                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-8xl font-bold text-transparent">
                                             ${job.to[0]}
                                         </h1>
-                                        <h2 class="pb-3 text-center text-4xl font-bold">${job.to[1]}</h2>
-                                        <h2 class="pb-3 text-center text-4xl font-bold">
+                                        <h2 class="pb-2 text-center text-4xl font-bold">${job.to[1]}</h2>
+                                        <h2 class="text-center text-4xl font-bold">
                                             <span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                 ${job.to[2]}
                                             </span>
@@ -80,7 +80,7 @@ export function Jobs(config) {
                                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-start text-4xl font-bold text-transparent">
                                         ${job.title}
                                     </h1>
-                                    <h3 class="pb-3 text-start text-3xl font-bold">
+                                    <h3 class="pb-4 text-start text-3xl font-bold">
                                         ${job.description.map((text) => {
                                             switch (text.type) {
                                                 case 'default':

@@ -18,7 +18,7 @@ export function FeatureCards(config) {
             <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 ${config.reverse ? 'text-start' : 'text-end'} text-8xl font-bold text-transparent">
                 ${config.featureTitle}
             </h1>
-            <h3 class="${config.reverse ? 'text-start' : 'text-end'} text-5xl font-bold pb-3">
+            <h3 class="${config.reverse ? 'text-start' : 'text-end'} text-5xl font-bold pb-4">
                 ${config.featureDescription.map((text) => {
                     switch (text.type) {
                         case 'default':
@@ -89,7 +89,7 @@ export function FeatureCards(config) {
         <div class="flex h-full w-screen flex-col">
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] h-full justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6">
                         <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>

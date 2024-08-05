@@ -15,7 +15,7 @@ export function OpenSourcePromo(config) {
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] h-full justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16">
-                        <div class="grid grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
+                        <div class="grid grid-flow-row grid-cols-1 gap-10 lg:grid-cols-2">
                             <div class="flex w-full flex-col">
                                 <div class="mb-16 flex flex-row items-center gap-4">
                                     <div class="h-[96px] w-[96px]">
@@ -66,7 +66,7 @@ export function OpenSourcePromo(config) {
                                     </a>
                                 </div>
                             </div>
-                            <div class="mx-8 mt-10 mb-6 grid grid-flow-row grid-cols-2 gap-4">
+                            <div class="mt-10 mb-6 grid grid-flow-row grid-cols-2 gap-4">
                                 <div class="flex h-full w-full flex-row rotate-[-10deg] scale-100">
                                     <div class="flex h-full w-full !min-w-[285px] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image}">
                                         ${config.images != null && config.images[0] != null ? `<img
@@ -76,7 +76,7 @@ export function OpenSourcePromo(config) {
                                             height="360"
                                         />` : shape(shapeIndexes[0].type, shapeIndexes[0].index)}
                                     </div>
-                                    <div class="pl-3">
+                                    <div class="pl-4">
                                         <div
                                             ${config.shadow != null ? 'data-shadow' : ''}
                                             class="card p-2 !min-w-min !min-h-min"

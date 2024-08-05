@@ -15,7 +15,7 @@ export function Footer(config) {
         <div class="flex h-full w-screen flex-col">
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
-                    <div class="relative flex h-auto w-full flex-col items-center justify-start p-12">
+                    <div class="relative flex h-auto w-full flex-col items-center justify-start p-12 pt-8">
                         <div class="absolute right-[-50px] top-[40px] h-[225px] w-[450px]">
                             ${shape(shapeIndexes()[0].type, shapeIndexes()[0].index, 'md', '60')}
                         </div>

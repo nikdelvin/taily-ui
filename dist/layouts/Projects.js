@@ -14,7 +14,7 @@ export function Projects(config) {
         <div class="flex h-full w-screen flex-col">
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pt-6">
                         <h1 class="mb-[-34px] bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>
@@ -33,7 +33,7 @@ export function Projects(config) {
                                             name="project"
                                             ${index === 0 ? 'checked' : ''}
                                         />
-                                        <div class="absolute bottom-0 left-0 w-full z-[4] justify-center p-[5px] hidden peer-checked/project-${index}:!flex">
+                                        <div class="absolute bottom-0 left-0 w-full z-[4] justify-center p-4 hidden peer-checked/project-${index}:!flex">
                                             <div
                                                 class="card !flex-row !min-h-min !min-w-min !w-min p-2 ${colorsConfig[config.color].cardBG}"
                                                 data-color="default"
@@ -52,7 +52,7 @@ export function Projects(config) {
                                                 src="${project.image}"
                                             />
                                             <div class="absolute right-0 top-0 flex h-full flex-col items-center justify-center">
-                                                <div class="relative m-5 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].cardBGPrimary : !(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
+                                                <div class="relative m-6 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].cardBGPrimary : !(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
                                                     <div class="relative flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-zinc-950/60">
                                                         <input
                                                             class="peer/hide hidden"
@@ -100,7 +100,7 @@ export function Projects(config) {
                                                                 <div class="absolute right-[-170px] top-[-80px] h-[225px] w-[450px]">
                                                                     ${shape(shapeIndexes()[projects[index]].type, shapeIndexes()[projects[index]].index, 'xl', '60')}
                                                                 </div>
-                                                                <div class="absolute bottom-[calc(50%-210.5px-95px)] left-[calc(50%-360px-95px)] h-[421px] w-[720px]">
+                                                                <div class="absolute bottom-[calc(50%-306px)] left-[calc(50%-455px)] h-[421px] w-[720px]">
                                                                     ${shape(shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].type, shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].index, 'md', '60')}
                                                                 </div>
                                                                 <h1 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textPrimary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
