@@ -31,12 +31,13 @@ export function Projects(config) {
                                             id="project-${index}"
                                             type="radio"
                                             name="project"
-                                            ${index === 0 ? 'checked' : ''}
+                                            ${(project.color != null ? project.color === config.color : index === 0) ? 'checked' : ''}
                                         />
                                         <div class="absolute bottom-0 left-0 w-full z-[4] justify-center p-4 hidden peer-checked/project-${index}:!flex">
                                             <div
                                                 class="card !flex-row !min-h-min !min-w-min !w-min p-2 ${colorsConfig[config.color].cardBG}"
-                                                data-color="default"
+                                                data-color="${colorsConfig[config.color].cardPrimary}"
+                                                ${config.shadow != null ? 'data-shadow' : ''}
                                             >
                                                 ${config.projects.map((projectLabel, indexLabel) => (
                                                     `<label for="project-${indexLabel}"
