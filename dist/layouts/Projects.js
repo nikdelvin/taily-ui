@@ -33,6 +33,13 @@ export function Projects(config) {
                                             name="project"
                                             ${(project.color != null ? project.color === config.color : index === 0) ? 'checked' : ''}
                                         />
+                                        <div class="absolute bottom-[63px] left-0 w-full z-[4] justify-center hidden peer-checked/project-${index}:!flex">
+                                            <div class="rounded-3xl pb-[5px] bg-zinc-950/75 w-[169px] mx-auto text-center">
+                                                <span class="inline bg-gradient-to-r ${colorsConfig[project.color].title} brightness-125 text-xs leading-none bg-clip-text text-transparent">
+                                                    Pick project via dot below
+                                                </span>
+                                            </div>
+                                        </div>
                                         <div class="absolute bottom-0 left-0 w-full z-[4] justify-center p-4 hidden peer-checked/project-${index}:!flex">
                                             <div
                                                 class="card !flex-row !min-h-min !min-w-min !w-min p-2 ${colorsConfig[config.color].cardBG}"
@@ -41,7 +48,7 @@ export function Projects(config) {
                                             >
                                                 ${config.projects.map((projectLabel, indexLabel) => (
                                                     `<label for="project-${indexLabel}"
-                                                        class="${indexLabel+1 < config.projects.length ? 'mr-2' : ''} h-[15px] w-[15px] rounded-full ${index === indexLabel ? 'border border-solid border-zinc-50' : ''} bg-gradient-to-r ${projectLabel.color != null ? colorsConfig[projectLabel.color].textPrimary : !(indexLabel % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} cursor-pointer select-none appearance-none"
+                                                        class="${indexLabel+1 < config.projects.length ? 'mr-2' : ''} h-[15px] w-[15px] rounded-full ${index === indexLabel ? 'border border-solid border-zinc-50' : ''} bg-gradient-to-r ${projectLabel.color != null ? colorsConfig[projectLabel.color].title : !(indexLabel % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} cursor-pointer select-none appearance-none"
                                                     ></label>`
                                                 )).join('')}
                                             </div>
@@ -53,7 +60,7 @@ export function Projects(config) {
                                                 src="${project.image}"
                                             />
                                             <div class="absolute right-0 top-0 flex h-full flex-col items-center justify-center">
-                                                <div class="relative m-6 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].cardBGPrimary : !(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
+                                                <div class="relative m-6 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].cardBGSecondary : !(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
                                                     <div class="relative flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-zinc-950/60">
                                                         <input
                                                             class="peer/hide hidden"
@@ -104,7 +111,7 @@ export function Projects(config) {
                                                                 <div class="absolute bottom-[calc(50%-306px)] left-[calc(50%-455px)] h-[421px] w-[720px]">
                                                                     ${shape(shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].type, shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].index, 'md', '60')}
                                                                 </div>
-                                                                <h1 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textPrimary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
+                                                                <h1 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
                                                                     ${project.title}
                                                                 </h1>
                                                                 <h2 class="pb-8 text-center text-5xl font-bold">
@@ -113,7 +120,7 @@ export function Projects(config) {
                                                                             case 'default':
                                                                                 return `<span>${text.value}${' '}</span>`
                                                                             case 'primary':
-                                                                                return `<span class="inline bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textPrimary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${text.value}${' '}</span>`
+                                                                                return `<span class="inline bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${text.value}${' '}</span>`
                                                                         }
                                                                     }).join('')}
                                                                 </h2>
@@ -121,18 +128,18 @@ export function Projects(config) {
                                                                     return `
                                                                         <div class="mt-4 flex w-full items-start gap-4">
                                                                             <div class="flex h-full min-w-[48px] items-start justify-start">
-                                                                                <h3 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textPrimary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
+                                                                                <h3 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
                                                                                     ${optionIndex + 1}.
                                                                                 </h3>
                                                                             </div>
-                                                                            ${optionIndex !== 1 ? `<p class="text-start text-[22px]/[30px] font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textPrimary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-[22px]/[30px] font-light text-transparent">${option}</p>`}
+                                                                            ${optionIndex !== 1 ? `<p class="text-start text-[22px]/[30px] font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-[22px]/[30px] font-light text-transparent">${option}</p>`}
                                                                         </div>
                                                                     `
                                                                 }).join('')}
                                                                 <div class="flex h-auto w-full flex-col items-center justify-start p-0 pt-8">
                                                                     <a
                                                                         ${config.shadow != null ? 'data-shadow' : ''}
-                                                                        data-color="${project.color != null ? colorsConfig[project.color].button : (index % 2 > 0) ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
+                                                                        data-color="${project.color != null ? colorsConfig[project.color].cardSecondary : (index % 2 > 0) ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
                                                                         data-type="bordered"
                                                                         data-size="medium"
                                                                         class="button !w-[150px]"

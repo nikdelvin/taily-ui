@@ -287,6 +287,7 @@ const safeList = [
   "pb-16",
   "pb-4",
   "pb-8",
+  "pb-[5px]",
   "peer-checked/hide:!hidden",
   "peer-checked/hide:!w-[60px]",
   "peer-checked/hide:min-w-[60px]",
@@ -418,7 +419,20 @@ const safeList = [
   "w-screen",
   "z-[1]",
   "z-[2]",
-  "z-[4]"
+  "z-[4]",
+  "bottom-[63px]",
+  "w-[169px]",
+  "rounded-b-none",
+  "bg-zinc-950/75",
+  "mx-auto",
+  "text-xs",
+  "brightness-125",
+  "leading-none",
+  "rotate-90",
+  "h-[169px]",
+  "my-auto",
+  "top-[41.5%]", 
+  "left-[-41.5%]"
 ]
 
 const tailyUI = plugin(
