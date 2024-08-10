@@ -33,11 +33,8 @@ export function Skills(config) {
                                             data-hint-group="skill"
                                             data-hint-text="${text.title}"
                                         >
-                                            <div
-                                                height="32px"
-                                                width="32px"
-                                                class="mx-auto my-auto">
-                                                ${icon(config.color, (index % 15 < 7 ? 'primary' : (index % 15 === 7 ? 'middle' : 'secondary')), text.icon, 32, 32)}
+                                            <div class="h-[32px] w-[32px] min-h-[32px] min-w-[32px] mx-auto my-auto">
+                                                ${icon(config.color, (index % 15 < 7 ? 'primary' : (index % 15 === 7 ? 'middle' : 'secondary')), text.icon)}
                                             </div>
                                         </div>`
                                         )).join('')
