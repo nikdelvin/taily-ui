@@ -13,19 +13,19 @@ export function OpenSourcePromo(config) {
     return `
         <div class="flex h-full w-screen flex-col">
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
-                <div class="flex flex-col max-w-[1440px] h-full justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16">
-                        <div class="grid grid-flow-row grid-cols-1 gap-10 lg:grid-cols-2">
-                            <div class="flex w-full flex-col">
-                                <div class="mb-16 flex flex-row items-center gap-4">
-                                    <div class="h-[96px] w-[96px] min-h-[96px] min-w-[96px]">
+                <div class="flex flex-col max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] h-full justify-center">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12">
+                        <div class="grid grid-flow-row grid-cols-1 gap-10 max-sm:gap-8 lg:grid-cols-2 min-[1024px]:max-[1439px]:mb-[-40px]">
+                            <div class="flex w-full flex-col mb-6 min-[1024px]:max-[1439px]:mb-0">
+                                <div class="mb-16 max-md:mb-12 max-sm:mb-8 min-[1024px]:max-[1439px]:mb-12 flex flex-row items-center gap-4">
+                                    <div class="h-[96px] w-[96px] min-h-[96px] min-w-[96px] max-sm:h-[48px] max-sm:w-[48px] max-sm:min-h-[48px] max-sm:min-w-[48px] max-md:h-[64px] max-md:w-[64px] max-md:min-h-[64px] max-md:min-w-[64px] min-[1024px]:max-[1439px]:h-[64px] min-[1024px]:max-[1439px]:w-[64px] min-[1024px]:max-[1439px]:min-h-[64px] min-[1024px]:max-[1439px]:min-w-[64px]">
                                         ${icon(config.color, 'main', config.logo)}
                                     </div>
-                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent">
+                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-5xl min-[1024px]:max-[1439px]:text-[4rem] max-md:text-[4rem] font-bold leading-tight text-transparent">
                                         ${config.title}
                                     </h1>
                                 </div>
-                                <h1 class="mb-10 text-5xl font-bold leading-tight">
+                                <h1 class="mb-10 max-md:mb-8 max-sm:mb-6 min-[1024px]:max-[1439px]:mb-8 text-5xl max-md:text-[2rem] max-sm:text-2xl min-[1024px]:max-[1439px]:text-[2rem] font-bold leading-tight">
                                     ${config.text.map((text) => {
                                         switch (text.type) {
                                             case 'default':
@@ -37,10 +37,10 @@ export function OpenSourcePromo(config) {
                                         }
                                     }).join('')}
                                 </h1>
-                                <h3 class="mb-10 text-2xl bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-transparent">
+                                <h3 class="mb-10 max-md:mb-8 max-sm:mb-6 min-[1024px]:max-[1439px]:mb-8 text-2xl max-md:text-lg max-sm:text-base min-[1024px]:max-[1439px]:text-lg bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-transparent">
                                     ${config.description}
                                 </h3>
-                                <div class="grid w-[400px] grid-flow-row grid-cols-2 gap-4">
+                                <div class="grid w-[400px] max-sm:w-full grid-flow-row grid-cols-2 max-sm:grid-cols-1 gap-4">
                                     <a
                                         ${config.shadow != null ? 'data-shadow' : ''}
                                         data-color="${colorsConfig[config.color].button}"
@@ -68,9 +68,9 @@ export function OpenSourcePromo(config) {
                                     </a>
                                 </div>
                             </div>
-                            <div class="mt-10 mb-6 grid grid-flow-row grid-cols-2 gap-4">
+                            <div class="mt-10 max-lg:mt-10 max-md:mt-6 max-sm:mt-0 max-sm:mb-6 grid grid-flow-row grid-cols-2 max-sm:grid-cols-1 gap-4">
                                 <div class="flex h-full w-full flex-row rotate-[-10deg] scale-100">
-                                    <div class="flex h-full w-full !min-w-[285px] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image}">
+                                    <div class="flex h-[169px] my-auto max-sm:ml-[9px] !min-h-min w-full !min-w-[275px] max-sm:!min-w-[calc(100%-111px)] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image}">
                                         ${config.images != null && config.images[0] != null ? `<img
                                             alt="Main 1"
                                             src="${config.images[0]}"
@@ -103,7 +103,7 @@ export function OpenSourcePromo(config) {
                                 </div>
                                 <div class="flex h-full flex-col items-center justify-center"></div>
                                 <div class="flex h-full flex-col items-center justify-center"></div>
-                                <div class="flex h-full w-full rotate-[10deg] scale-90 flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-sm">
+                                <div class="relative h-full max-h-[190px] w-full top-[28px] min-[1024px]:max-[1439px]:top-[8px] max-sm:top-[16px] max-sm:!w-[75%] rotate-[10deg] scale-90 flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-sm">
                                     ${config.images != null && config.images[1] != null ? `<img
                                         alt="Main 2"
                                         src="${config.images[1]}"
@@ -111,7 +111,7 @@ export function OpenSourcePromo(config) {
                                         height="360"
                                     />` : shape(shapeIndexes[1].type, shapeIndexes[1].index)}
                                 </div>
-                                <div class="flex h-full w-full rotate-[20deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
+                                <div class="relative h-full max-h-[190px] w-full top-[-28px] min-[1024px]:max-[1439px]:top-[-48px] max-sm:top-[calc(((100vw_-_345px)/17*-1)_+_28px)] max-sm:!w-[60%] rotate-[20deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
                                     ${config.images != null && config.images[2] != null ? `<img
                                         alt="Main 3"
                                         src="${config.images[2]}"
