@@ -1,12 +1,12 @@
 export function icon(color, type, path) {
     const colorsConfig = {
-        default: {primary: ['#94a3b8','#a1a1aa'], middle: ['#a1a1aa','#bfdbfe'], secondary: ['#bfdbfe','#ddd6fe'], main: ['#a1a1aa', '#ddd6fe']},
-        primary: {primary: ['#06b6d4', '#3b82f6'], middle: ['#3b82f6','#14b8a6'], secondary: ['#14b8a6', '#22c55e'], main: ['#3b82f6', '#22c55e']},
-        secondary: {primary: ['#a855f7', '#6366f1'], middle: ['#6366f1','#06b6d4'], secondary: ['#06b6d4', '#3b82f6'], main: ['#a855f7', '#3b82f6']},
-        success: {primary: ['#14b8a6', '#22c55e'], middle: ['#22c55e','#eab308'], secondary: ['#eab308', '#f97316'], main: ['#22c55e', '#f97316']},
-        warning: {primary: ['#eab308', '#f97316'], middle: ['#f97316','#ec4899'], secondary: ['#ec4899', '#ef4444'], main: ['#eab308', '#ef4444']},
-        error: {primary: ['#ec4899', '#ef4444'], middle: ['#ef4444','#a855f7'], secondary: ['#a855f7', '#6366f1'], main: ['#ef4444', '#8b5cf6']},
-        ghost: {primary: ['#bfdbfe', '#ddd6fe'], middle: ['#ddd6fe','#94a3b8'], secondary: ['#94a3b8','#a1a1aa'], main: ['#bfdbfe', '#a1a1aa']}
+        default: {primary: ['#a1a1aa','#94a3b8'], middle: ['#94a3b8','#bfdbfe'], secondary: ['#bfdbfe','#ddd6fe'], main: ['#94a3b8','#bfdbfe']},
+        primary: {primary: ['#06b6d4','#3b82f6'], middle: ['#3b82f6','#6366f1'], secondary: ['#6366f1','#a855f7'], main: ['#3b82f6','#a855f7']},
+        secondary: {primary: ['#6366f1','#a855f7'], middle: ['#a855f7','#ec4899'], secondary: ['#ec4899','#ef4444'], main: ['#a855f7','#ef4444']},
+        success: {primary: ['#22c55e','#14b8a6'], middle: ['#14b8a6','#06b6d4'], secondary: ['#06b6d4','#3b82f6'], main: ['#14b8a6','#3b82f6']},
+        warning: {primary: ['#f97316','#eab308'], middle: ['#eab308','#22c55e'], secondary: ['#22c55e','#14b8a6'], main: ['#eab308','#22c55e']},
+        error: {primary: ['#ec4899','#ef4444'], middle: ['#ef4444','#f97316'], secondary: ['#f97316','#eab308'], main: ['#ef4444','#eab308']},
+        ghost: {primary: ['#bfdbfe','#ddd6fe'], middle: ['#ddd6fe','#a1a1aa'], secondary: ['#a1a1aa','#94a3b8'], main: ['#bfdbfe','#94a3b8']}
     }
     return `
         <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="100%" height="100%">
