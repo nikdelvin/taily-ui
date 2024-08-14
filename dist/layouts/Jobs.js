@@ -26,6 +26,7 @@ export function Jobs(config) {
                                 <div class="relative mb-auto mt-2 grid grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
                                     <div
                                         ${config.shadow != null ? 'data-shadow' : ''}
+                                        ${(config.color !== 'ghost' && config.color !== 'success') ? 'data-reverse' : ''}
                                         data-color="${colorsConfig[config.color].cardPrimary}"
                                         class="card mb-auto aspect-square"
                                     >
@@ -50,6 +51,7 @@ export function Jobs(config) {
                                     </div>
                                     <div
                                         ${config.shadow != null ? 'data-shadow' : ''}
+                                        ${(config.color !== 'ghost' && config.color !== 'success') ? 'data-reverse' : ''}
                                         data-color="${colorsConfig[config.color].cardPrimary}"
                                         class="card mb-auto aspect-square"
                                     >
@@ -113,6 +115,7 @@ export function Jobs(config) {
                                     <div class="flex h-auto w-full flex-col items-start justify-start p-0 pt-8">
                                         <a
                                             ${config.shadow != null ? 'data-shadow' : ''}
+                                            ${(config.color !== 'ghost' && config.color !== 'primary') ? 'data-reverse' : ''}
                                             data-color="${colorsConfig[config.color].cardSecondary}"
                                             data-type="bordered"
                                             data-size="medium"

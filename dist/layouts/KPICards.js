@@ -29,6 +29,7 @@ export function KPICards(config) {
                                 return `
                                     <div
                                         ${config.shadow != null ? 'data-shadow' : ''}
+                                        ${(config.color !== 'ghost' && (!(index % 4 > 1) ? config.color !== 'success' : config.color !== 'primary')) ? 'data-reverse' : ''}
                                         data-color="${!(index % 4 > 1) ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                         class="card aspect-square min-[1024px]:max-[1439px]:!min-w-[200px] min-[1024px]:max-[1439px]:!min-h-[200px]"
                                     >
@@ -52,6 +53,7 @@ export function KPICards(config) {
                     <div class="flex h-auto w-full flex-col items-center justify-start pb-16 max-sm:pb-4 max-md:pb-6 pt-0">
                         <a
                             ${config.shadow != null ? 'data-shadow' : ''}
+                            ${(config.color !== 'ghost' && config.color !== 'primary') ? 'data-reverse' : ''}
                             data-color="${colorsConfig[config.color].github}"
                             data-type="solid"
                             data-size="large"

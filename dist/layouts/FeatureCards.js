@@ -8,10 +8,14 @@ export function FeatureCards(config) {
         { type: 'type2', index: getRandomInt(4) }, 
         { type: 'type3', index: getRandomInt(3) }
     ])
+    const isGreenFirst = config.reverse ? (config.color === 'primary') : (config.color === 'success')
+    const isGreenSecond = config.reverse ? (config.color === 'success') : (config.color === 'primary')
+    const isGreenButton = config.reverse ? (config.color === 'primary') : (config.color === 'success')
 
     const firstCard = `
         <div
             ${config.shadow != null ? 'data-shadow' : ''}
+            ${(config.color !== 'ghost' && !isGreenFirst) ? 'data-reverse' : ''}
             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].cardPrimary}"
             class="card ${config.reverse ? '!items-start' : '!items-end'} !justify-start !px-10"
         >
@@ -52,6 +56,7 @@ export function FeatureCards(config) {
     const secondCard = `
         <div
             ${config.shadow != null ? 'data-shadow' : ''}
+            ${(config.color !== 'ghost' && !isGreenSecond) ? 'data-reverse' : ''}
             data-color="${config.reverse ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
             class="card !items-start !justify-start !px-10 !py-6"
         >
@@ -102,6 +107,7 @@ export function FeatureCards(config) {
                     <div class="flex h-auto w-full flex-col ${config.reverse ? 'items-end' : 'items-start'} justify-start pb-16 pt-0 px-16">
                         <a
                             ${config.shadow != null ? 'data-shadow' : ''}
+                            ${(config.color !== 'ghost' && !isGreenButton) ? 'data-reverse' : ''}
                             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
                             data-type="bordered"
                             data-size="medium"

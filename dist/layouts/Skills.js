@@ -29,6 +29,7 @@ export function Skills(config) {
                                         `<div
                                             class="group card z-[2] !min-h-[65px] !min-w-[65px] !flex-row !p-2 ${index % 15 === 7 ? colorsConfig[config.color].cardBGMiddle : ''}"
                                             ${config.shadow != null ? 'data-shadow' : ''}
+                                            ${(config.color !== 'ghost' && (index % 15 < 8 ? config.color !== 'success' : config.color !== 'primary')) && (index % 15 !== 7) ? 'data-reverse' : ''}
                                             data-color="${index % 15 < 8 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                             data-hint-group="skill"
                                             data-hint-text="${text.title}"
@@ -52,6 +53,7 @@ export function Skills(config) {
                                     `<div
                                         class="card z-[2] !min-h-[156px] !min-w-[200px] !p-[2px] ${index % 5 === 2 ? colorsConfig[config.color].cardBGMiddle : ''}"
                                         ${config.shadow != null ? 'data-shadow' : ''}
+                                        ${(config.color !== 'ghost' && (index % 5 < 3 ? config.color !== 'success' : config.color !== 'primary')) && (index % 5 !== 2) ? 'data-reverse' : ''}
                                         data-color="${index % 5 < 3 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
                                     >
                                         <div class="absolute left-[2px] top-[2px] pointer-events-none z-[1] rounded-[22px] h-[152px] w-[calc(100%-4px)] bg-gradient-to-r ${index % 5 === 2 ? colorsConfig[config.color].cardBGMiddle : (index % 5 < 3 ? colorsConfig[config.color].musicCardBGPrimary : colorsConfig[config.color].musicCardBGSecondary)} opacity-25"></div>
@@ -76,6 +78,7 @@ export function Skills(config) {
                         <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
                             <a
                                 ${config.shadow != null ? 'data-shadow' : ''}
+                                ${(config.color !== 'ghost' && config.color !== 'success') ? 'data-reverse' : ''}
                                 data-color="${colorsConfig[config.color].button}"
                                 data-type="bordered"
                                 data-size="large"

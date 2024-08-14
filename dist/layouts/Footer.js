@@ -33,7 +33,7 @@ export function Footer(config) {
                         </div>
                         <div class="relative grid w-full grid-flow-row grid-cols-2 gap-4 p-4 lg:grid-cols-4">
                             <div class="aspect-square h-auto w-full rounded-3xl rounded-bl-none rounded-tr-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[0]} p-4">
-                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[0].title}
                                 </h1>
                                 ${config.blocks[0].text.map((text) => {
@@ -59,7 +59,7 @@ export function Footer(config) {
                                 }).join('')}
                             </div>
                             <div class="aspect-square h-auto w-full rounded-3xl rounded-br-none rounded-tl-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[1]} p-4">
-                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[1].title}
                                 </h1>
                                 ${config.blocks[1].text.map((text) => {
@@ -85,7 +85,7 @@ export function Footer(config) {
                                 }).join('')}
                             </div>
                             <div class="aspect-square h-auto w-full rounded-3xl rounded-bl-none rounded-tr-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[2]} p-4">
-                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[2].title}
                                 </h1>
                                 ${config.blocks[2].text.map((text) => {
@@ -111,7 +111,7 @@ export function Footer(config) {
                                 }).join('')}
                             </div>
                             <div class="aspect-square h-auto w-full rounded-3xl rounded-br-none rounded-tl-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[3]} p-4">
-                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[3].title}
                                 </h1>
                                 ${config.blocks[3].text.map((text) => {
@@ -139,7 +139,7 @@ export function Footer(config) {
                         </div>
                         <div class="relative grid w-full grid-flow-row grid-cols-1 gap-4 p-4 pt-0 lg:grid-cols-2">
                             <div class="h-full w-full rounded-3xl rounded-t-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[4]} p-4">
-                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[4].title}
                                 </h1>
                                 ${config.blocks[4].text.map((text) => {
@@ -166,7 +166,7 @@ export function Footer(config) {
                             </div>
                             <div class="relative grid w-full grid-flow-row grid-cols-1 gap-4 lg:grid-cols-2">
                                 <div class="aspect-square h-auto w-full rounded-3xl rounded-br-none rounded-tl-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[5]} p-4">
-                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent w-min min-w-max">
                                         ${config.blocks[5].title}
                                     </h1>
                                     ${config.blocks[5].text.map((text) => {
@@ -192,7 +192,7 @@ export function Footer(config) {
                                     }).join('')}
                                 </div>
                                 <div class="aspect-square h-auto w-full rounded-3xl rounded-bl-none rounded-tr-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[6]} p-4">
-                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent">
+                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl font-bold text-transparent w-min min-w-max">
                                         ${config.blocks[6].title}
                                     </h1>
                                     ${config.blocks[6].text.map((text) => {

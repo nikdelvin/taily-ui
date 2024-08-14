@@ -268,6 +268,7 @@ const safeList = [
   "w-auto",
   "w-full",
   "w-screen",
+  "w-min",
   "z-[1]",
   "z-[2]",
   "z-[4]",
