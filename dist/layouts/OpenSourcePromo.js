@@ -71,7 +71,7 @@ export function OpenSourcePromo(config) {
                                 </div>
                             </div>
                             <div class="mt-10 max-lg:mt-10 max-md:mt-6 max-sm:mt-0 max-sm:mb-6 grid grid-flow-row grid-cols-2 max-sm:grid-cols-1 gap-4">
-                                <div class="flex h-full w-full flex-row rotate-[-10deg] scale-100">
+                                <div class="flex h-full w-full flex-row rotate-[-10deg] scale-100 ml-[10px] max-sm:ml-0">
                                     <div class="flex h-[169px] my-auto max-sm:ml-[9px] !min-h-min w-full !min-w-[275px] max-sm:!min-w-[calc(100%-111px)] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image}">
                                         ${config.images != null && config.images[0] != null ? `<img
                                             alt="Main 1"
