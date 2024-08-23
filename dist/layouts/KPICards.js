@@ -50,7 +50,7 @@ export function KPICards(config) {
                             }).join('')}
                         </div>
                     </div>
-                    <div class="flex h-auto w-full flex-col items-center justify-start pb-16 max-sm:pb-4 max-md:pb-6 pt-0">
+                    <div class="flex h-auto w-full flex-col items-center justify-start pb-16 max-sm:pb-10 max-md:pb-12 pt-0">
                         <a
                             ${config.shadow != null ? 'data-shadow' : ''}
                             ${(config.color !== 'ghost' && config.color !== 'primary') ? 'data-reverse' : ''}

@@ -348,7 +348,32 @@ const safeList = [
   "text-nowrap",
   "max-md:text-5xl",
   "max-lg:text-[3.5rem]",
-  "min-[1024px]:max-[1439px]:text-[3.5rem]"
+  "min-[1024px]:max-[1439px]:text-[3.5rem]",
+  "max-sm:pb-10", 
+  "max-md:pb-12",
+  "max-md:!px-8", 
+  "max-md:!py-6", 
+  "max-sm:!px-6", 
+  "max-sm:!py-4",
+  "min-[1024px]:max-[1439px]:!px-6", 
+  "min-[1024px]:max-[1439px]:!py-4",
+  "min-[1024px]:max-[1439px]:min-w-[24px]", 
+  "max-md:min-w-[24px]", 
+  "max-sm:min-w-[18px]",
+  "max-md:text-2xl", 
+  "mb-4",
+  "min-[1024px]:max-[1439px]:leading-[1.15]",
+  "max-md:leading-[1.15]",
+  "max-sm:text-[3.5rem]", 
+  "min-[1024px]:max-[1439px]:leading-[1.2]",
+  "max-md:leading-[1.35]", 
+  "max-md:pb-8", 
+  "min-[1024px]:max-[1439px]:pb-8",
+  "max-sm:!min-h-[200px]", 
+  "max-md:!min-h-[200px]",
+  "max-lg:order-last",
+  "min-[1024px]:max-[1439px]:mt-2",
+  "min-[1024px]:max-[1439px]:mb-2"
 ].concat(Object.values(colorsConfig).flatMap((color) => Object.values(color).flatMap((style) => Array.isArray(style) ? style.flatMap((subStyle) => subStyle.split(' ')) : style.split(' '))))
 
 const tailyUI = plugin(
