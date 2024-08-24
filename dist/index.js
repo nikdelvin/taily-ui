@@ -373,7 +373,24 @@ const safeList = [
   "max-md:!min-h-[200px]",
   "max-lg:order-last",
   "min-[1024px]:max-[1439px]:mt-2",
-  "min-[1024px]:max-[1439px]:mb-2"
+  "min-[1024px]:max-[1439px]:mb-2",
+  "max-sm:mb-10", 
+  "max-md:mb-12", 
+  "min-[1024px]:max-[1439px]:mb-12",
+  "max-lg:hidden",
+  "min-[1024px]:max-[1439px]:pb-4",
+  "min-[1024px]:max-[1439px]:pt-8",
+  "max-[1439px]:p-2",
+  "max-[1439px]:bottom-[47px]",
+  "min-[1024px]:max-[1439px]:hidden",
+  "min-[1024px]:max-[1439px]:pt-0", 
+  "min-[1024px]:max-[1439px]:items-end",
+  "min-[1024px]:max-[1439px]:pr-12",
+  "max-sm:pt-10", 
+  "max-md:pt-12", 
+  "min-[1024px]:max-[1439px]:pt-12",
+  "max-sm:pb-10",
+  "max-md:pb-12"
 ].concat(Object.values(colorsConfig).flatMap((color) => Object.values(color).flatMap((style) => Array.isArray(style) ? style.flatMap((subStyle) => subStyle.split(' ')) : style.split(' '))))
 
 const tailyUI = plugin(

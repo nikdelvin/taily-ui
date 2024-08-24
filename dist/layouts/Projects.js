@@ -13,15 +13,15 @@ export function Projects(config) {
     return `
         <div class="flex h-full w-screen flex-col">
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
-                <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pt-6">
-                        <h1 class="mb-[-34px] bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
+                <div class="flex h-full w-full max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] flex-col justify-center">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pt-6 max-sm:px-6 max-sm:pt-4 max-sm:pb-10 max-md:px-8 max-md:pt-6 max-md:pb-12">
+                        <h1 class="bg-gradient-to-r mb-16 max-sm:mb-10 max-md:mb-12 min-[1024px]:max-[1439px]:mb-12 ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>
                         <div
                             ${config.shadow != null ? 'data-shadow' : ''}
                             data-color="${colorsConfig[config.color].cardPrimary}"
-                            class="card !items-start !justify-start !p-0 ${colorsConfig[config.color].cardBG}"
+                            class="card !items-start !justify-start !p-0 max-sm:!min-h-[200px] ${colorsConfig[config.color].cardBG}"
                         >
                             <div class="flex aspect-video w-full p-[2px]">
                                 <div class="flex w-full overflow-hidden rounded-[22px]">
@@ -33,14 +33,14 @@ export function Projects(config) {
                                             name="project"
                                             ${(project.color != null ? project.color === config.color : index === 0) ? 'checked' : ''}
                                         />
-                                        <div class="absolute bottom-[63px] left-0 w-full z-[4] justify-center hidden peer-checked/project-${index}:!flex">
+                                        <div class="absolute bottom-[63px] max-[1439px]:bottom-[47px] left-0 w-full z-[4] justify-center hidden peer-checked/project-${index}:!flex">
                                             <div class="rounded-3xl pb-[5px] bg-zinc-950/75 w-[169px] mx-auto text-center">
                                                 <span class="inline bg-gradient-to-r ${colorsConfig[project.color].title} brightness-125 text-xs leading-none bg-clip-text text-transparent">
                                                     Pick project via dot below
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="absolute bottom-0 left-0 w-full z-[4] justify-center p-4 hidden peer-checked/project-${index}:!flex">
+                                        <div class="absolute bottom-0 left-0 w-full z-[4] justify-center p-4 max-[1439px]:p-2 hidden peer-checked/project-${index}:!flex">
                                             <div
                                                 class="card !flex-row !min-h-min !min-w-min !w-min p-2 ${colorsConfig[config.color].cardBG}"
                                                 data-color="${colorsConfig[config.color].cardPrimary}"
@@ -60,7 +60,7 @@ export function Projects(config) {
                                                 height="auto"
                                                 src="${project.image}"
                                             />
-                                            <div class="absolute right-0 top-0 flex h-full flex-col items-center justify-center">
+                                            <div class="absolute right-0 top-0 flex max-lg:hidden h-full flex-col items-center justify-center">
                                                 <div class="relative m-6 ml-auto mr-0 flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].cardBGSecondary : !(index % 2 > 0) ? colorsConfig[config.color].cardBGPrimary : colorsConfig[config.color].cardBGSecondary} text-center backdrop-blur-xl">
                                                     <div class="relative flex h-full w-full flex-col items-center justify-start overflow-hidden rounded-l-3xl bg-zinc-950/60">
                                                         <input
@@ -105,17 +105,17 @@ export function Projects(config) {
                                                             </svg>
                                                         </label>
                                                         <div class="overflow-hidden transition-all duration-500 ease-in-out peer-checked/hide:!w-[60px] peer-checked/open:!w-[654px] peer-checked/hide:min-w-[60px] peer-checked/open:min-w-[654px]">
-                                                            <div class="relative flex w-full min-w-[654px] flex-col items-center justify-start p-16 pt-12 transition-all duration-500 ease-in-out peer-checked/hide:opacity-0 peer-checked/open:opacity-100">
+                                                            <div class="relative flex w-full min-w-[654px] flex-col items-center justify-start p-16 pt-12 min-[1024px]:max-[1439px]:pr-12 min-[1024px]:max-[1439px]:pt-8 transition-all duration-500 ease-in-out peer-checked/hide:opacity-0 peer-checked/open:opacity-100">
                                                                 <div class="absolute right-[-170px] top-[-80px] h-[225px] w-[450px]">
                                                                     ${shape(shapeIndexes()[projects[index]].type, shapeIndexes()[projects[index]].index, 'xl', '60')}
                                                                 </div>
                                                                 <div class="absolute bottom-[calc(50%-306px)] left-[calc(50%-455px)] h-[421px] w-[720px]">
                                                                     ${shape(shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].type, shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].index, 'md', '60')}
                                                                 </div>
-                                                                <h1 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-8xl font-bold text-transparent">
+                                                                <h1 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 min-[1024px]:max-[1439px]:pb-8 text-8xl min-[1024px]:max-[1439px]:text-[2rem] min-[1024px]:max-[1439px]:leading-[1.2] font-bold text-transparent">
                                                                     ${project.title}
                                                                 </h1>
-                                                                <h2 class="pb-8 text-center text-5xl font-bold">
+                                                                <h2 class="pb-8 text-center text-5xl min-[1024px]:max-[1439px]:text-2xl min-[1024px]:max-[1439px]:leading-[1.2] min-[1024px]:max-[1439px]:pb-4 font-bold">
                                                                     ${project.description.map((text) => {
                                                                         switch (text.type) {
                                                                             case 'default':
@@ -128,16 +128,16 @@ export function Projects(config) {
                                                                 ${project.options.map((option, optionIndex) => {
                                                                     return `
                                                                         <div class="mt-4 flex w-full items-start gap-4">
-                                                                            <div class="flex h-full min-w-[48px] items-start justify-start">
-                                                                                <h3 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl font-bold text-transparent">
+                                                                            <div class="flex h-full min-w-[48px] min-[1024px]:max-[1439px]:min-w-[24px] items-start justify-start">
+                                                                                <h3 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-end text-5xl min-[1024px]:max-[1439px]:leading-[1.15] min-[1024px]:max-[1439px]:text-[2rem] font-bold text-transparent">
                                                                                     ${optionIndex + 1}.
                                                                                 </h3>
                                                                             </div>
-                                                                            ${optionIndex !== 1 ? `<p class="text-start text-[22px]/[30px] font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-[22px]/[30px] font-light text-transparent">${option}</p>`}
+                                                                            ${optionIndex !== 1 ? `<p class="text-start text-[22px]/[30px] min-[1024px]:max-[1439px]:text-lg font-light text-zinc-50">${option}</p>` : `<p class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-start text-[22px]/[30px] min-[1024px]:max-[1439px]:text-lg font-light text-transparent">${option}</p>`}
                                                                         </div>
                                                                     `
                                                                 }).join('')}
-                                                                <div class="flex h-auto w-full flex-col items-center justify-start p-0 pt-8">
+                                                                <div class="flex min-[1024px]:max-[1439px]:pt-0 min-[1024px]:max-[1439px]:items-end h-auto w-full flex-col items-center justify-start p-0 pt-8">
                                                                     <a
                                                                         ${config.shadow != null ? 'data-shadow' : ''}
                                                                         ${(config.color !== 'ghost' && project.color != null ? project.color !== 'primary' : ((index % 2 > 0) ? config.color !== 'primary' : config.color !== 'success')) ? 'data-reverse' : ''}
@@ -162,7 +162,7 @@ export function Projects(config) {
                                 </div>
                             </div>
                         </div>
-                        <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16">
+                        <div class="flex h-auto w-full flex-col items-center justify-start pb-0 pt-16 max-sm:pt-10 max-md:pt-12 min-[1024px]:max-[1439px]:pt-12">
                             <a
                                 ${config.shadow != null ? 'data-shadow' : ''}
                                 ${(config.color !== 'ghost' && config.color !== 'success') ? 'data-reverse' : ''}
