@@ -24,11 +24,11 @@ export function Skills(config) {
                         ${config.rows.map((row, rowIndex) => (
                             `<div class="flex h-auto w-full flex-col items-${rowIndex % 2 === 0 ? "start" : "end"} justify-start mt-[-8px]">
                                 <h1 class="bg-gradient-to-r ${rowIndex % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 max-md:pb-8 max-sm:pb-6 min-[1024px]:max-[1439px]:pb-8 text-start text-4xl min-[1024px]:max-[1439px]:text-[2rem] max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent">${row.title}</h1>
-                                <div class="relative w-full grid grid-flow-row gap-6 grid-cols-[repeat(15,_minmax(0,_1fr))] min-[1024px]:max-[1439px]:grid-cols-10 max-lg:grid-cols-6 max-md:grid-cols-6 max-sm:grid-cols-5 pb-16 max-sm:pb-10 max-md:pb-12 min-[1024px]:max-[1439px]:pb-12">
+                                <div class="relative w-full grid grid-flow-row gap-6 max-sm:gap-4 grid-cols-[repeat(15,_minmax(0,_1fr))] min-[1024px]:max-[1439px]:grid-cols-10 max-lg:grid-cols-6 max-md:grid-cols-6 max-sm:grid-cols-5 pb-16 max-sm:pb-10 max-md:pb-12 min-[1024px]:max-[1439px]:pb-12">
                                     ${row.skills.map((text, index) => (
                                         `<div
                                             id="skills_${rowIndex}"
-                                            class="group card z-[2] !min-h-[65px] !min-w-[65px] !flex-row !p-2 ${index % 15 === 7 ? colorsConfig[config.color].cardBGMiddle : ''}"
+                                            class="group card z-[2] !min-h-[65px] !min-w-[65px] max-sm:!min-w-[50px] !flex-row !p-2 ${index % 15 === 7 ? colorsConfig[config.color].cardBGMiddle : ''}"
                                             ${config.shadow != null ? 'data-shadow' : ''}
                                             ${(config.color !== 'ghost' && (index % 15 < 8 ? config.color !== 'success' : config.color !== 'primary')) && (index % 15 !== 7) ? 'data-reverse' : ''}
                                             data-color="${index % 15 < 8 ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
@@ -101,7 +101,12 @@ export function Skills(config) {
                 document.querySelectorAll("#skills_"+String(index)).forEach((skill) => {
                     skill.setAttribute("data-color", index % 2 === 0 ? "${colorsConfig[config.color].cardPrimary}" : "${colorsConfig[config.color].cardSecondary}")
                     skill.querySelector("path").setAttribute("fill", "url(#${config.color}-"+(index % 2 === 0 ? 'primary' : 'secondary')+"-gradient)")
-                    skill.className = "group card z-[2] !min-h-[65px] !min-w-[65px] !flex-row !p-2"
+                    skill.className = "group card z-[2] !min-h-[65px] !min-w-[65px] max-sm:!min-w-[50px] !flex-row !p-2"
+                    if ("${config.color}" !== "ghost" && (index % 2 === 0 ? "${colorsConfig[config.color].cardPrimary}" : "${colorsConfig[config.color].cardSecondary}") !== "success") {
+                        skill.toggleAttribute("data-reverse", true)
+                    } else {
+                        skill.removeAttribute("data-reverse")
+                    }
                 })
             })
         }

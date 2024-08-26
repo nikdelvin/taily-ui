@@ -21,7 +21,7 @@ export function Projects(config) {
                         <div
                             ${config.shadow != null ? 'data-shadow' : ''}
                             data-color="${colorsConfig[config.color].cardPrimary}"
-                            class="card !items-start !justify-start !p-0 max-sm:!min-h-[200px] ${colorsConfig[config.color].cardBG}"
+                            class="card !items-start !justify-start !p-0 max-sm:!min-h-[150px] ${colorsConfig[config.color].cardBG}"
                         >
                             <div class="flex aspect-video w-full p-[2px]">
                                 <div class="flex w-full overflow-hidden rounded-[22px]">

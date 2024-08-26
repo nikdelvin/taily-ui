@@ -427,7 +427,15 @@ const safeList = [
   "max-md:pb-1", 
   "min-[1024px]:max-[1439px]:pb-0",
   "max-sm:gap-6",
-  "!pb-0"
+  "!pb-0",
+  "max-sm:gap-4",
+  "max-sm:!min-w-[50px]",
+  "max-sm:text-[3.25rem]",
+  "max-sm:!min-h-[150px]",
+  "max-sm:text-sm",
+  "max-sm:left-[12px]", 
+  "max-sm:top-[8px]",
+  "max-sm:pb-2"
 ].concat(Object.values(colorsConfig).flatMap((color) => Object.values(color).flatMap((style) => Array.isArray(style) ? style.flatMap((subStyle) => subStyle.split(' ')) : style.split(' '))))
 
 const tailyUI = plugin(

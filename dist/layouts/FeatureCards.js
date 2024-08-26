@@ -19,7 +19,7 @@ export function FeatureCards(config) {
             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].cardPrimary}"
             class="card ${config.reverse ? '!items-start' : '!items-end'} !justify-start !px-10 max-md:!px-8 max-md:!py-6 max-sm:!px-6 max-sm:!py-4 min-[1024px]:max-[1439px]:!px-6 min-[1024px]:max-[1439px]:!py-4 max-sm:!min-h-[200px] max-md:!min-h-[200px]"
         >
-            <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 max-sm:pb-4 max-md:pb-8 min-[1024px]:max-[1439px]:pb-8 ${config.reverse ? 'text-start' : 'text-end'} text-8xl max-sm:text-[3.5rem] min-[1024px]:max-[1439px]:text-[4rem] min-[1024px]:max-[1439px]:leading-[1.2] max-md:text-[4rem] max-md:leading-[1.35] font-bold text-transparent">
+            <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 max-sm:pb-4 max-md:pb-8 min-[1024px]:max-[1439px]:pb-8 ${config.reverse ? 'text-start' : 'text-end'} text-8xl text-nowrap max-sm:text-[3.25rem] min-[1024px]:max-[1439px]:text-[4rem] min-[1024px]:max-[1439px]:leading-[1.2] max-md:text-[4rem] max-md:leading-[1.35] font-bold text-transparent">
                 ${config.featureTitle}
             </h1>
             <h3 class="${config.reverse ? 'text-start' : 'text-end'} text-5xl min-[1024px]:max-[1439px]:text-[2rem] max-md:text-[2rem] max-sm:text-2xl font-bold pb-4">
