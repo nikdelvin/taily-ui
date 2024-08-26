@@ -14,30 +14,30 @@ export function Jobs(config) {
     return `
         <div class="flex h-full w-screen flex-col">
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
-                <div class="flex h-full w-full max-w-[1440px] flex-col justify-center">
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6">
-                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
+                <div class="flex h-full w-full max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] flex-col justify-center">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6 max-sm:px-6 max-sm:pt-4 max-md:px-8 max-md:pt-6">
+                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>
                     </div>
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-8">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12 min-[1024px]:max-[1439px]:py-12">
                         ${config.jobs.map((job, index) => (
-                            `<div class="relative grid w-full grid-flow-row grid-cols-1 gap-16 pb-16 pt-8 lg:grid-cols-2">
-                                <div class="relative mb-auto mt-2 grid grid-flow-row grid-cols-1 gap-16 lg:grid-cols-2">
+                            `<div class="relative grid w-full grid-flow-row grid-cols-1 gap-16 max-sm:gap-6 max-lg:gap-10 min-[1024px]:max-[1439px]:gap-10 ${index === config.jobs.length - 1 ? '!pb-0' : ''} pb-16 min-[1024px]:max-[1439px]:pb-12 max-sm:pb-10 max-md:pb-12 lg:grid-cols-2">
+                                <div class="relative mb-auto mt-2 grid grid-flow-row gap-16 max-sm:gap-6 max-lg:gap-10 min-[1024px]:max-[1439px]:gap-6 grid-cols-2">
                                     <div
                                         ${config.shadow != null ? 'data-shadow' : ''}
                                         ${(config.color !== 'ghost' && config.color !== 'success') ? 'data-reverse' : ''}
                                         data-color="${colorsConfig[config.color].cardPrimary}"
-                                        class="card mb-auto aspect-square"
+                                        class="card mb-auto aspect-square min-[1024px]:max-[1439px]:!min-w-[200px] max-sm:!min-w-[150px] min-[1024px]:max-[1439px]:!min-h-[200px] max-sm:!min-h-[150px]"
                                     >
-                                        <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl font-semibold text-transparent">
+                                        <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl max-md:text-2xl max-sm:text-lg min-[1024px]:max-[1439px]:text-lg font-semibold text-transparent">
                                             From
                                         </h2>
-                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-8xl font-bold text-transparent">
+                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-8xl max-sm:text-[3.5rem] min-[1024px]:max-[1439px]:text-[3.5rem] max-md:text-[4rem] font-bold text-transparent">
                                             ${job.from[0]}
                                         </h1>
-                                        <h2 class="pb-2 text-center text-4xl font-bold">${job.from[1]}</h2>
-                                        <h2 class="text-center text-4xl font-bold">
+                                        <h2 class="pb-2 max-sm:pb-0 max-md:pb-1 min-[1024px]:max-[1439px]:pb-0 text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold">${job.from[1]}</h2>
+                                        <h2 class="text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold">
                                             <span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                 ${job.from[2]}
                                             </span>
@@ -53,16 +53,16 @@ export function Jobs(config) {
                                         ${config.shadow != null ? 'data-shadow' : ''}
                                         ${(config.color !== 'ghost' && config.color !== 'success') ? 'data-reverse' : ''}
                                         data-color="${colorsConfig[config.color].cardPrimary}"
-                                        class="card mb-auto aspect-square"
+                                        class="card mb-auto aspect-square min-[1024px]:max-[1439px]:!min-w-[200px] max-sm:!min-w-[150px] min-[1024px]:max-[1439px]:!min-h-[200px] max-sm:!min-h-[150px]"
                                     >
-                                        <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl font-semibold text-transparent">
+                                        <h2 class="absolute left-[16px] top-[12px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl max-md:text-2xl max-sm:text-lg min-[1024px]:max-[1439px]:text-lg font-semibold text-transparent">
                                             To
                                         </h2>
-                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-8xl font-bold text-transparent">
+                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-8xl max-sm:text-[3.5rem] min-[1024px]:max-[1439px]:text-[3.5rem] max-md:text-[4rem] font-bold text-transparent">
                                             ${job.to[0]}
                                         </h1>
-                                        <h2 class="pb-2 text-center text-4xl font-bold">${job.to[1]}</h2>
-                                        <h2 class="text-center text-4xl font-bold">
+                                        <h2 class="pb-2 max-sm:pb-0 max-md:pb-1 min-[1024px]:max-[1439px]:pb-0 text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold">${job.to[1]}</h2>
+                                        <h2 class="text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold">
                                             <span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                 ${job.to[2]}
                                             </span>
@@ -79,10 +79,10 @@ export function Jobs(config) {
                                     <div class="absolute bottom-[30px] left-[-60px] h-[360px] w-[720px]">
                                         ${shape((!(index % 2 > 0) ? shapeIndexes() : shapeIndexes().reverse())[4].type, (!(index % 2 > 0) ? shapeIndexes() : shapeIndexes().reverse())[4].index, 'md', '60')}
                                     </div>
-                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-12 text-start text-4xl font-bold text-transparent">
+                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-12 max-sm:pb-4 max-md:pb-8 min-[1024px]:max-[1439px]:pb-4 text-start text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent">
                                         ${job.title}
                                     </h1>
-                                    <h3 class="pb-4 text-start text-3xl font-bold">
+                                    <h3 class="pb-4 max-sm:pb-0 max-md:pb-2 min-[1024px]:max-[1439px]:pb-0 text-start text-3xl min-[1024px]:max-[1439px]:text-xl max-md:text-2xl max-sm:text-xl font-bold">
                                         ${job.description.map((text) => {
                                             switch (text.type) {
                                                 case 'default':
@@ -104,15 +104,15 @@ export function Jobs(config) {
                                                 </h3>
                                             </div>
                                             ${index !== 1 ? (
-                                                `<p class="text-start text-xl font-light text-zinc-50">${option}</p>`
+                                                `<p class="text-start text-xl min-[1024px]:max-[1439px]:text-base max-md:text-lg max-sm:text-base font-light text-zinc-50">${option}</p>`
                                             ) : (
-                                                `<p class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-start text-xl font-light text-transparent">
+                                                `<p class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-start text-xl min-[1024px]:max-[1439px]:text-base max-md:text-lg max-sm:text-base font-light text-transparent">
                                                     ${option}
                                                 </p>`
                                             )}
                                         </div>`
                                     )).join('')}
-                                    <div class="flex h-auto w-full flex-col items-start justify-start p-0 pt-8">
+                                    <div class="flex h-auto w-full flex-col items-start justify-start p-0 pb-4 pt-8 max-sm:pt-4 max-md:pt-6 min-[1024px]:max-[1439px]:pt-4">
                                         <a
                                             ${config.shadow != null ? 'data-shadow' : ''}
                                             ${(config.color !== 'ghost' && config.color !== 'primary') ? 'data-reverse' : ''}

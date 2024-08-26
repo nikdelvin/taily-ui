@@ -36,7 +36,7 @@ export function KPICards(config) {
                                         <h1 class="bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-8xl max-sm:text-[4rem] min-[1024px]:max-[1439px]:text-[3.5rem] max-md:text-[4rem] font-bold text-transparent">
                                             ${card.title}
                                         </h1>
-                                        <h2 class="pb-4 text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-[2rem] font-bold">
+                                        <h2 class="pb-4 min-[1024px]:max-[1439px]:pb-2 text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-[2rem] font-bold">
                                             ${card.description1}${' '}<span class="inline bg-gradient-to-r ${!(index % 4 > 1) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">${card.description2}</span>
                                         </h2>
                                         <div class="absolute bottom-[-30px] ${index % 2 === 0 ? 'right' : 'left'}-[-165px] h-[225px] w-[450px]">
