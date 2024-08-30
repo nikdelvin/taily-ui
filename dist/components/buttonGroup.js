@@ -1,4 +1,9 @@
 export const buttonGroup = `@apply
+group:transition-all
+duration-500
+ease-in-out
+group-hover:scale-105
+group-focus:scale-95
 relative
 z-0
 inline-flex

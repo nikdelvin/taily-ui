@@ -16,13 +16,13 @@ export const colorsConfig = {
         musicCardBGPrimary: 'from-indigo-200 via-blue-200 to-sky-200',
         musicCardBGSecondary: 'from-slate-400 via-gray-400 to-zinc-400',
         footerBorders: [
-            'border-b-blue-200/25 border-l-blue-200 border-r-blue-200/25 border-t-blue-200',
-            'border-b-blue-200/25 border-l-blue-200/25 border-r-blue-200 border-t-blue-200',
-            'border-b-slate-400/25 border-l-slate-400 border-r-slate-400/25 border-t-slate-400',
-            'border-b-slate-400/25 border-l-slate-400/25 border-r-slate-400 border-t-slate-400',
-            'border-blue-200 border-t-blue-200/25',
-            'border-b-slate-400 border-l-slate-400 border-r-slate-400/25 border-t-slate-400/25',
-            'border-b-slate-400 border-l-slate-400/25 border-r-slate-400 border-t-slate-400/25'
+            'border-b-blue-200/25 border-l-blue-200 border-r-blue-200/25 border-t-blue-200 max-lg:border-blue-200/50',
+            'border-b-blue-200/25 border-l-blue-200/25 border-r-blue-200 border-t-blue-200 max-lg:border-blue-200/50',
+            'border-b-slate-400/25 border-l-slate-400 border-r-slate-400/25 border-t-slate-400 max-lg:border-slate-400/50',
+            'border-b-slate-400/25 border-l-slate-400/25 border-r-slate-400 border-t-slate-400 max-lg:border-slate-400/50',
+            'border-blue-200 border-t-blue-200/25 max-lg:border-blue-200/50',
+            'border-b-slate-400 border-l-slate-400 border-r-slate-400/25 border-t-slate-400/25 max-lg:border-slate-400/50',
+            'border-b-slate-400 border-l-slate-400/25 border-r-slate-400 border-t-slate-400/25 max-lg:border-slate-400/50'
         ]
     },
     primary: {
@@ -42,13 +42,13 @@ export const colorsConfig = {
         musicCardBGPrimary: 'from-blue-500 via-sky-500 to-cyan-500',
         musicCardBGSecondary: 'from-teal-500 via-emerald-500 to-green-500',
         footerBorders: [
-            'border-b-sky-500/25 border-l-sky-500 border-r-sky-500/25 border-t-sky-500',
-            'border-b-sky-500/25 border-l-sky-500/25 border-r-sky-500 border-t-sky-500',
-            'border-b-green-500/25 border-l-green-500 border-r-green-500/25 border-t-green-500',
-            'border-b-green-500/25 border-l-green-500/25 border-r-green-500 border-t-green-500',
-            'border-sky-500 border-t-sky-500/25',
-            'border-b-green-500 border-l-green-500 border-r-green-500/25 border-t-green-500/25',
-            'border-b-green-500 border-l-green-500/25 border-r-green-500 border-t-green-500/25'
+            'border-b-sky-500/25 border-l-sky-500 border-r-sky-500/25 border-t-sky-500 max-lg:border-sky-500/50',
+            'border-b-sky-500/25 border-l-sky-500/25 border-r-sky-500 border-t-sky-500 max-lg:border-sky-500/50',
+            'border-b-green-500/25 border-l-green-500 border-r-green-500/25 border-t-green-500 max-lg:border-green-500/50',
+            'border-b-green-500/25 border-l-green-500/25 border-r-green-500 border-t-green-500 max-lg:border-green-500/50',
+            'border-sky-500 border-t-sky-500/25 max-lg:border-sky-500/50',
+            'border-b-green-500 border-l-green-500 border-r-green-500/25 border-t-green-500/25 max-lg:border-green-500/50',
+            'border-b-green-500 border-l-green-500/25 border-r-green-500 border-t-green-500/25 max-lg:border-green-500/50'
         ]
     },
     secondary: {
@@ -68,13 +68,13 @@ export const colorsConfig = {
         musicCardBGPrimary: 'from-purple-500 via-violet-500 to-indigo-500',
         musicCardBGSecondary: 'from-blue-500 via-sky-500 to-cyan-500',
         footerBorders: [
-            'border-b-violet-500/25 border-l-violet-500 border-r-violet-500/25 border-t-violet-500',
-            'border-b-violet-500/25 border-l-violet-500/25 border-r-violet-500 border-t-violet-500',
-            'border-b-sky-500/25 border-l-sky-500 border-r-sky-500/25 border-t-sky-500',
-            'border-b-sky-500/25 border-l-sky-500/25 border-r-sky-500 border-t-sky-500',
-            'border-violet-500 border-t-violet-500/25',
-            'border-b-sky-500 border-l-sky-500 border-r-sky-500/25 border-t-sky-500/25',
-            'border-b-sky-500 border-l-sky-500/25 border-r-sky-500 border-t-sky-500/25'
+            'border-b-violet-500/25 border-l-violet-500 border-r-violet-500/25 border-t-violet-500 max-lg:border-violet-500/50',
+            'border-b-violet-500/25 border-l-violet-500/25 border-r-violet-500 border-t-violet-500 max-lg:border-violet-500/50',
+            'border-b-sky-500/25 border-l-sky-500 border-r-sky-500/25 border-t-sky-500 max-lg:border-sky-500/50',
+            'border-b-sky-500/25 border-l-sky-500/25 border-r-sky-500 border-t-sky-500 max-lg:border-sky-500/50',
+            'border-violet-500 border-t-violet-500/25 max-lg:border-violet-500/50',
+            'border-b-sky-500 border-l-sky-500 border-r-sky-500/25 border-t-sky-500/25 max-lg:border-sky-500/50',
+            'border-b-sky-500 border-l-sky-500/25 border-r-sky-500 border-t-sky-500/25 max-lg:border-sky-500/50'
         ]
     },
     success: {
@@ -94,13 +94,13 @@ export const colorsConfig = {
         musicCardBGPrimary: 'from-teal-500 via-emerald-500 to-green-500',
         musicCardBGSecondary: 'from-yellow-500 via-amber-500 to-orange-500',
         footerBorders: [
-            'border-b-green-500/25 border-l-green-500 border-r-green-500/25 border-t-green-500',
-            'border-b-green-500/25 border-l-green-500/25 border-r-green-500 border-t-green-500',
-            'border-b-amber-500/25 border-l-amber-500 border-r-amber-500/25 border-t-amber-500',
-            'border-b-amber-500/25 border-l-amber-500/25 border-r-amber-500 border-t-amber-500',
-            'border-green-500 border-t-green-500/25',
-            'border-b-amber-500 border-l-amber-500 border-r-amber-500/25 border-t-amber-500/25',
-            'border-b-amber-500 border-l-amber-500/25 border-r-amber-500 border-t-amber-500/25'
+            'border-b-green-500/25 border-l-green-500 border-r-green-500/25 border-t-green-500 max-lg:border-green-500/50',
+            'border-b-green-500/25 border-l-green-500/25 border-r-green-500 border-t-green-500 max-lg:border-green-500/50',
+            'border-b-amber-500/25 border-l-amber-500 border-r-amber-500/25 border-t-amber-500 max-lg:border-amber-500/50',
+            'border-b-amber-500/25 border-l-amber-500/25 border-r-amber-500 border-t-amber-500 max-lg:border-amber-500/50',
+            'border-green-500 border-t-green-500/25 max-lg:border-green-500/50',
+            'border-b-amber-500 border-l-amber-500 border-r-amber-500/25 border-t-amber-500/25 max-lg:border-amber-500/50',
+            'border-b-amber-500 border-l-amber-500/25 border-r-amber-500 border-t-amber-500/25 max-lg:border-amber-500/50'
         ]
     },
     warning: {
@@ -120,13 +120,13 @@ export const colorsConfig = {
         musicCardBGPrimary: 'from-yellow-500 via-amber-500 to-orange-500',
         musicCardBGSecondary: 'from-red-500 via-rose-500 to-pink-500',
         footerBorders: [
-            'border-b-amber-500/25 border-l-amber-500 border-r-amber-500/25 border-t-amber-500',
-            'border-b-amber-500/25 border-l-amber-500/25 border-r-amber-500 border-t-amber-500',
-            'border-b-red-500/25 border-l-red-500 border-r-red-500/25 border-t-red-500',
-            'border-b-red-500/25 border-l-red-500/25 border-r-red-500 border-t-red-500',
-            'border-amber-500 border-t-amber-500/25',
-            'border-b-red-500 border-l-red-500 border-r-red-500/25 border-t-red-500/25',
-            'border-b-red-500 border-l-red-500/25 border-r-red-500 border-t-red-500/25'
+            'border-b-amber-500/25 border-l-amber-500 border-r-amber-500/25 border-t-amber-500 max-lg:border-amber-500/50',
+            'border-b-amber-500/25 border-l-amber-500/25 border-r-amber-500 border-t-amber-500 max-lg:border-amber-500/50',
+            'border-b-red-500/25 border-l-red-500 border-r-red-500/25 border-t-red-500 max-lg:border-red-500/50',
+            'border-b-red-500/25 border-l-red-500/25 border-r-red-500 border-t-red-500 max-lg:border-red-500/50',
+            'border-amber-500 border-t-amber-500/25 max-lg:border-amber-500/50',
+            'border-b-red-500 border-l-red-500 border-r-red-500/25 border-t-red-500/25 max-lg:border-red-500/50',
+            'border-b-red-500 border-l-red-500/25 border-r-red-500 border-t-red-500/25 max-lg:border-red-500/50'
         ]
     },
     error: {
@@ -146,13 +146,13 @@ export const colorsConfig = {
         musicCardBGPrimary: 'from-red-500 via-rose-500 to-pink-500',
         musicCardBGSecondary: 'from-purple-500 via-violet-500 to-indigo-500',
         footerBorders: [
-            'border-b-red-500/25 border-l-red-500 border-r-red-500/25 border-t-red-500',
-            'border-b-red-500/25 border-l-red-500/25 border-r-red-500 border-t-red-500',
-            'border-b-violet-500/25 border-l-violet-500 border-r-violet-500/25 border-t-violet-500',
-            'border-b-violet-500/25 border-l-violet-500/25 border-r-violet-500 border-t-violet-500',
-            'border-red-500 border-t-red-500/25',
-            'border-b-violet-500 border-l-violet-500 border-r-violet-500/25 border-t-violet-500/25',
-            'border-b-violet-500 border-l-violet-500/25 border-r-violet-500 border-t-violet-500/25'
+            'border-b-red-500/25 border-l-red-500 border-r-red-500/25 border-t-red-500 max-lg:border-red-500/50',
+            'border-b-red-500/25 border-l-red-500/25 border-r-red-500 border-t-red-500 max-lg:border-red-500/50',
+            'border-b-violet-500/25 border-l-violet-500 border-r-violet-500/25 border-t-violet-500 max-lg:border-violet-500/50',
+            'border-b-violet-500/25 border-l-violet-500/25 border-r-violet-500 border-t-violet-500 max-lg:border-violet-500/50',
+            'border-red-500 border-t-red-500/25 max-lg:border-red-500/50',
+            'border-b-violet-500 border-l-violet-500 border-r-violet-500/25 border-t-violet-500/25 max-lg:border-violet-500/50',
+            'border-b-violet-500 border-l-violet-500/25 border-r-violet-500 border-t-violet-500/25 max-lg:border-violet-500/50'
         ]
     },
     ghost: {
@@ -172,13 +172,13 @@ export const colorsConfig = {
         musicCardBGPrimary: 'from-zinc-400 via-gray-400 to-slate-400',
         musicCardBGSecondary: 'from-sky-200 via-blue-200 to-indigo-200',
         footerBorders: [
-            'border-b-slate-400/25 border-l-slate-400 border-r-slate-400/25 border-t-slate-400',
-            'border-b-slate-400/25 border-l-slate-400/25 border-r-slate-400 border-t-slate-400',
-            'border-b-blue-200/25 border-l-blue-200 border-r-blue-200/25 border-t-blue-200',
-            'border-b-blue-200/25 border-l-blue-200/25 border-r-blue-200 border-t-blue-200',
-            'border-slate-400 border-t-slate-400/25',
-            'border-b-blue-200 border-l-blue-200 border-r-blue-200/25 border-t-blue-200/25',
-            'border-b-blue-200 border-l-blue-200/25 border-r-blue-200 border-t-blue-200/25'
+            'border-b-slate-400/25 border-l-slate-400 border-r-slate-400/25 border-t-slate-400 max-lg:border-slate-400/50',
+            'border-b-slate-400/25 border-l-slate-400/25 border-r-slate-400 border-t-slate-400 max-lg:border-slate-400/50',
+            'border-b-blue-200/25 border-l-blue-200 border-r-blue-200/25 border-t-blue-200 max-lg:border-blue-200/50',
+            'border-b-blue-200/25 border-l-blue-200/25 border-r-blue-200 border-t-blue-200 max-lg:border-blue-200/50',
+            'border-slate-400 border-t-slate-400/25 max-lg:border-slate-400/50',
+            'border-b-blue-200 border-l-blue-200 border-r-blue-200/25 border-t-blue-200/25 max-lg:border-blue-200/50',
+            'border-b-blue-200 border-l-blue-200/25 border-r-blue-200 border-t-blue-200/25 max-lg:border-blue-200/50'
         ]
     }
 }

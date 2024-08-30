@@ -20,7 +20,7 @@ export function Skills(config) {
                             ${config.title}
                         </h1>
                     </div>
-                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12 min-[1024px]:max-[1439px]:py-12">
+                    <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12 min-[1024px]:max-[1439px]:py-12 min-[1024px]:max-[1439px]:pb-16">
                         ${config.rows.map((row, rowIndex) => (
                             `<div class="flex h-auto w-full flex-col items-${rowIndex % 2 === 0 ? "start" : "end"} justify-start mt-[-8px]">
                                 <h1 class="bg-gradient-to-r ${rowIndex % 2 === 0 ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-10 max-md:pb-8 max-sm:pb-6 min-[1024px]:max-[1439px]:pb-8 text-start text-4xl min-[1024px]:max-[1439px]:text-[2rem] max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent">${row.title}</h1>

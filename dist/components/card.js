@@ -1,4 +1,9 @@
 export const card = `@apply
+transition-all
+duration-500
+ease-in-out
+hover:scale-[1.025]
+focus:scale-[0.975]
 relative
 z-0
 h-full

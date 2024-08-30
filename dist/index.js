@@ -435,7 +435,22 @@ const safeList = [
   "max-sm:text-sm",
   "max-sm:left-[12px]", 
   "max-sm:top-[8px]",
-  "max-sm:pb-2"
+  "max-sm:pb-2",
+  "md:grid-cols-2",
+  "sm:grid-cols-2",
+  "max-lg:rounded-tl-none", 
+  "max-lg:rounded-br-none",
+  "max-lg:rounded-tr-none", 
+  "max-lg:rounded-bl-none",
+  "max-lg:rounded-br-3xl", 
+  "max-lg:rounded-tl-3xl",
+  "max-lg:rounded-bl-3xl", 
+  "max-lg:rounded-tr-3xl",
+  "max-lg:rounded-b-none", 
+  "max-lg:rounded-t-3xl",
+  "max-sm:!rounded-3xl",
+  "max-sm:!aspect-auto",
+  "min-[1024px]:max-[1439px]:pb-16"
 ].concat(Object.values(colorsConfig).flatMap((color) => Object.values(color).flatMap((style) => Array.isArray(style) ? style.flatMap((subStyle) => subStyle.split(' ')) : style.split(' '))))
 
 const tailyUI = plugin(

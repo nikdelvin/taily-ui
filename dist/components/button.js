@@ -1,4 +1,9 @@
 export const button = `@apply
+transition-all
+duration-500
+ease-in-out
+hover:scale-105
+focus:scale-95
 relative
 z-0
 inline-flex
