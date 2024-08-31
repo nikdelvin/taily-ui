@@ -100,7 +100,7 @@ export function FeatureCards(config) {
                         </h1>
                     </div>
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12 min-[1024px]:max-[1439px]:py-12">
-                        <div class="grid w-full grid-flow-row grid-cols-1 gap-10 lg:grid-cols-2 content-start">
+                        <div class="grid w-full grid-flow-row grid-cols-1 gap-10 max-sm:gap-6 max-md:gap-8 lg:grid-cols-2 content-start">
                             ${config.reverse ? [secondCard, firstCard].join('') : [firstCard, secondCard].join('')}
                         </div>
                     </div>

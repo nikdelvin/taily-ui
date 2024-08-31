@@ -24,7 +24,7 @@ export function KPICards(config) {
                         </h1>
                     </div>
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12 min-[1024px]:max-[1439px]:py-12">
-                        <div class="grid grid-flow-row w-full grid-cols-2 gap-10 max-sm:grid-cols-1 lg:grid-cols-4 content-start">
+                        <div class="grid grid-flow-row w-full grid-cols-2 gap-10 max-sm:gap-6 max-md:gap-8 max-sm:grid-cols-1 lg:grid-cols-4 content-start">
                             ${config.cards.map((card, index) => {
                                 return `
                                     <div
