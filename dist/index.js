@@ -463,7 +463,10 @@ const safeList = [
   "whitespace-nowrap",
   "translate-z-0",
   "max-[1439px]:!aspect-auto",
-  "max-sm:mx-auto"
+  "max-sm:mx-auto",
+  "max-sm:!max-h-[408px]", 
+  "max-md:!max-h-[308px]",
+  "max-sm:!min-h-fit"
 ].concat(Object.values(colorsConfig).flatMap((color) => Object.values(color).flatMap((style) => Array.isArray(style) ? style.flatMap((subStyle) => subStyle.split(' ')) : style.split(' '))))
 
 const tailyUI = plugin(

@@ -58,7 +58,7 @@ export function FeatureCards(config) {
             ${config.shadow != null ? 'data-shadow' : ''}
             ${(config.color !== 'ghost' && !isGreenSecond) ? 'data-reverse' : ''}
             data-color="${config.reverse ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
-            class="card !max-h-[322px] min-[1024px]:max-[1439px]:!max-h-[360px] max-sm:!max-h-full max-md:!max-h-full max-lg:order-last !items-start !justify-start !px-10 !py-6 max-md:!px-8 max-md:!py-6 max-sm:!px-6 max-sm:!py-4 min-[1024px]:max-[1439px]:!px-6 min-[1024px]:max-[1439px]:!py-4"
+            class="card !max-h-[322px] min-[1024px]:max-[1439px]:!max-h-[360px] max-sm:!max-h-[408px] max-sm:!min-h-fit max-md:!max-h-[308px] max-lg:order-last !items-start !justify-start !px-10 !py-6 max-md:!px-8 max-md:!py-6 max-sm:!px-6 max-sm:!py-4 min-[1024px]:max-[1439px]:!px-6 min-[1024px]:max-[1439px]:!py-4"
         >
             ${config.featureOptions.map((option, index) => {
                 return `
