@@ -109,7 +109,7 @@ export function Jobs(config) {
                                             )}
                                         </div>`
                                     )).join('')}
-                                    <div class="flex h-auto w-full flex-col items-start justify-start p-0 pb-4 pt-8 max-sm:pt-6 max-md:pt-8 min-[1024px]:max-[1439px]:pt-6">
+                                    <div class="flex h-auto w-full flex-col items-start justify-start p-0 pb-4 pt-8 max-sm:pt-6 max-md:pt-6 min-[1024px]:max-[1439px]:pt-6">
                                         <a
                                             ${config.shadow != null ? 'data-shadow' : ''}
                                             ${(config.color !== 'ghost' && config.color !== 'primary') ? 'data-reverse' : ''}
