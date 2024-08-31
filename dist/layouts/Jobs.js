@@ -22,8 +22,8 @@ export function Jobs(config) {
                     </div>
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12 min-[1024px]:max-[1439px]:py-12 min-[1024px]:max-[1439px]:pb-16">
                         ${config.jobs.map((job, index) => (
-                            `<div class="relative grid w-full grid-flow-row grid-cols-1 gap-16 max-sm:gap-6 max-lg:gap-10 min-[1024px]:max-[1439px]:gap-10 ${index === config.jobs.length - 1 ? '!pb-0' : ''} pb-16 min-[1024px]:max-[1439px]:pb-12 max-sm:pb-10 max-md:pb-12 lg:grid-cols-2">
-                                <div class="relative mb-auto mt-2 grid grid-flow-row gap-16 max-sm:gap-6 max-lg:gap-10 min-[1024px]:max-[1439px]:gap-6 grid-cols-2">
+                            `<div class="relative grid w-full grid-flow-row grid-cols-1 gap-16 max-sm:gap-6 max-md:gap-8 max-lg:gap-10 min-[1024px]:max-[1439px]:gap-10 ${index === config.jobs.length - 1 ? '!pb-0' : ''} pb-16 min-[1024px]:max-[1439px]:pb-12 max-sm:pb-10 max-md:pb-12 lg:grid-cols-2">
+                                <div class="relative mb-auto mt-2 grid grid-flow-row gap-16 max-sm:gap-6 max-md:gap-8 max-lg:gap-10 min-[1024px]:max-[1439px]:gap-6 grid-cols-2">
                                     <div
                                         ${config.shadow != null ? 'data-shadow' : ''}
                                         ${(config.color !== 'ghost' && config.color !== 'success') ? 'data-reverse' : ''}
