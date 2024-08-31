@@ -17,9 +17,9 @@ export function FeatureCards(config) {
             ${config.shadow != null ? 'data-shadow' : ''}
             ${(config.color !== 'ghost' && !isGreenFirst) ? 'data-reverse' : ''}
             data-color="${config.reverse ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].cardPrimary}"
-            class="card ${config.reverse ? '!items-start' : '!items-end'} !justify-start !px-10 max-md:!px-8 max-md:!py-6 max-sm:!px-6 max-sm:!py-4 min-[1024px]:max-[1439px]:!px-6 min-[1024px]:max-[1439px]:!py-4 max-sm:!min-h-[200px] max-md:!min-h-[200px]"
+            class="card ${config.reverse ? '!items-start' : '!items-end'} !justify-start !max-h-[322px] min-[1024px]:max-[1439px]:!max-h-[360px] max-sm:!max-h-[200px] max-md:!max-h-[247px] !px-10 max-md:!px-8 max-md:!py-6 max-sm:!px-6 max-sm:!py-4 min-[1024px]:max-[1439px]:!px-6 min-[1024px]:max-[1439px]:!py-4 max-sm:!min-h-[200px] max-md:!min-h-[200px]"
         >
-            <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 max-sm:pb-4 max-md:pb-8 min-[1024px]:max-[1439px]:pb-8 ${config.reverse ? 'text-start' : 'text-end'} text-8xl text-nowrap max-sm:text-[3.25rem] min-[1024px]:max-[1439px]:text-[4rem] min-[1024px]:max-[1439px]:leading-[1.2] max-md:text-[4rem] max-md:leading-[1.35] font-bold text-transparent">
+            <h1 class="bg-gradient-to-r ${config.reverse ? colorsConfig[config.color].textSecondary : colorsConfig[config.color].textPrimary} bg-clip-text pb-12 max-sm:pb-4 max-md:pb-8 min-[1024px]:max-[1439px]:pb-8 ${config.reverse ? 'text-start' : 'text-end'} text-8xl text-nowrap whitespace-nowrap max-sm:text-[3.25rem] min-[1024px]:max-[1439px]:text-[4rem] min-[1024px]:max-[1439px]:leading-[1.2] max-md:text-[4rem] max-md:leading-[1.35] font-bold text-transparent">
                 ${config.featureTitle}
             </h1>
             <h3 class="${config.reverse ? 'text-start' : 'text-end'} text-5xl min-[1024px]:max-[1439px]:text-[2rem] max-md:text-[2rem] max-sm:text-2xl font-bold pb-4">
@@ -58,7 +58,7 @@ export function FeatureCards(config) {
             ${config.shadow != null ? 'data-shadow' : ''}
             ${(config.color !== 'ghost' && !isGreenSecond) ? 'data-reverse' : ''}
             data-color="${config.reverse ? colorsConfig[config.color].cardPrimary : colorsConfig[config.color].cardSecondary}"
-            class="card max-lg:order-last !items-start !justify-start !px-10 !py-6 max-md:!px-8 max-md:!py-6 max-sm:!px-6 max-sm:!py-4 min-[1024px]:max-[1439px]:!px-6 min-[1024px]:max-[1439px]:!py-4"
+            class="card !max-h-[322px] min-[1024px]:max-[1439px]:!max-h-[360px] max-sm:!max-h-full max-md:!max-h-full max-lg:order-last !items-start !justify-start !px-10 !py-6 max-md:!px-8 max-md:!py-6 max-sm:!px-6 max-sm:!py-4 min-[1024px]:max-[1439px]:!px-6 min-[1024px]:max-[1439px]:!py-4"
         >
             ${config.featureOptions.map((option, index) => {
                 return `
@@ -95,12 +95,12 @@ export function FeatureCards(config) {
             <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] h-full justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6 max-sm:px-6 max-sm:pt-4 max-md:px-8 max-md:pt-6">
-                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
+                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap whitespace-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold max-md:leading-[1.15] leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>
                     </div>
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12 min-[1024px]:max-[1439px]:py-12">
-                        <div class="grid w-full grid-flow-row grid-cols-1 gap-10 lg:grid-cols-2">
+                        <div class="grid w-full grid-flow-row grid-cols-1 gap-10 lg:grid-cols-2 content-start">
                             ${config.reverse ? [secondCard, firstCard].join('') : [firstCard, secondCard].join('')}
                         </div>
                     </div>

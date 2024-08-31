@@ -16,7 +16,7 @@ export function Jobs(config) {
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] flex-col justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6 max-sm:px-6 max-sm:pt-4 max-md:px-8 max-md:pt-6">
-                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
+                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap whitespace-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight max-md:leading-[1.15] text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>
                     </div>
@@ -76,9 +76,6 @@ export function Jobs(config) {
                                     </div>
                                 </div>
                                 <div class="relative flex flex-col items-start">
-                                    <div class="absolute bottom-[30px] left-[-60px] h-[360px] w-[720px]">
-                                        ${shape((!(index % 2 > 0) ? shapeIndexes() : shapeIndexes().reverse())[4].type, (!(index % 2 > 0) ? shapeIndexes() : shapeIndexes().reverse())[4].index, 'md', '60')}
-                                    </div>
                                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-12 max-sm:pb-4 max-md:pb-8 min-[1024px]:max-[1439px]:pb-4 text-start text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent">
                                         ${job.title}
                                     </h1>

@@ -21,7 +21,7 @@ export function OpenSourcePromo(config) {
                                     <div class="h-[96px] w-[96px] min-h-[96px] min-w-[96px] max-sm:h-[48px] max-sm:w-[48px] max-sm:min-h-[48px] max-sm:min-w-[48px] max-md:h-[64px] max-md:w-[64px] max-md:min-h-[64px] max-md:min-w-[64px] min-[1024px]:max-[1439px]:h-[64px] min-[1024px]:max-[1439px]:w-[64px] min-[1024px]:max-[1439px]:min-h-[64px] min-[1024px]:max-[1439px]:min-w-[64px]">
                                         ${icon(config.color, 'main', config.logo)}
                                     </div>
-                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-5xl min-[1024px]:max-[1439px]:text-[4rem] max-md:text-[4rem] font-bold leading-tight text-transparent">
+                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl text-nowrap whitespace-nowrap max-sm:text-5xl min-[1024px]:max-[1439px]:text-[4rem] max-md:text-[4rem] font-bold leading-tight max-md:leading-[1.15] text-transparent">
                                         ${config.title}
                                     </h1>
                                 </div>
@@ -106,7 +106,7 @@ export function OpenSourcePromo(config) {
                                 </div>
                                 <div class="flex h-full flex-col items-center justify-center"></div>
                                 <div class="flex h-full flex-col items-center justify-center"></div>
-                                <div class="relative h-full max-h-[190px] w-full top-[28px] min-[1024px]:max-[1439px]:top-[8px] max-sm:top-[16px] max-sm:!w-[75%] rotate-[10deg] scale-90 flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-sm">
+                                <div class="relative h-full max-h-[190px] w-full top-[28px] min-[1024px]:max-[1439px]:top-[8px] max-sm:top-[16px] max-sm:!w-[75%] rotate-[10deg] translate-z-0 scale-90 flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-sm">
                                     ${config.images != null && config.images[1] != null ? `<img
                                         alt="Main 2"
                                         src="${config.images[1]}"
@@ -114,7 +114,7 @@ export function OpenSourcePromo(config) {
                                         height="360"
                                     />` : shape(shapeIndexes[1].type, shapeIndexes[1].index)}
                                 </div>
-                                <div class="relative h-full max-h-[190px] w-full top-[-28px] min-[1024px]:max-[1439px]:top-[-48px] max-sm:top-[calc(((100vw_-_345px)/17*-1)_+_28px)] max-sm:!w-[60%] rotate-[20deg] scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
+                                <div class="relative h-full max-h-[190px] w-full top-[-28px] min-[1024px]:max-[1439px]:top-[-48px] max-sm:top-[calc(((100vw_-_345px)/17*-1)_+_28px)] max-sm:!w-[60%] rotate-[20deg] translate-z-0 scale-[0.8] flex-col items-center justify-center rounded-3xl overflow-hidden bg-gradient-to-r ${colorsConfig[config.color].image} blur-md">
                                     ${config.images != null && config.images[2] != null ? `<img
                                         alt="Main 3"
                                         src="${config.images[2]}"

@@ -450,11 +450,24 @@ const safeList = [
   "max-lg:rounded-t-3xl",
   "max-sm:!rounded-3xl",
   "max-sm:!aspect-auto",
-  "min-[1024px]:max-[1439px]:pb-16"
+  "min-[1024px]:max-[1439px]:pb-16",
+  "!max-h-[322px]",
+  "min-[1024px]:max-[1439px]:!max-h-[360px]",
+  "max-sm:!max-h-[200px]", 
+  "max-md:!max-h-[247px]",
+  "max-sm:!max-h-full", 
+  "max-md:!max-h-full",
+  "!max-h-[65px]",
+  "!max-h-[156px]",
+  "content-start",
+  "whitespace-nowrap",
+  "translate-z-0",
+  "max-[1439px]:!aspect-auto",
+  "max-sm:mx-auto"
 ].concat(Object.values(colorsConfig).flatMap((color) => Object.values(color).flatMap((style) => Array.isArray(style) ? style.flatMap((subStyle) => subStyle.split(' ')) : style.split(' '))))
 
 const tailyUI = plugin(
-  function ({addComponents}) {
+  function ({addComponents, matchUtilities, theme}) {
     addComponents({
       '.button': {
         [button]: {}
@@ -469,6 +482,15 @@ const tailyUI = plugin(
         [card]: {}
       }
     })
+    matchUtilities(
+      {
+        'translate-z': (value) => ({
+          '--tw-translate-z': value,
+          transform: ` translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))`
+        })
+      },
+      { values: theme('translate'), supportsNegativeValues: true }
+    )
   }
 )
 

@@ -1,21 +1,12 @@
-import { shape } from "../icons/shape"
-import { getRandomInt } from "../utils"
 import { colorsConfig } from "../config"
 
 export function Projects(config) {
-    const shapeIndexes = () => [
-        { type: 'type1', index: getRandomInt(3) }, 
-        { type: 'type2', index: getRandomInt(4) }, 
-        { type: 'type3', index: getRandomInt(3) }
-    ]
-    const projects = Array(config.projects.length).fill(true).map(() => getRandomInt(3))
-    
     return `
         <div class="flex h-full w-screen flex-col">
             <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex h-full w-full max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] flex-col justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pt-6 max-sm:px-6 max-sm:pt-4 max-sm:pb-10 max-md:px-8 max-md:pt-6 max-md:pb-12">
-                        <h1 class="bg-gradient-to-r mb-16 max-sm:mb-10 max-md:mb-12 min-[1024px]:max-[1439px]:mb-12 ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
+                        <h1 class="bg-gradient-to-r mb-16 max-sm:mb-10 max-md:mb-12 min-[1024px]:max-[1439px]:mb-12 ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap whitespace-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight max-md:leading-[1.15] text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
                             ${config.title}
                         </h1>
                         <div
@@ -106,12 +97,6 @@ export function Projects(config) {
                                                         </label>
                                                         <div class="overflow-hidden transition-all duration-500 ease-in-out peer-checked/hide:!w-[60px] peer-checked/open:!w-[654px] peer-checked/hide:min-w-[60px] peer-checked/open:min-w-[654px]">
                                                             <div class="relative flex w-full min-w-[654px] flex-col items-center justify-start p-16 pt-12 min-[1024px]:max-[1439px]:pr-12 min-[1024px]:max-[1439px]:pt-8 transition-all duration-500 ease-in-out peer-checked/hide:opacity-0 peer-checked/open:opacity-100">
-                                                                <div class="absolute right-[-170px] top-[-80px] h-[225px] w-[450px]">
-                                                                    ${shape(shapeIndexes()[projects[index]].type, shapeIndexes()[projects[index]].index, 'xl', '60')}
-                                                                </div>
-                                                                <div class="absolute bottom-[calc(50%-306px)] left-[calc(50%-455px)] h-[421px] w-[720px]">
-                                                                    ${shape(shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].type, shapeIndexes()[projects[index] < 2 ? projects[index] + 1 : 0].index, 'md', '60')}
-                                                                </div>
                                                                 <h1 class="bg-gradient-to-r ${project.color != null ? colorsConfig[project.color].textSecondary : !(index % 2 > 0) ? colorsConfig[config.color].textPrimary : colorsConfig[config.color].textSecondary} bg-clip-text pb-12 min-[1024px]:max-[1439px]:pb-8 text-8xl min-[1024px]:max-[1439px]:text-[2rem] min-[1024px]:max-[1439px]:leading-[1.2] font-bold text-transparent">
                                                                     ${project.title}
                                                                 </h1>
