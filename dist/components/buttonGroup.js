@@ -1,5 +1,5 @@
 export const buttonGroup = `@apply
-group:transition-all
+transition-all
 duration-500
 ease-in-out
 group-hover:scale-105
