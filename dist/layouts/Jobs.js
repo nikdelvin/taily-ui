@@ -109,20 +109,22 @@ export function Jobs(config) {
                                             )}
                                         </div>`
                                     )).join('')}
-                                    <div class="flex h-auto w-full flex-col items-start justify-start p-0 pb-4 pt-8 max-sm:pt-6 max-md:pt-6 min-[1024px]:max-[1439px]:pt-6">
-                                        <a
-                                            ${config.shadow != null ? 'data-shadow' : ''}
-                                            ${(config.color !== 'ghost' && config.color !== 'primary') ? 'data-reverse' : ''}
-                                            data-color="${colorsConfig[config.color].cardSecondary}"
-                                            data-type="bordered"
-                                            data-size="medium"
-                                            class="button !w-[150px]"
-                                            href="${job.button.link}"
-                                            target="_${job.button.newPage != null ? 'blank' : 'self'}"
-                                        >
-                                            <span class="font-medium">${job.button.title}</span>
-                                        </a>
-                                    </div>
+                                    ${job.button != null ? (
+                                        `<div class="flex h-auto w-full flex-col items-start justify-start p-0 pb-4 pt-8 max-sm:pt-6 max-md:pt-6 min-[1024px]:max-[1439px]:pt-6">
+                                            <a
+                                                ${config.shadow != null ? 'data-shadow' : ''}
+                                                ${(config.color !== 'ghost' && config.color !== 'primary') ? 'data-reverse' : ''}
+                                                data-color="${colorsConfig[config.color].cardSecondary}"
+                                                data-type="bordered"
+                                                data-size="medium"
+                                                class="button !w-[150px]"
+                                                href="${job.button.link}"
+                                                target="_${job.button.newPage != null ? 'blank' : 'self'}"
+                                            >
+                                                <span class="font-medium">${job.button.title}</span>
+                                            </a>
+                                        </div>`
+                                    ) : ''}
                                 </div>
                             </div>`
                         )).join('')}

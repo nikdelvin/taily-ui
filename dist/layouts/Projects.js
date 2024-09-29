@@ -122,20 +122,22 @@ export function Projects(config) {
                                                                         </div>
                                                                     `
                                                                 }).join('')}
-                                                                <div class="flex min-[1024px]:max-[1439px]:pt-0 min-[1024px]:max-[1439px]:items-end h-auto w-full flex-col items-center justify-start p-0 pt-8">
-                                                                    <a
-                                                                        ${config.shadow != null ? 'data-shadow' : ''}
-                                                                        ${(config.color !== 'ghost' && project.color != null ? project.color !== 'primary' : ((index % 2 > 0) ? config.color !== 'primary' : config.color !== 'success')) ? 'data-reverse' : ''}
-                                                                        data-color="${project.color != null ? colorsConfig[project.color].cardSecondary : (index % 2 > 0) ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
-                                                                        data-type="bordered"
-                                                                        data-size="medium"
-                                                                        class="button !w-[150px]"
-                                                                        href="${project.button.link}"
-                                                                        target="_${project.button.newPage != null ? 'blank' : 'self'}"
-                                                                    >
-                                                                        <span class="font-medium">${project.button.title}</span>
-                                                                    </a>
-                                                                </div>
+                                                                ${project.button != null ? (
+                                                                    `<div class="flex min-[1024px]:max-[1439px]:pt-0 min-[1024px]:max-[1439px]:items-end h-auto w-full flex-col items-center justify-start p-0 pt-8">
+                                                                        <a
+                                                                            ${config.shadow != null ? 'data-shadow' : ''}
+                                                                            ${(config.color !== 'ghost' && project.color != null ? project.color !== 'primary' : ((index % 2 > 0) ? config.color !== 'primary' : config.color !== 'success')) ? 'data-reverse' : ''}
+                                                                            data-color="${project.color != null ? colorsConfig[project.color].cardSecondary : (index % 2 > 0) ? colorsConfig[config.color].cardSecondary : colorsConfig[config.color].button}"
+                                                                            data-type="bordered"
+                                                                            data-size="medium"
+                                                                            class="button !w-[150px]"
+                                                                            href="${project.button.link}"
+                                                                            target="_${project.button.newPage != null ? 'blank' : 'self'}"
+                                                                        >
+                                                                            <span class="font-medium">${project.button.title}</span>
+                                                                        </a>
+                                                                    </div>`
+                                                                ) : ''}
                                                             </div>
                                                         </div>
                                                     </div>

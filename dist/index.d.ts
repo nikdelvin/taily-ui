@@ -55,7 +55,7 @@ declare module './index.js' {
             title: string,
             description: Array<{ type: 'default' | 'primary', value: string }>,
             options: string[],
-            button: {
+            button?: {
                 title: string
                 link: string
                 newPage?: true
@@ -97,7 +97,7 @@ declare module './index.js' {
             title: string,
             description: Array<{ type: 'default' | 'primary', value: string }>,
             role: string[],
-            button: {
+            button?: {
                 title: string
                 link: string
                 newPage?: true
