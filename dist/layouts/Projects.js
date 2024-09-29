@@ -137,7 +137,7 @@ export function Projects(config) {
                                                                             <span class="font-medium">${project.button.title}</span>
                                                                         </a>
                                                                     </div>`
-                                                                ) : ''}
+                                                                ) : '<div class="flex min-[1024px]:max-[1439px]:pt-0 min-[1024px]:max-[1439px]:items-end h-auto w-full flex-col items-center justify-start p-0 pt-8"></div>'}
                                                             </div>
                                                         </div>
                                                     </div>
