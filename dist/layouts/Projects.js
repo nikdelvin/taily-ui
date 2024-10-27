@@ -24,7 +24,7 @@ export function Projects(config) {
                                             name="project"
                                             ${(project.color != null ? project.color === config.color : index === 0) ? 'checked' : ''}
                                         />
-                                        <div class="absolute bottom-[63px] max-[1439px]:bottom-[47px] left-0 w-full z-[4] justify-center hidden peer-checked/project-${index}:!flex">
+                                        <div class="absolute bottom-[63px] max-[1439px]:bottom-[47px] left-0 w-full z-[4] justify-center hidden peer-checked/project-${index}:!flex pointer-events-none">
                                             <div class="rounded-3xl pb-[5px] bg-zinc-950/75 w-[169px] mx-auto text-center">
                                                 <span class="inline bg-gradient-to-r ${colorsConfig[project.color].title} brightness-125 text-xs leading-none bg-clip-text text-transparent">
                                                     Pick project via dot below
