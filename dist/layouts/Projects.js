@@ -3,7 +3,7 @@ import { colorsConfig } from "../config"
 export function Projects(config) {
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
+            <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 py-4">
                 <div class="flex h-full w-full max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] flex-col justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pt-6 max-sm:px-6 max-sm:pt-4 max-sm:pb-10 max-md:px-8 max-md:pt-6 max-md:pb-12">
                         <h1 class="bg-gradient-to-r mb-16 max-sm:mb-10 max-md:mb-12 min-[1024px]:max-[1439px]:mb-12 ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap whitespace-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight max-md:leading-[1.15] text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
