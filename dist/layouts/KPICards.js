@@ -1,6 +1,6 @@
-import { shape } from "../icons/shape"
-import { getRandomInt } from "../utils"
-import { colorsConfig } from "../config"
+import { shape } from "../icons/shape.js"
+import { getRandomInt } from "../utils.js"
+import { colorsConfig } from "../config.js"
 
 export function KPICards(config) {
     const shapeIndexes = [

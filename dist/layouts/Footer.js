@@ -1,4 +1,4 @@
-import { colorsConfig } from "../config"
+import { colorsConfig } from "../config.js"
 
 export function Footer(config) {
     return `

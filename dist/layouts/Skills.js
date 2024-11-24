@@ -1,7 +1,7 @@
-import { shape } from "../icons/shape"
-import { icon } from "../icons/icon"
-import { getRandomInt } from "../utils"
-import { colorsConfig } from "../config"
+import { shape } from "../icons/shape.js"
+import { icon } from "../icons/icon.js"
+import { getRandomInt } from "../utils.js"
+import { colorsConfig } from "../config.js"
 
 export function Skills(config) {
     const shapeIndexes = () => [

@@ -1,6 +1,6 @@
-import { shape } from "../icons/shape"
-import { shuffle, getRandomInt } from "../utils"
-import { colorsConfig } from "../config"
+import { shape } from "../icons/shape.js"
+import { shuffle, getRandomInt } from "../utils.js"
+import { colorsConfig } from "../config.js"
 
 export function FeatureCards(config) {
     const shapeIndexes = shuffle([

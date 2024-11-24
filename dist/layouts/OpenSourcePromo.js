@@ -1,7 +1,7 @@
-import { icon } from "../icons/icon"
-import { shape } from "../icons/shape"
-import { shuffle, getRandomInt } from "../utils"
-import { colorsConfig } from "../config"
+import { icon } from "../icons/icon.js"
+import { shape } from "../icons/shape.js"
+import { shuffle, getRandomInt } from "../utils.js"
+import { colorsConfig } from "../config.js"
 
 export function OpenSourcePromo(config) {
     const shapeIndexes = shuffle([
