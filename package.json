@@ -1,7 +1,7 @@
 {
   "name": "taily-ui",
   "type": "module",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "description": "🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/nikdelvin/taily-ui"
   },
-  "homepage": "https://tailyui.nikdelvin.dev",
+  "homepage": "https://tailyui.by.nikdelv.in",
   "keywords": [
     "components",
     "library",
@@ -22,7 +22,7 @@
     "tailwindcss",
     "components-library"
   ],
-  "author": "Nikita Stadnik <erter.live@gmail.com>",
+  "author": "Nikita Stadnik <the@nikdelv.in>",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.1",

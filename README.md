@@ -1,6 +1,6 @@
 <p>
-    <a href="https://tailyui.nikdelvin.dev">
-      <img alt="Taily UI - Tailwind CSS components" width="350" src="https://tailyui.nikdelvin.dev/assets/github/logo.png">
+    <a href="https://tailyui.by.nikdelv.in">
+      <img alt="Taily UI - Tailwind CSS components" width="350" src="https://tailyui.by.nikdelv.in/assets/github/logo.png">
     </a><br>
     Introducing Taily UI - 🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.
 </p>
@@ -72,13 +72,13 @@ Taily UI is an open source collection of UI components built with the utility cl
     </tr>
     <tr>
         <td width="33.3333%">
-            <a href="https://tailyui.nikdelvin.dev/docs/components/buttons">
-                <img alt="Tailwind CSS Button" src="https://tailyui.nikdelvin.dev/assets/github/button.png">
+            <a href="https://tailyui.by.nikdelv.in/docs/components/buttons">
+                <img alt="Tailwind CSS Button" src="https://tailyui.by.nikdelv.in/assets/github/button.png">
             </a>
         </td>
         <td width="33.3333%">
-            <a href="https://tailyui.nikdelvin.dev/docs/components/button-groups">
-                <img alt="Tailwind CSS Button Group" src="https://tailyui.nikdelvin.dev/assets/github/button-group.png">
+            <a href="https://tailyui.by.nikdelv.in/docs/components/button-groups">
+                <img alt="Tailwind CSS Button Group" src="https://tailyui.by.nikdelv.in/assets/github/button-group.png">
             </a>
         </td>
         <td width="33.3333%">
