@@ -95,7 +95,7 @@ export function Skills(config) {
             </div>
         </div>
         <div id="data-hint" class="absolute top-0 left-0 w-auto z-[4] justify-center hidden pointer-events-none">
-            <div class="rounded-3xl pb-[5px] bg-zinc-950/75 w-auto px-[10px] mx-auto text-center">
+            <div class="rounded-3xl pb-[5px] bg-zinc-950/75 w-auto px-[12px] mx-auto text-center">
                 <span id="data-hint-text" class="inline text-nowrap bg-gradient-to-r ${colorsConfig[config.color].title} brightness-125 text-xs leading-none bg-clip-text text-transparent">
                 </span>
             </div>
