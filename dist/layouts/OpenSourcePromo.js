@@ -12,7 +12,7 @@ export function OpenSourcePromo(config) {
 
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 pb-4">
+            <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50">
                 <div class="flex flex-col max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] h-full justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 max-sm:p-6 max-sm:py-10 max-md:p-8 max-md:py-12">
                         <div class="grid grid-flow-row grid-cols-1 gap-10 max-sm:gap-8 lg:grid-cols-2 min-[1024px]:max-[1439px]:mb-[-40px]">

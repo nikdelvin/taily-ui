@@ -477,7 +477,8 @@ const safeList = [
   "py-4",
   "pt-4",
   "py-6",
-  "px-[10px]"
+  "px-[10px]",
+  "pb-6"
 ].concat(Object.values(colorsConfig).flatMap((color) => Object.values(color).flatMap((style) => Array.isArray(style) ? style.flatMap((subStyle) => subStyle.split(' ')) : style.split(' '))))
 
 const tailyUI = plugin(
