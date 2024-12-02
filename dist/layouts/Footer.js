@@ -3,9 +3,9 @@ import { colorsConfig } from "../config.js"
 export function Footer(config) {
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 pt-4">
+            <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 pt-6">
                 <div class="flex h-full w-full max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] flex-col justify-center">
-                    <div class="relative flex h-auto w-full flex-col items-center justify-start p-16 pt-6 max-sm:px-6 max-sm:pt-4 max-md:px-8 max-md:pt-6 max-sm:pb-10 max-md:pb-12">
+                    <div class="relative flex h-auto w-full flex-col items-center justify-start p-16 pt-8 max-sm:px-6 max-sm:pt-4 max-md:px-8 max-md:pt-6 max-sm:pb-10 max-md:pb-12">
                         <div class="relative grid w-full content-start grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 pb-4 lg:grid-cols-4">
                             <div class="aspect-square max-[1439px]:!aspect-auto h-full w-full rounded-3xl max-sm:!rounded-3xl rounded-bl-none rounded-tr-none border border-opacity-75 ${colorsConfig[config.color].footerBorders[0]} p-4">
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">

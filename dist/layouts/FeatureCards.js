@@ -92,7 +92,7 @@ export function FeatureCards(config) {
 
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 py-4">
+            <div class="flex flex-col h-full items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 py-6">
                 <div class="flex flex-col max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] h-full justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6 max-sm:px-6 max-sm:pt-4 max-md:px-8 max-md:pt-6">
                         <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap whitespace-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold max-md:leading-[1.15] leading-tight text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">

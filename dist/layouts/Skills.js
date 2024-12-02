@@ -13,7 +13,7 @@ export function Skills(config) {
     
     return `
         <div class="flex h-full w-screen flex-col">
-            <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 py-4">
+            <div class="flex h-full flex-col items-center bg-gradient-to-r ${colorsConfig[config.color].background} text-zinc-50 py-6">
                 <div class="flex h-full w-full max-w-[1440px] max-sm:max-w-[459px] max-md:max-w-[640px] max-lg:max-w-[759px] min-[1024px]:max-[1439px]:max-w-[1024px] flex-col justify-center">
                     <div class="flex h-auto w-full flex-col items-center justify-start p-16 pb-0 pt-6 max-sm:px-6 max-sm:pt-4 max-md:px-8 max-md:pt-6">
                         <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl max-sm:text-[2rem] text-nowrap whitespace-nowrap min-[1024px]:max-[1439px]:text-[4rem] max-md:text-5xl max-lg:text-[3.5rem] font-bold leading-tight max-md:leading-[1.15] text-transparent opacity-${(config.color === 'default' || config.color === 'ghost') ? '50' : '60'}">
@@ -94,6 +94,12 @@ export function Skills(config) {
                 </div>
             </div>
         </div>
+        <div id="data-hint" class="absolute top-0 left-0 w-auto z-[4] justify-center hidden pointer-events-none">
+            <div class="rounded-3xl pb-[5px] bg-zinc-950/75 w-auto px-[10px] mx-auto text-center">
+                <span id="data-hint-text" class="inline text-nowrap bg-gradient-to-r ${colorsConfig[project.color].title} brightness-125 text-xs leading-none bg-clip-text text-transparent">
+                </span>
+            </div>
+        </div>
         <script>
         if (window.innerWidth < 1440) {
             const skillsRows = "${config.rows.join(',')}".split(",")
@@ -110,6 +116,21 @@ export function Skills(config) {
                 })
             })
         }
+        const hint = document.querySelector("#data-hint")
+        const hintText = document.querySelector("#data-hint-text")
+        document.querySelectorAll("[data-hint-text]").forEach((skill) => {
+            skill.onmousemove = (e) => {
+                hint.style.top = String(Number(e.pageY) - 30) + "px"
+                hint.style.left = String(Number(e.pageX) + 10) + "px"
+            }
+            skill.onmouseover = (e) => {
+                hintText.textContent = skill.getAttribute("data-hint-text")
+                hint.style.display = "flex"
+            }
+            skill.onmouseout = (e) => {
+                hint.style.display = "none"
+            }
+        })
         </script>
     `
 }

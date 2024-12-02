@@ -1,7 +1,7 @@
 {
   "name": "taily-ui",
   "type": "module",
-  "version": "1.2.14",
+  "version": "1.2.15",
   "description": "🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
