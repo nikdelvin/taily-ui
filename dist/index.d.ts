@@ -20,6 +20,7 @@ declare module './index.js' {
         }
         github: string
         images?: string[]
+        themeLinks?: string[]
     }): void
     function KPICards(config: {
         title: string
@@ -114,5 +115,6 @@ declare module './index.js' {
     function Theme(config: {
         color: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'ghost'
         shadow?: true
+        themeLinks?: string[]
     }): void
 }
