@@ -1,7 +1,7 @@
 {
   "name": "taily-ui",
   "type": "module",
-  "version": "1.2.25",
+  "version": "1.2.26",
   "description": "🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -25,8 +25,8 @@
   "author": "Nikita Stadnik <the@nikdelv.in>",
   "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.17",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.8.3"
   }
 }
