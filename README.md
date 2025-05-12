@@ -12,7 +12,7 @@
 </p>
 
 ------
-## Getting started
+## 🚀 Getting started
 
 Taily UI can be included as a plugin into an existing Tailwind CSS project and it is supposed to help you build websites faster by having a set of web components to work with built with the utility classes from Tailwind CSS.
 
@@ -60,7 +60,7 @@ For example, to set up a button component all you need to do is use `data-color`
 </button>
 ```
 
-## Components
+## 🪄 Components
 
 Taily UI is an open source collection of UI components built with the utility classes from Tailwind CSS that you can use as a starting point when coding user interfaces and websites.
 
@@ -88,3 +88,27 @@ Taily UI is an open source collection of UI components built with the utility cl
         </td>
     </tr>
 </table>
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check issues page.   
+
+1. Fork the Project
+2. Create your Feature Branch 
+```bash
+git checkout -b feature/AmazingFeature
+```
+3. Commit your Changes
+```bash
+git commit -m 'Add some AmazingFeature'
+```
+4. Push to the Branch 
+```bash
+git push origin feature/AmazingFeature
+```
+5. Open a Pull Request
+
+## 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgements
+1. [Tailwind CSS Team](https://tailwindcss.com/)
