@@ -11,7 +11,6 @@
     <a href="https://tailyui.nikdelvin.dev/docs/getting-started/license"><img src="https://img.shields.io/badge/license-MIT-blue" alt="Licenese"></a>
 </p>
 
-------
 ## 🚀 Getting started
 
 Taily UI can be included as a plugin into an existing Tailwind CSS project and it is supposed to help you build websites faster by having a set of web components to work with built with the utility classes from Tailwind CSS.
@@ -22,31 +21,31 @@ Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js
 
 1. Install Taily UI as a dependency using NPM by running the following command:
 
-```bash
-npm install taily-ui
-```
+    ```bash
+    npm install taily-ui
+    ```
 
-2.A. Require Taily UI as a plugin inside the `tailwind.config.js` file:
+2. (A) Require Taily UI as a plugin inside the `tailwind.config.js` file:
 
-```javascript
-const { tailyUI } = require('taily-ui')
+    ```javascript
+    const { tailyUI } = require('taily-ui')
 
-module.exports = {
-    plugins: [tailyUI]
-}
-```
+    module.exports = {
+        plugins: [tailyUI]
+    }
+    ```
 
-2.B. Or if you work with Typescript import Taily UI as a plugin inside the `tailwind.config.ts` file:
+3. (B) Or if you work with Typescript import Taily UI as a plugin inside the `tailwind.config.ts` file:
 
-```javascript
-import type { Config } from 'tailwindcss'
-import { tailyUI } from 'taily-ui'
+    ```javascript
+    import type { Config } from 'tailwindcss'
+    import { tailyUI } from 'taily-ui'
 
-const config: Config = {
-    plugins: [tailyUI]
-}
-export default config
-```
+    const config: Config = {
+        plugins: [tailyUI]
+    }
+    export default config
+    ```
 
 ### Data attributes
 
@@ -90,25 +89,35 @@ Taily UI is an open source collection of UI components built with the utility cl
 </table>
 
 ## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome! Feel free to check issues page.   
 
 1. Fork the Project
-2. Create your Feature Branch 
-```bash
-git checkout -b feature/AmazingFeature
-```
+
+2. Create your Feature Branch
+
+    ```bash
+    git checkout -b feature/AmazingFeature
+    ```
+
 3. Commit your Changes
-```bash
-git commit -m 'Add some AmazingFeature'
-```
+
+    ```bash
+    git commit -m 'Add some AmazingFeature'
+    ```
+
 4. Push to the Branch 
-```bash
-git push origin feature/AmazingFeature
-```
+
+    ```bash
+    git push origin feature/AmazingFeature
+    ```
+
 5. Open a Pull Request
 
 ## 📜 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgements
+
 1. [Tailwind CSS Team](https://tailwindcss.com/)
