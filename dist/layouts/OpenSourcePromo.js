@@ -21,7 +21,7 @@ export function OpenSourcePromo(config) {
                                     <div class="h-[96px] w-[96px] min-h-[96px] min-w-[96px] max-sm:h-[48px] max-sm:w-[48px] max-sm:min-h-[48px] max-sm:min-w-[48px] max-md:h-[64px] max-md:w-[64px] max-md:min-h-[64px] max-md:min-w-[64px] min-[1024px]:max-[1439px]:h-[64px] min-[1024px]:max-[1439px]:w-[64px] min-[1024px]:max-[1439px]:min-h-[64px] min-[1024px]:max-[1439px]:min-w-[64px]">
                                         ${icon(config.color, 'main', config.logo)}
                                     </div>
-                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl text-nowrap whitespace-nowrap max-sm:text-5xl min-[1024px]:max-[1439px]:text-[4rem] max-md:text-[4rem] font-bold leading-tight max-md:leading-[1.15] text-transparent">
+                                    <h1 class="bg-gradient-to-r ${colorsConfig[config.color].title} bg-clip-text text-8xl text-nowrap whitespace-nowrap max-sm:text-5xl min-[1024px]:max-[1439px]:text-[4rem] max-md:text-[4rem] font-bold leading-tight max-md:leading-[1.15] max-sm:leading-[1.1] text-transparent">
                                         ${config.title}
                                     </h1>
                                 </div>
