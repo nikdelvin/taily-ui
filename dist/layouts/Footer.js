@@ -11,20 +11,20 @@ export function Footer(config) {
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[0].title}
                                 </h1>
-                                ${config.blocks[0].text.map((text) => {
+                                ${config.blocks[0].text.map((text, index) => {
                                     switch (text.type) {
                                         case 'default':
-                                            return `<span>${text.value}${' '}</span>`
+                                            return `<span id="block-0-${index}">${text.value}${' '}</span>`
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<a id="block-0-${index}" href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
                                             } else {
                                                 return (
-                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<span id="block-0-${index}" class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </span>`
                                                 )
@@ -37,20 +37,20 @@ export function Footer(config) {
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[1].title}
                                 </h1>
-                                ${config.blocks[1].text.map((text) => {
+                                ${config.blocks[1].text.map((text, index) => {
                                     switch (text.type) {
                                         case 'default':
-                                            return `<span>${text.value}${' '}</span>`
+                                            return `<span id="block-1-${index}">${text.value}${' '}</span>`
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<a id="block-1-${index}" href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
                                             } else {
                                                 return (
-                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<span id="block-1-${index}" class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </span>`
                                                 )
@@ -63,20 +63,20 @@ export function Footer(config) {
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[2].title}
                                 </h1>
-                                ${config.blocks[2].text.map((text) => {
+                                ${config.blocks[2].text.map((text, index) => {
                                     switch (text.type) {
                                         case 'default':
-                                            return `<span>${text.value}${' '}</span>`
+                                            return `<span id="block-2-${index}">${text.value}${' '}</span>`
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                    `<a id="block-2-${index}" href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
                                             } else {
                                                 return (
-                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                    `<span id="block-2-${index}" class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </span>`
                                                 )
@@ -89,20 +89,20 @@ export function Footer(config) {
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[3].title}
                                 </h1>
-                                ${config.blocks[3].text.map((text) => {
+                                ${config.blocks[3].text.map((text, index) => {
                                     switch (text.type) {
                                         case 'default':
-                                            return `<span>${text.value}${' '}</span>`
+                                            return `<span id="block-3-${index}">${text.value}${' '}</span>`
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                    `<a id="block-3-${index}" href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
                                             } else {
                                                 return (
-                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                    `<span id="block-3-${index}" class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </span>`
                                                 )
@@ -117,20 +117,20 @@ export function Footer(config) {
                                 <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">
                                     ${config.blocks[4].title}
                                 </h1>
-                                ${config.blocks[4].text.map((text) => {
+                                ${config.blocks[4].text.map((text, index) => {
                                     switch (text.type) {
                                         case 'default':
-                                            return `<span>${text.value}${' '}</span>`
+                                            return `<span id="block-4-${index}">${text.value}${' '}</span>`
                                         case 'primary': {
                                             if (text.link != null) {
                                                 return (
-                                                    `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<a id="block-4-${index}" href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </a>`
                                                 )
                                             } else {
                                                 return (
-                                                    `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                                    `<span id="block-4-${index}" class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                         ${text.value}${' '}
                                                     </span>`
                                                 )
@@ -144,20 +144,20 @@ export function Footer(config) {
                                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">
                                         ${config.blocks[5].title}
                                     </h1>
-                                    ${config.blocks[5].text.map((text) => {
+                                    ${config.blocks[5].text.map((text, index) => {
                                         switch (text.type) {
                                             case 'default':
-                                                return `<span>${text.value}${' '}</span>`
+                                                return `<span id="block-5-${index}">${text.value}${' '}</span>`
                                             case 'primary': {
                                                 if (text.link != null) {
                                                     return (
-                                                        `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        `<a id="block-5-${index}" href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                             ${text.value}${' '}
                                                         </a>`
                                                     )
                                                 } else {
                                                     return (
-                                                        `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        `<span id="block-5-${index}" class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                             ${text.value}${' '}
                                                         </span>`
                                                     )
@@ -170,20 +170,20 @@ export function Footer(config) {
                                     <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text pb-4 text-3xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold text-transparent w-min min-w-max">
                                         ${config.blocks[6].title}
                                     </h1>
-                                    ${config.blocks[6].text.map((text) => {
+                                    ${config.blocks[6].text.map((text, index) => {
                                         switch (text.type) {
                                             case 'default':
-                                                return `<span>${text.value}${' '}</span>`
+                                                return `<span id="block-6-${index}">${text.value}${' '}</span>`
                                             case 'primary': {
                                                 if (text.link != null) {
                                                     return (
-                                                        `<a href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        `<a id="block-6-${index}" href="${text.link}" target="_${text.newPage != null ? 'blank' : 'self'}" class="underline decoration-zinc-50/50 inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                             ${text.value}${' '}
                                                         </a>`
                                                     )
                                                 } else {
                                                     return (
-                                                        `<span class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
+                                                        `<span id="block-6-${index}" class="inline bg-gradient-to-r ${colorsConfig[config.color].textSecondary} bg-clip-text text-transparent">
                                                             ${text.value}${' '}
                                                         </span>`
                                                     )

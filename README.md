@@ -1,31 +1,83 @@
-<p>
-    <a href="https://tailyui.by.nikdelv.in">
-      <img alt="Taily UI - Tailwind CSS components" width="350" src="https://tailyui.by.nikdelv.in/assets/github/logo.png">
-    </a><br>
-    Introducing Taily UI - 🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.
-</p>
+# [![Taily UI - Tailwind CSS components](https://tailyui.by.nikdelv.in/assets/github/logo.png)](https://tailyui.by.nikdelv.in)
 
-<p>
-    <a href="https://www.npmjs.com/package/taily-ui"><img src="https://img.shields.io/npm/dt/taily-ui.svg" alt="Total Downloads"></a>
-    <a href="https://github.com/nikdelvin/taily-ui/releases"><img src="https://img.shields.io/npm/v/taily-ui.svg" alt="Latest Release"></a>
-    <a href="https://tailyui.nikdelvin.dev/docs/getting-started/license"><img src="https://img.shields.io/badge/license-MIT-blue" alt="Licenese"></a>
-</p>
+Introducing Taily UI - 🚀 Beautiful, fast, and modern UI Library 100% built and animated with pure Tailwind CSS.
 
-## 🚀 Getting started
+[![Total Downloads](https://img.shields.io/npm/dt/taily-ui.svg)](https://www.npmjs.com/package/taily-ui)
+[![Latest Release](https://img.shields.io/npm/v/taily-ui.svg)](https://github.com/nikdelvin/taily-ui/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://tailyui.nikdelvin.dev/docs/getting-started/license)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-Taily UI can be included as a plugin into an existing Tailwind CSS project and it is supposed to help you build websites faster by having a set of web components to work with built with the utility classes from Tailwind CSS.
+## Table of Contents
 
-### Install using NPM
+- Taily UI
+  - [Table of Contents](#table-of-contents)
+  - [✨ Features](#-features)
+  - [🚀 Quick Start](#-quick-start)
+  - [📋 Prerequisites](#-prerequisites)
+  - [💻 Installation](#-installation)
+    - [NPM Installation](#npm-installation)
+  - [📖 Usage](#-usage)
+    - [Data Attributes](#data-attributes)
+  - [🪄 Components](#-components)
+    - [Featured Components](#featured-components)
+  - [❓ Troubleshooting](#-troubleshooting)
+    - [Styles not showing up?](#styles-not-showing-up)
+    - [Components not working?](#components-not-working)
+  - [🤝 Contributing](#-contributing)
+    - [Getting Started](#getting-started)
+  - [📜 License](#-license)
 
-Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js</a> and <a href="https://tailwindcss.com/" rel="nofollow" >Tailwind CSS</a> installed. 
+## ✨ Features
 
-1. Install Taily UI as a dependency using NPM by running the following command:
+- **🎨 Pure Tailwind CSS** - No extra CSS files or dependencies to load
+- **⚡ Lightweight & Fast** - Minimal bundle size with zero overhead
+- **🔧 Fully Customizable** - Use Tailwind utilities to style components
+- **📱 Responsive by Default** - Mobile-first design patterns
+- **♿ Accessible** - Built with accessibility best practices
+- **🎯 Simple Data Attributes** - Easy-to-use HTML interface
+
+## 🚀 Quick Start
+
+The fastest way to get started with Taily UI is to use the data attributes interface:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button data-color="primary" data-type="solid" data-size="medium" class="button">
+        Start using Taily UI
+    </button>
+</body>
+</html>
+```
+
+For a complete setup guide, check the [Installation](#-installation) section below.
+
+## 📋 Prerequisites
+
+Before you begin, make sure you have:
+
+- **Node.js** 14.0 or higher ([Download](https://nodejs.org/))
+- **Tailwind CSS** 3.0 or higher ([Install Guide](https://tailwindcss.com/docs/installation))
+
+## 💻 Installation
+
+Taily UI can be included as a plugin into an existing Tailwind CSS project to help you build websites faster with a set of beautiful, production-ready web components built with Tailwind CSS utilities.
+
+### NPM Installation
+
+Make sure that you have [Node.js](https://nodejs.org/en/) and [Tailwind CSS](https://tailwindcss.com/) installed first.
+
+1. Install Taily UI as a dependency:
 
     ```bash
     npm install taily-ui
     ```
 
-2. (A) Require Taily UI as a plugin inside the `tailwind.config.js` file:
+2. Add Taily UI as a plugin in your `tailwind.config.js`:
 
     ```javascript
     const { tailyUI } = require('taily-ui')
@@ -35,9 +87,9 @@ Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js
     }
     ```
 
-3. (B) Or if you work with Typescript import Taily UI as a plugin inside the `tailwind.config.ts` file:
+3. Or if you use TypeScript, add it to your `tailwind.config.ts`:
 
-    ```javascript
+    ```typescript
     import type { Config } from 'tailwindcss'
     import { tailyUI } from 'taily-ui'
 
@@ -47,50 +99,57 @@ Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js
     export default config
     ```
 
-### Data attributes
+## 📖 Usage
 
-The preferred way to use the interactive UI components from Taily UI is via the data attributes interface which allows us to add functionality via the HTML element attributes and most of the examples on our documentation applies this strategy.
+### Data Attributes
 
-For example, to set up a button component all you need to do is use `data-color`, `data-type` and `data-size` to setup color, type and size of the component.
+The preferred way to use Taily UI components is via the data attributes interface. This allows you to configure components directly in your HTML using simple attributes:
 
 ```html
-<button data-color="default" data-type="solid" data-size="medium" class="button">
+<button data-color="primary" data-type="solid" data-size="medium" class="button">
     Start using Taily UI
 </button>
 ```
 
+Available attributes include:
+
+- `data-color` - Set the button color (primary, secondary, default, etc.)
+- `data-type` - Choose the button type (solid, outline, ghost, etc.)
+- `data-size` - Define the button size (small, medium, large, etc.)
+
 ## 🪄 Components
 
-Taily UI is an open source collection of UI components built with the utility classes from Tailwind CSS that you can use as a starting point when coding user interfaces and websites.
+Taily UI is an open source collection of 50+ UI components built with the utility classes from Tailwind CSS that you can use as a starting point when coding user interfaces and websites. Each component is production-ready, fully customizable, and accessible.
 
-<table>
-    <tr>
-        <td width="33.3333%">Button</td>
-        <td width="33.3333%">Button Group</td>
-        <td width="33.3333%">Card</td>
-    </tr>
-    <tr>
-        <td width="33.3333%">
-            <a href="https://tailyui.by.nikdelv.in/docs/components/buttons">
-                <img alt="Tailwind CSS Button" src="https://tailyui.by.nikdelv.in/assets/github/button.png">
-            </a>
-        </td>
-        <td width="33.3333%">
-            <a href="https://tailyui.by.nikdelv.in/docs/components/button-groups">
-                <img alt="Tailwind CSS Button Group" src="https://tailyui.by.nikdelv.in/assets/github/button-group.png">
-            </a>
-        </td>
-        <td width="33.3333%">
-            <a href="https://tailyui.by.nikdelv.in/docs/components/cards">
-                <img alt="Tailwind CSS Card" src="https://tailyui.by.nikdelv.in/assets/github/card.png">
-            </a>
-        </td>
-    </tr>
-</table>
+### Featured Components
+
+| Button | Button Group | Card |
+| --- | --- | --- |
+| [![Tailwind CSS Button](https://tailyui.by.nikdelv.in/assets/github/button.png)](https://tailyui.by.nikdelv.in/docs/components/buttons) | [![Tailwind CSS Button Group](https://tailyui.by.nikdelv.in/assets/github/button-group.png)](https://tailyui.by.nikdelv.in/docs/components/button-groups) | [![Tailwind CSS Card](https://tailyui.by.nikdelv.in/assets/github/card.png)](https://tailyui.by.nikdelv.in/docs/components/cards) |
+
+[View all components →](https://tailyui.by.nikdelv.in/docs/components)
+
+## ❓ Troubleshooting
+
+### Styles not showing up?
+
+Make sure Taily UI is correctly installed as a plugin in your `tailwind.config.js` or `tailwind.config.ts` file. The plugin needs to be included in the `plugins` array for styles to be generated.
+
+### Components not working?
+
+Ensure that:
+
+- Tailwind CSS version 3.0 or higher is installed
+- You've included the Taily UI plugin in your Tailwind config
+- You're using the correct data attributes
+
+For more help, check the [documentation](https://tailyui.by.nikdelv.in/docs) or open an issue on GitHub.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check issues page.   
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/nikdelvin/taily-ui/issues).
+
+### Getting Started
 
 1. Fork the Project
 
@@ -106,7 +165,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check issu
     git commit -m 'Add some AmazingFeature'
     ```
 
-4. Push to the Branch 
+4. Push to the Branch
 
     ```bash
     git push origin feature/AmazingFeature
@@ -116,8 +175,4 @@ Contributions, issues, and feature requests are welcome! Feel free to check issu
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-1. [Tailwind CSS Team](https://tailwindcss.com/)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

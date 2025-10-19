@@ -58,12 +58,12 @@ export function Jobs(config) {
                                         <h2 class="absolute left-[16px] top-[12px] max-sm:left-[12px] max-sm:top-[8px] bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-2xl max-md:text-2xl max-sm:text-sm min-[1024px]:max-[1439px]:text-lg font-semibold text-transparent">
                                             To
                                         </h2>
-                                        <h1 class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 max-sm:pb-2 text-8xl max-sm:text-[3.25rem] min-[1024px]:max-[1439px]:text-[3.5rem] max-md:text-[4rem] font-bold text-transparent">
+                                        <h1 id="job-${index}-to-0" class="bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text pb-4 max-sm:pb-2 text-8xl max-sm:text-[3.25rem] min-[1024px]:max-[1439px]:text-[3.5rem] max-md:text-[4rem] font-bold text-transparent">
                                             ${job.to[0]}
                                         </h1>
-                                        <h2 class="pb-2 max-sm:pb-0 max-md:pb-1 min-[1024px]:max-[1439px]:pb-0 text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold">${job.to[1]}</h2>
+                                        <h2 id="job-${index}-to-1" class="pb-2 max-sm:pb-0 max-md:pb-1 min-[1024px]:max-[1439px]:pb-0 text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold">${job.to[1]}</h2>
                                         <h2 class="text-center text-4xl min-[1024px]:max-[1439px]:text-2xl max-md:text-[2rem] max-sm:text-2xl font-bold">
-                                            <span class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
+                                            <span id="job-${index}-to-2" class="inline bg-gradient-to-r ${colorsConfig[config.color].textPrimary} bg-clip-text text-transparent">
                                                 ${job.to[2]}
                                             </span>
                                         </h2>
